@@ -1,0 +1,55 @@
+[0.054s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map
+[0.850s] -- The C compiler identification is GNU 11.4.0
+[1.218s] -- The CXX compiler identification is GNU 11.4.0
+[1.246s] -- Detecting C compiler ABI info
+[1.526s] -- Detecting C compiler ABI info - done
+[1.542s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.544s] -- Detecting C compile features
+[1.546s] -- Detecting C compile features - done
+[1.555s] -- Detecting CXX compiler ABI info
+[1.803s] -- Detecting CXX compiler ABI info - done
+[1.825s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.827s] -- Detecting CXX compile features
+[1.829s] -- Detecting CXX compile features - done
+[1.843s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.238s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.675s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[2.848s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.866s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.899s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.944s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.005s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.165s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.177s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.441s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.510s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.596s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.624s] -- Looking for pthread.h
+[3.843s] -- Looking for pthread.h - found
+[3.843s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.044s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.046s] -- Found Threads: TRUE  
+[4.235s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.288s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.359s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.407s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[4.468s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[4.501s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.779s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.821s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.825s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.825s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.832s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[4.921s] -- Checking for module 'eigen3'
+[4.946s] --   Found eigen3, version 3.4.0
+[5.024s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[5.024s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.141s] -- Checking for module 'flann'
+[5.168s] --   Found flann, version 1.9.1
+[5.253s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[5.254s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[7.393s] -- Checking for module 'libusb-1.0'
+[7.425s] --   Found libusb-1.0, version 1.0.25
+[7.509s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[7.512s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.587s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map

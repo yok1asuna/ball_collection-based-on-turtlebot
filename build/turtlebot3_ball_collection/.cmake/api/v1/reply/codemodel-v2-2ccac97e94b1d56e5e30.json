@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c33bb7a2770e48d60700.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "turtlebot3_ball_collection",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detector_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detector_node-96a500554af268ebfee7.json",
+					"name" : "ball_detector_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "density_map_builder_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-density_map_builder_node-1200b60ecded59f54838.json",
+					"name" : "density_map_builder_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_planner_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_planner_node-09270b37b920dcdf446a.json",
+					"name" : "path_planner_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "semantic_path_planner_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-semantic_path_planner_node-d8e651f93ae453813227.json",
+					"name" : "semantic_path_planner_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tsp_planner_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tsp_planner_node-6ed0d0fa5c015093028d.json",
+					"name" : "tsp_planner_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turtlebot3_ball_collection_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turtlebot3_ball_collection_uninstall-31bb6b009f0c45d0c3d1.json",
+					"name" : "turtlebot3_ball_collection_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-def35d25cc7c2edc0082.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u22/turtlebot/build/turtlebot3_ball_collection",
+		"source" : "/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,7 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+gmake[2]: *** [CMakeFiles/density_map_builder_node.dir/build.make:76: CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/density_map_builder_node.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/semantic_path_planner_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,114 @@
+[0.030s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map
+[0.151s] -- The C compiler identification is GNU 11.4.0
+[0.275s] -- The CXX compiler identification is GNU 11.4.0
+[0.297s] -- Detecting C compiler ABI info
+[0.458s] -- Detecting C compiler ABI info - done
+[0.480s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.482s] -- Detecting C compile features
+[0.482s] -- Detecting C compile features - done
+[0.491s] -- Detecting CXX compiler ABI info
+[0.650s] -- Detecting CXX compiler ABI info - done
+[0.662s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.662s] -- Detecting CXX compile features
+[0.663s] -- Detecting CXX compile features - done
+[0.667s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.016s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.186s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[1.275s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.286s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.301s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.327s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.443s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.448s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.641s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.698s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.793s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.809s] -- Looking for pthread.h
+[1.942s] -- Looking for pthread.h - found
+[1.943s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.072s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.073s] -- Found Threads: TRUE  
+[2.187s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.221s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.269s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.306s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.352s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[2.375s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.550s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.584s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.587s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.587s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.598s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.676s] -- Checking for module 'eigen3'
+[2.697s] --   Found eigen3, version 3.4.0
+[2.753s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.753s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.832s] -- Checking for module 'flann'
+[2.856s] --   Found flann, version 1.9.1
+[2.925s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.926s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.704s] -- Checking for module 'libusb-1.0'
+[4.725s] --   Found libusb-1.0, version 1.0.25
+[4.778s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.780s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.891s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.191s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.208s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.222s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.518s] -- Found Qhull version 8.0.2
+[5.858s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.211s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[6.229s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[6.231s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[6.232s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[6.236s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[6.238s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[6.239s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[6.241s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[6.243s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[6.247s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[6.249s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[6.252s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[6.254s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[6.256s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[6.260s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[6.263s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[6.267s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[6.269s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[6.272s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[6.274s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[6.277s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[6.278s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[6.280s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[6.285s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[6.285s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[6.289s] [33mCMake Warning (dev) at CMakeLists.txt:20 (find_package):
+[6.289s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[6.289s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[6.289s]   command to set the policy and suppress this warning.
+[6.289s] 
+[6.289s]   CMake variable PCL_ROOT is set to:
+[6.289s] 
+[6.289s]     /usr
+[6.290s] 
+[6.290s]   For compatibility, CMake is ignoring the variable.
+[6.290s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.290s] [0m
+[6.313s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[6.380s] -- Found nav2_core: 1.1.20 (/opt/ros/humble/share/nav2_core/cmake)
+[7.049s] -- Configuring done
+[7.458s] -- Generating done
+[7.497s] -- Build files have been written to: /home/u22/turtlebot/build/semantic_density_map
+[7.531s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map
+[7.537s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4
+[7.660s] [ 25%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+[7.665s] [ 50%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[11.039s] gmake[2]: *** wait: No child processes.  Stop.
+[11.040s] gmake[2]: *** Waiting for unfinished jobs....
+[11.041s] gmake[2]: *** wait: No child processes.  Stop.
+[11.042s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/semantic_path_planner_node.dir/all] Error 2
+[11.043s] gmake[2]: *** [CMakeFiles/density_map_builder_node.dir/build.make:76: CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o] Interrupt
+[11.045s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/density_map_builder_node.dir/all] Interrupt
+[11.045s] gmake: *** [Makefile:146: all] Interrupt
+[11.049s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4

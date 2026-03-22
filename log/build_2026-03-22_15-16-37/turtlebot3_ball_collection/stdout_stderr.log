@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target density_map_builder_node[0m
+[35m[1mConsolidate compiler generated dependencies of target tsp_planner_node[0m
+[35m[1mConsolidate compiler generated dependencies of target semantic_path_planner_node[0m
+[35m[1mConsolidate compiler generated dependencies of target ball_detector_node[0m
+[ 20%] Built target density_map_builder_node
+[ 40%] Built target ball_detector_node
+[35m[1mConsolidate compiler generated dependencies of target path_planner_node[0m
+[ 60%] Built target tsp_planner_node
+[ 70%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/path_planner_node.dir/src/path_planner_node.cpp.o[0m
+In file included from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/path_planner_node.cpp:1[m[K:
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/path_planner_node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_action/rclcpp_action.hpp: No such file or directory
+    8 | #include [01;31m[K<rclcpp_action/rclcpp_action.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/path_planner_node.dir/build.make:76: CMakeFiles/path_planner_node.dir/src/path_planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/path_planner_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kvoid SemanticPathPlannerNode::plan_path()[m[K’:
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:43:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   43 |   for (int i = 0; [01;35m[Ki < current_density_map_.info.width[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:44:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   44 |     for (int j = 0; [01;35m[Kj < current_density_map_.info.height[m[K; ++j) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)[m[K’:
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:141:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  141 |   if (index < 0 || [01;35m[Kindex >= grid.data.size()[m[K) return 100.0;
+      |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)[m[K’:
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  171 |   if (start_x < 0 || [01;35m[Kstart_x >= grid.info.width[m[K || start_y < 0 || start_y >= grid.info.height ||
+      |                      [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:75:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  171 |   if (start_x < 0 || start_x >= grid.info.width || start_y < 0 || [01;35m[Kstart_y >= grid.info.height[m[K ||
+      |                                                                   [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  172 |       goal_x < 0 || [01;35m[Kgoal_x >= grid.info.width[m[K || goal_y < 0 || goal_y >= grid.info.height) {
+      |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:71:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  172 |       goal_x < 0 || goal_x >= grid.info.width || goal_y < 0 || [01;35m[Kgoal_y >= grid.info.height[m[K) {
+      |                                                                [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  231 |       if (neighbor_x < 0 || [01;35m[Kneighbor_x >= grid.info.width[m[K || neighbor_y < 0 || neighbor_y >= grid.info.height) {
+      |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:91:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  231 |       if (neighbor_x < 0 || neighbor_x >= grid.info.width || neighbor_y < 0 || [01;35m[Kneighbor_y >= grid.info.height[m[K) {
+      |                                                                                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[ 90%] [32m[1mLinking CXX executable semantic_path_planner_node[0m
+[ 90%] Built target semantic_path_planner_node
+gmake: *** [Makefile:146: all] Error 2

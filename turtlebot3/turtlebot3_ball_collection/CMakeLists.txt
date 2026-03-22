@@ -18,31 +18,31 @@ find_package(nav_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
-find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
 
 include_directories(include)
-include_directories(${PCL_INCLUDE_DIRS})
+
+add_executable(density_map_builder_node src/density_map_builder_node.cpp)
+ament_target_dependencies(density_map_builder_node rclcpp std_msgs geometry_msgs sensor_msgs nav_msgs visualization_msgs pcl_conversions tf2 tf2_ros tf2_geometry_msgs)
+
+add_executable(semantic_path_planner_node src/semantic_path_planner_node.cpp)
+ament_target_dependencies(semantic_path_planner_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs nav2_msgs pcl_conversions)
 
 add_executable(ball_detector_node src/ball_detector_node.cpp)
 ament_target_dependencies(ball_detector_node rclcpp std_msgs geometry_msgs sensor_msgs visualization_msgs pcl_conversions)
-target_link_libraries(ball_detector_node ${PCL_LIBRARIES})
-
-add_executable(clustering_node src/clustering_node.cpp)
-ament_target_dependencies(clustering_node rclcpp std_msgs geometry_msgs sensor_msgs visualization_msgs pcl_conversions)
-target_link_libraries(clustering_node ${PCL_LIBRARIES})
 
 add_executable(tsp_planner_node src/tsp_planner_node.cpp)
-ament_target_dependencies(tsp_planner_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs pcl_conversions)
-target_link_libraries(tsp_planner_node ${PCL_LIBRARIES})
+ament_target_dependencies(tsp_planner_node rclcpp std_msgs geometry_msgs sensor_msgs nav_msgs pcl_conversions)
 
 add_executable(path_planner_node src/path_planner_node.cpp)
-ament_target_dependencies(path_planner_node rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_ros nav2_msgs)
+ament_target_dependencies(path_planner_node rclcpp nav_msgs nav2_msgs rclcpp_action)
 
 install(TARGETS
+  density_map_builder_node
+  semantic_path_planner_node
   ball_detector_node
-  clustering_node
   tsp_planner_node
   path_planner_node
   DESTINATION lib/${PROJECT_NAME}

@@ -1,0 +1,32 @@
+[0.060s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
+[0.202s] [35m[1mConsolidate compiler generated dependencies of target semantic_path_planner_node[0m
+[0.225s] [35m[1mConsolidate compiler generated dependencies of target density_map_builder_node[0m
+[0.245s] [ 50%] Built target semantic_path_planner_node
+[0.286s] [100%] Built target density_map_builder_node
+[1.157s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
+[1.163s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_ball_collection
+[1.187s] -- Install configuration: ""
+[1.189s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/density_map_builder_node
+[1.189s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/semantic_path_planner_node
+[1.189s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch
+[1.189s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/ball_collection.launch.py
+[1.189s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/full_system.launch.py
+[1.189s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/slam_navigation.launch.py
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param/slam_toolbox.yaml
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/package_run_dependencies/turtlebot3_ball_collection
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/parent_prefix_path/turtlebot3_ball_collection
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.sh
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.dsv
+[1.190s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.sh
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.dsv
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.bash
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.sh
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.zsh
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.dsv
+[1.191s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.dsv
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/packages/turtlebot3_ball_collection
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig.cmake
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig-version.cmake
+[1.191s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.xml
+[1.230s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_ball_collection

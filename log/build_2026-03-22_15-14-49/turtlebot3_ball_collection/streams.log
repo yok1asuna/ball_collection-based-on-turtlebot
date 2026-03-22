@@ -1,0 +1,322 @@
+[0.018s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=/opt/ros/humble __trae_PS1=\n(TraeAI-3) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
+[0.070s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.329s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.396s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.402s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.418s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.437s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.465s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.542s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.544s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.754s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.853s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.871s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.919s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.959s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.011s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[1.021s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.211s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.273s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.349s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.417s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.127s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.144s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.471s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.488s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.498s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.799s] -- Found Qhull version 8.0.2
+[3.161s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.714s] -- Configuring done
+[3.997s] -- Generating done
+[4.058s] -- Build files have been written to: /home/u22/turtlebot/build/turtlebot3_ball_collection
+[4.143s] [35m[1mConsolidate compiler generated dependencies of target density_map_builder_node[0m
+[4.153s] [35m[1mConsolidate compiler generated dependencies of target ball_detector_node[0m
+[4.182s] [35m[1mConsolidate compiler generated dependencies of target semantic_path_planner_node[0m
+[4.187s] [35m[1mConsolidate compiler generated dependencies of target tsp_planner_node[0m
+[4.289s] [ 10%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+[4.317s] [ 20%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[4.426s] [ 30%] [32mBuilding CXX object CMakeFiles/tsp_planner_node.dir/src/tsp_planner_node.cpp.o[0m
+[4.450s] [ 40%] [32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/ball_detector_node.cpp.o[0m
+[23.604s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kvoid SemanticPathPlannerNode::plan_path()[m[K’:
+[23.604s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:43:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.605s]    43 |   for (int i = 0; [01;35m[Ki < current_density_map_.info.width[m[K; ++i) {
+[23.605s]       |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.605s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:44:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.605s]    44 |     for (int j = 0; [01;35m[Kj < current_density_map_.info.height[m[K; ++j) {
+[23.605s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.651s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)[m[K’:
+[23.652s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:141:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.653s]   141 |   if (index < 0 || [01;35m[Kindex >= grid.data.size()[m[K) return 100.0;
+[23.656s]       |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[23.657s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)[m[K’:
+[23.657s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.658s]   171 |   if (start_x < 0 || [01;35m[Kstart_x >= grid.info.width[m[K || start_y < 0 || start_y >= grid.info.height ||
+[23.658s]       |                      [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[23.658s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:75:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.658s]   171 |   if (start_x < 0 || start_x >= grid.info.width || start_y < 0 || [01;35m[Kstart_y >= grid.info.height[m[K ||
+[23.658s]       |                                                                   [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[23.666s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.667s]   172 |       goal_x < 0 || [01;35m[Kgoal_x >= grid.info.width[m[K || goal_y < 0 || goal_y >= grid.info.height) {
+[23.668s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[23.670s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:71:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.672s]   172 |       goal_x < 0 || goal_x >= grid.info.width || goal_y < 0 || [01;35m[Kgoal_y >= grid.info.height[m[K) {
+[23.672s]       |                                                                [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[23.707s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:191:34:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[23.707s]   191 |     Node current = open_list.top([01;31m[K)[m[K;
+[23.707s]       |                                  [01;31m[K^[m[K
+[23.707s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[23.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[23.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[23.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[23.707s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[23.707s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[23.707s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[23.707s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.707s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[23.707s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[23.708s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:195:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.709s]   195 |     if (current.[01;31m[Kx[m[K == goal_x && current.y == goal_y) {
+[23.709s]       |                 [01;31m[K^[m[K
+[23.709s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:195:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.709s]   195 |     if (current.x == goal_x && current.[01;31m[Ky[m[K == goal_y) {
+[23.709s]       |                                        [01;31m[K^[m[K
+[23.710s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:201:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.710s]   201 |         p.x = grid.info.origin.position.x + node->[01;31m[Kx[m[K * grid.info.resolution + grid.info.resolution / 2;
+[23.710s]       |                                                   [01;31m[K^[m[K
+[23.710s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:202:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.710s]   202 |         p.y = grid.info.origin.position.y + node->[01;31m[Ky[m[K * grid.info.resolution + grid.info.resolution / 2;
+[23.710s]       |                                                   [01;31m[K^[m[K
+[23.711s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:205:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparent[m[K’
+[23.711s]   205 |         node = node->[01;31m[Kparent[m[K;
+[23.711s]       |                      [01;31m[K^~~~~~[m[K
+[23.713s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:220:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.713s]   220 |     if (closed_list[current.[01;31m[Ky[m[K][current.x]) {
+[23.713s]       |                             [01;31m[K^[m[K
+[23.714s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:220:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.715s]   220 |     if (closed_list[current.y][current.[01;31m[Kx[m[K]) {
+[23.715s]       |                                        [01;31m[K^[m[K
+[23.715s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:223:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.715s]   223 |     closed_list[current.[01;31m[Ky[m[K][current.x] = true;
+[23.715s]       |                         [01;31m[K^[m[K
+[23.715s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:223:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.715s]   223 |     closed_list[current.y][current.[01;31m[Kx[m[K] = true;
+[23.715s]       |                                    [01;31m[K^[m[K
+[23.715s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:227:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.715s]   227 |       int neighbor_x = current.[01;31m[Kx[m[K + dir.first;
+[23.716s]       |                                [01;31m[K^[m[K
+[23.716s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:228:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.716s]   228 |       int neighbor_y = current.[01;31m[Ky[m[K + dir.second;
+[23.716s]       |                                [01;31m[K^[m[K
+[23.717s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.717s]   231 |       if (neighbor_x < 0 || [01;35m[Kneighbor_x >= grid.info.width[m[K || neighbor_y < 0 || neighbor_y >= grid.info.height) {
+[23.717s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[23.718s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:91:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[23.718s]   231 |       if (neighbor_x < 0 || neighbor_x >= grid.info.width || neighbor_y < 0 || [01;35m[Kneighbor_y >= grid.info.height[m[K) {
+[23.718s]       |                                                                                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[23.719s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:243:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kg[m[K’
+[23.719s]   243 |       double total_cost = current.[01;31m[Kg[m[K + move_cost * (1.0 + density_cost * 0.5); // Higher density slightly increases cost
+[23.719s]       |                                   [01;31m[K^[m[K
+[23.719s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[23.720s]   248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.[01;31m[Kx[m[K, current.y, current.g, current.h, current.parent));
+[23.720s]       |                                                                                   [01;31m[K^[m[K
+[23.720s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[23.721s]   248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.[01;31m[Ky[m[K, current.g, current.h, current.parent));
+[23.722s]       |                                                                                              [01;31m[K^[m[K
+[23.722s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:105:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kg[m[K’
+[23.725s]   248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.[01;31m[Kg[m[K, current.h, current.parent));
+[23.725s]       |                                                                                                         [01;31m[K^[m[K
+[23.725s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:116:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kh[m[K’
+[23.725s]   248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.g, current.[01;31m[Kh[m[K, current.parent));
+[23.726s]       |                                                                                                                    [01;31m[K^[m[K
+[23.726s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:127:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparent[m[K’
+[23.726s]   248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.g, current.h, current.[01;31m[Kparent[m[K));
+[23.726s]       |                                                                                                                               [01;31m[K^~~~~~[m[K
+[24.985s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[24.985s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[24.985s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[24.985s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[24.986s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[24.986s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.986s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[24.986s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[24.986s] /usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘[01m[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>][m[K’:
+[24.987s] [01m[K/usr/include/c++/11/bits/stl_queue.h:659:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[24.988s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:[m[K   required from here
+[24.988s] [01m[K/usr/include/c++/11/bits/stl_heap.h:214:18:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[24.988s]   214 |       _ValueType [01;31m[K__value[m[K = _GLIBCXX_MOVE(*(__last - 1));
+[24.988s]       |                  [01;31m[K^~~~~~~[m[K
+[24.988s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[24.988s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[24.988s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[24.988s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[24.988s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.988s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[24.988s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[24.988s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.988s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[24.989s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.992s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[24.992s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[24.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[24.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[24.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[24.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.992s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[24.992s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[24.992s] [01m[K/usr/include/c++/11/bits/stl_heap.h:215:23:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[24.992s]   215 |       [01;31m[Kstd::__push_heap(__first, _DistanceType((__last - __first) - 1),[m[K
+[24.993s]       |       [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.993s]   216 | [01;31m[K                       _DistanceType(0), _GLIBCXX_MOVE(__value), __cmp)[m[K;
+[24.993s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.993s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[24.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[24.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[24.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[24.993s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.993s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[24.994s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[24.994s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.994s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[24.994s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.994s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[24.994s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[24.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[24.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[24.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[24.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.994s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[24.994s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[24.994s] [01m[K/usr/include/c++/11/bits/stl_heap.h:135:66:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<rclcpp::Node> >][m[K’
+[24.994s]   135 |                 _Distance __holeIndex, _Distance __topIndex, [01;36m[K_Tp __value[m[K,
+[24.995s]       |                                                              [01;36m[K~~~~^~~~~~~[m[K
+[25.588s] /usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘[01m[Kvoid std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >][m[K’:
+[25.588s] [01m[K/usr/include/c++/11/bits/stl_heap.h:332:19:[m[K   required from ‘[01m[Kvoid std::pop_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>][m[K’
+[25.588s] [01m[K/usr/include/c++/11/bits/stl_queue.h:678:15:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::pop() [with _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[25.588s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:192:18:[m[K   required from here
+[25.588s] [01m[K/usr/include/c++/11/bits/stl_heap.h:261:18:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[25.588s]   261 |       _ValueType [01;31m[K__value[m[K = _GLIBCXX_MOVE(*__result);
+[25.588s]       |                  [01;31m[K^~~~~~~[m[K
+[25.588s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[25.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[25.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.588s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.589s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.589s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.590s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.590s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[25.590s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[25.591s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.591s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[25.591s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[25.591s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[25.591s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.591s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.591s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.591s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.591s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.591s] [01m[K/usr/include/c++/11/bits/stl_heap.h:262:17:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)[m[K’
+[25.591s]   262 |       *__result [01;31m[K=[m[K _GLIBCXX_MOVE(*__first);
+[25.591s]       |                 [01;31m[K^[m[K
+[25.592s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[25.592s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[25.592s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.592s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.592s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.592s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.592s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.593s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[25.594s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[25.594s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.598s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[25.598s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[25.598s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[25.598s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.598s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.598s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.598s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.598s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.598s] [01m[K/usr/include/c++/11/bits/stl_heap.h:263:25:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[25.599s]   263 |       [01;31m[Kstd::__adjust_heap(__first, _DistanceType(0),[m[K
+[25.599s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.599s]   264 | [01;31m[K                         _DistanceType(__last - __first),[m[K
+[25.600s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.600s]   265 | [01;31m[K                         _GLIBCXX_MOVE(__value), __comp)[m[K;
+[25.601s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.601s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[25.601s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[25.601s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.601s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.603s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.603s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.604s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.604s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[25.604s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[25.605s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.605s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[25.605s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[25.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[25.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[25.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[25.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[25.606s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[25.606s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[25.606s] [01m[K/usr/include/c++/11/bits/stl_heap.h:224:40:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >][m[K’
+[25.607s]   224 |                   _Distance __len, [01;36m[K_Tp __value[m[K, _Compare __comp)
+[25.609s]       |                                    [01;36m[K~~~~^~~~~~~[m[K
+[26.143s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[26.143s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[26.143s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[26.144s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[26.144s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[26.144s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[26.144s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node][m[K’:
+[26.144s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rclcpp::Node>][m[K’
+[26.144s] [01m[K/usr/include/c++/11/bits/vector.tcc:115:30:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&][m[K’
+[26.145s] [01m[K/usr/include/c++/11/bits/stl_queue.h:658:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[26.145s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:[m[K   required from here
+[26.145s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node(int&, int&, double, double&, std::nullptr_t)[m[K’
+[26.145s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[26.149s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.149s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[26.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[26.150s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[26.150s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[26.150s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[26.150s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[26.150s]  1294 |   [01;36m[KNode[m[K(
+[26.151s]       |   [01;36m[K^~~~[m[K
+[26.155s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 5 provided
+[26.155s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[26.155s]   101 |   explicit [01;36m[KNode[m[K(
+[26.156s]       |            [01;36m[K^~~~[m[K
+[26.156s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 5 provided
+[26.156s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[26.156s]    89 |   explicit [01;36m[KNode[m[K(
+[26.156s]       |            [01;36m[K^~~~[m[K
+[26.156s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 5 provided
+[27.194s] In file included from [01m[K/usr/include/c++/11/memory:66[m[K,
+[27.195s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[27.197s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4[m[K,
+[27.197s]                  from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1[m[K:
+[27.197s] /usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of ‘[01m[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*][m[K’:
+[27.198s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*; _Tp = rclcpp::Node][m[K’
+[27.198s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = rclcpp::Node*; _ForwardIterator = rclcpp::Node*; _Allocator = std::allocator<rclcpp::Node>][m[K’
+[27.198s] [01m[K/usr/include/c++/11/bits/vector.tcc:474:3:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::iterator = std::vector<rclcpp::Node>::iterator][m[K’
+[27.198s] [01m[K/usr/include/c++/11/bits/vector.tcc:121:21:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&][m[K’
+[27.204s] [01m[K/usr/include/c++/11/bits/stl_queue.h:658:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[27.204s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:[m[K   required from here
+[27.204s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: result type must be constructible from value type of input range
+[27.204s]   138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::[01;31m[Kvalue[m[K,
+[27.204s]       |                                                                        [01;31m[K^~~~~[m[K
+[27.204s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+[34.984s] gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Error 1
+[34.987s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/semantic_path_planner_node.dir/all] Error 2
+[34.987s] gmake[1]: *** Waiting for unfinished jobs....
+[35.427s] [ 50%] [32m[1mLinking CXX executable density_map_builder_node[0m
+[37.660s] [ 50%] Built target density_map_builder_node
+[42.619s] [ 60%] [32m[1mLinking CXX executable ball_detector_node[0m
+[42.663s] [ 70%] [32m[1mLinking CXX executable tsp_planner_node[0m
+[44.262s] [ 70%] Built target tsp_planner_node
+[44.267s] [ 70%] Built target ball_detector_node
+[44.271s] gmake: *** [Makefile:146: all] Error 2
+[44.278s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble __trae_PS1=\n(TraeAI-3) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4

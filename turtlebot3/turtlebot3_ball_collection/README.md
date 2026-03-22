@@ -1,73 +1,102 @@
 # TurtleBot3 Ball Collection Package
 
-This package implements a complete ball collection pipeline for TurtleBot3 robots, including vision-based detection, clustering, path planning, and navigation.
+This package implements an complete ball collection system for TurtleBot3 robots using  YOLOv11 neural network for real-time multi-target detection, combined with SLAM spatial coordinate projection to build a target density cost map. It employs a heuristic priority path planning algorithm based on non-uniform potential fields, incorporating K-Means density clustering to identify high-yield areas, and uses an improved A* planner to guide the robot along potential field gradients for efficient collection of outliers.
 
 ## Features
 
-- **Vision Simulation**: Reads ball positions from spawn script and publishes as point cloud
-- **DBSCAN Clustering**: Groups scattered balls into high-value centroids
-- **TSP Planning**: Optimizes collection order using greedy TSP algorithm
-- **Navigation Integration**: Uses Nav2 for path planning and execution
-- **SLAM Support**: Optional SLAM Toolbox integration for online mapping
+- **YOLOv11 Detection**: neural network for real-time multi-target ball detection
+- **Density Cost Map**: Projects detection results onto local grid to build density-based cost map
+- **K-Means Clustering**: Identifies high-density regions for prioritized collection
+- **Potential Field Planning**: Non-uniform potential field algorithm with density weights
+- **Improved A* Planning**: Enhanced A* with potential field integration for smooth trajectories
+- **SLAM Integration**: Compatible with Nav2 navigation stack
+
+## Architecture
+
+1. **Detection Layer**: YOLOv11 processes RGB-D images to detect balls in 3D space
+2. **Perception Layer**: Transforms detections to map coordinates and builds density cost map
+3. **Planning Layer**: K-Means clustering + potential field A* for optimal collection paths
+4. **Execution Layer**: Nav2 integration for autonomous navigation and collection
 
 ## Launch Options
 
-### Full System with Pre-built Map
+### Full System
 ```bash
-ros2 launch turtlebot3_ball_collection full_system.launch.py use_slam:=false
+ros2 launch turtlebot3_ball_collection full_system.launch.py
 ```
 
-### Full System with SLAM
+### Ball Collection Pipeline Only
 ```bash
-ros2 launch turtlebot3_ball_collection full_system.launch.py use_slam:=true
-```
-
-### SLAM + Navigation Only
-```bash
-ros2 launch turtlebot3_ball_collection slam_navigation.launch.py
+ros2 launch turtlebot3_ball_collection ball_collection.launch.py
 ```
 
 ## Parameters
 
-- `eps`: DBSCAN epsilon parameter (default: 1.0)
-- `min_samples`: DBSCAN minimum samples (default: 2)
-- SLAM parameters in `param/slam_toolbox.yaml`
+- `resolution`: Density map resolution (default: 0.1m)
+- `width`: Density map width (default: 100 cells)
+- `height`: Density map height (default: 100 cells)
+- `origin_x`: Map origin X (default: -5.0m)
+- `origin_y`: Map origin Y (default: -5.0m)
 
 ## Topics
 
-- `/ball_positions`: Detected ball positions (PointCloud2)
-- `/centroids`: Clustered centroids (PointCloud2)
-- `/collection_path`: Optimized collection path (Path)
-- `/ball_markers`, `/centroid_markers`: Visualization markers
+- `/detected_balls`: YOLO-detected ball positions (PointCloud2)
+- `/density_map`: Target density cost map (OccupancyGrid)
+- `/semantic_path`: Planned collection path (Path)
+- `/density_markers`: Density visualization markers
 
 ## Dependencies
 
 - ROS2 Humble
 - Nav2
-- PCL
-- SLAM Toolbox (optional)
+- ultralytics (YOLOv11)
+- OpenCV
+- cv_bridge
 
 ## Usage
 
 1. Set environment variables:
    ```bash
-   export TURTLEBOT3_MODEL=burger
-   export LDS_MODEL=LDS-01
+   export TURTLEBOT3_MODEL=waffle
    ```
 
-2. Launch the system:
+2. Install YOLO dependencies:
+   ```bash
+   pip install ultralytics
+   ```
+
+3. Launch the system:
    ```bash
    ros2 launch turtlebot3_ball_collection full_system.launch.py
    ```
 
-3. The robot will automatically detect balls, plan a collection path, and navigate to the first target.
+4. The robot will automatically detect balls using YOLO, build density maps, plan optimal collection paths, and navigate to targets.
 
-## SLAM Integration
+## Algorithm Details
 
-When `use_slam:=true`, the system uses SLAM Toolbox for online mapping instead of a pre-built map. This is useful for:
+### Density Cost Map
+- Converts YOLO 3D detections to occupancy grid
+- Higher density regions have lower costs (attractive)
+- Enables potential field-based path planning
 
-- Unknown environments
-- Dynamic obstacle avoidance
-- Real-time map updates
+### K-Means Clustering
+- Groups high-density areas into clusters
+- Identifies optimal collection centroids
+- Reduces planning complexity
 
-The SLAM node publishes to `/map` topic, which Nav2 uses for navigation.
+### Potential Field A*
+- Combines traditional A* with potential field costs
+- Prioritizes paths through high-density regions
+- Generates smooth, efficient trajectories
+
+### Edge Computing
+- Designed for lightweight deployment on edge platforms
+- Real-time performance with YOLOv11 nano model
+- Minimal computational overhead
+
+## Performance
+
+- **Detection**: Real-time multi-target detection with YOLOv11
+- **Planning**: Efficient density-aware path optimization
+- **Navigation**: Seamless Nav2 integration
+- **Scalability**: Handles dynamic environments and multiple targets

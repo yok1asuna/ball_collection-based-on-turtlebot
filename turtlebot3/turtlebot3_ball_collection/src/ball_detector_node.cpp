@@ -27,7 +27,7 @@ BallDetectorNode::BallDetectorNode() : Node("ball_detector_node")
 
   timer_ = this->create_wall_timer(
     std::chrono::milliseconds(1000),
-    std::bind(&BallDetectorNode::timer_callback, this));
+    [this]() { timer_callback(); });
 }
 
 void BallDetectorNode::timer_callback()

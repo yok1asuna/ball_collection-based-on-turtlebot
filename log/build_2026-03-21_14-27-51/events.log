@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000428] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.000464] (-) JobUnselected: {'identifier': 'turtlebot3_ball_collection'}
+[0.000476] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.000484] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.000506] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.000515] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.000598] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.000632] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.000643] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.000650] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.000658] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.000666] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.000673] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.000684] (turtlebot3_vision) JobQueued: {'identifier': 'turtlebot3_vision', 'dependencies': OrderedDict()}
+[0.000696] (turtlebot3_vision) JobStarted: {'identifier': 'turtlebot3_vision'}
+[0.099004] (-) TimerEvent: {}
+[0.200020] (-) TimerEvent: {}
+[0.300613] (-) TimerEvent: {}
+[0.401430] (-) TimerEvent: {}
+[0.502098] (-) TimerEvent: {}
+[0.603086] (-) TimerEvent: {}
+[0.703903] (-) TimerEvent: {}
+[0.804913] (-) TimerEvent: {}
+[0.906048] (-) TimerEvent: {}
+[1.006832] (-) TimerEvent: {}
+[1.107410] (-) TimerEvent: {}
+[1.208295] (-) TimerEvent: {}
+[1.286745] (turtlebot3_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtlebot3_vision', 'build', '--build-base', '/home/u22/turtlebot/build/turtlebot3_vision/build', 'install', '--record', '/home/u22/turtlebot/build/turtlebot3_vision/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/u22/turtlebot/turtlebot3/turtlebot3_vision', 'env': {'LINOROBOT2_BASE': '2wd', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'u22', 'SSH_CLIENT': '192.168.182.1 4541 22', 'LC_TIME': 'zh_CN.UTF-8', 'GIT_EDITOR': ':', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/u22', 'OLDPWD': '/home/u22/turtlebot', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-c833d231-6dc2-4da5-9543-045a81d03526.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'u22', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignorespace', 'PATH': '/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/home/u22/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8c2554b38b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'PWD': '/home/u22/turtlebot/build/turtlebot3_vision', 'GIT_MERGE_AUTOEDIT': 'no', 'SSH_CONNECTION': '192.168.182.1 4541 192.168.182.131 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/u22/turtlebot/build/turtlebot3_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1'}, 'shell': False}
+[1.309100] (-) TimerEvent: {}
+[1.409566] (-) TimerEvent: {}
+[1.510177] (-) TimerEvent: {}
+[1.610588] (-) TimerEvent: {}
+[1.711475] (-) TimerEvent: {}
+[1.804884] (turtlebot3_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.808586] (turtlebot3_vision) StdoutLine: {'line': b'writing ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/PKG-INFO\n'}
+[1.809900] (turtlebot3_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/dependency_links.txt\n'}
+[1.810263] (turtlebot3_vision) StdoutLine: {'line': b'writing entry points to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/entry_points.txt\n'}
+[1.810408] (turtlebot3_vision) StdoutLine: {'line': b'writing requirements to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/requires.txt\n'}
+[1.811891] (-) TimerEvent: {}
+[1.813816] (turtlebot3_vision) StdoutLine: {'line': b'writing top-level names to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/top_level.txt\n'}
+[1.814360] (turtlebot3_vision) StdoutLine: {'line': b"reading manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'\n"}
+[1.819953] (turtlebot3_vision) StdoutLine: {'line': b"writing manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'\n"}
+[1.820436] (turtlebot3_vision) StdoutLine: {'line': b'running build\n'}
+[1.820678] (turtlebot3_vision) StdoutLine: {'line': b'running build_py\n'}
+[1.820898] (turtlebot3_vision) StdoutLine: {'line': b'copying turtlebot3_vision/yolo_detector_node.py -> /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision\n'}
+[1.821134] (turtlebot3_vision) StdoutLine: {'line': b'running install\n'}
+[1.821553] (turtlebot3_vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.825936] (turtlebot3_vision) StdoutLine: {'line': b'copying /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision/yolo_detector_node.py -> /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision\n'}
+[1.826319] (turtlebot3_vision) StdoutLine: {'line': b'byte-compiling /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision/yolo_detector_node.py to yolo_detector_node.cpython-310.pyc\n'}
+[1.829248] (turtlebot3_vision) StdoutLine: {'line': b'running install_data\n'}
+[1.829839] (turtlebot3_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.834325] (turtlebot3_vision) StdoutLine: {'line': b"removing '/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.836142] (turtlebot3_vision) StdoutLine: {'line': b'Copying ../../build/turtlebot3_vision/turtlebot3_vision.egg-info to /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision-0.0.0-py3.10.egg-info\n'}
+[1.838002] (turtlebot3_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.880921] (turtlebot3_vision) StdoutLine: {'line': b"writing list of installed files to '/home/u22/turtlebot/build/turtlebot3_vision/install.log'\n"}
+[1.912471] (-) TimerEvent: {}
+[1.927553] (turtlebot3_vision) CommandEnded: {'returncode': 0}
+[1.960748] (turtlebot3_vision) JobEnded: {'identifier': 'turtlebot3_vision', 'rc': 0}
+[1.962830] (-) EventReactorShutdown: {}

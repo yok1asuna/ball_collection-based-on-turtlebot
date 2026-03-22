@@ -19,8 +19,8 @@ private:
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr ball_positions_pub_;
   rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
 
-  // Simulated ball positions (read from spawn script)
+  // Simulated ball positions,read from spawn script
   std::vector<geometry_msgs::msg::Point> simulated_balls_;
 };
 
-#endif  // TURTLEBOT3_BALL_COLLECTION__BALL_DETECTOR_NODE_HPP_
+#endif

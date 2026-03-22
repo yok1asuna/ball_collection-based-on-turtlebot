@@ -4,7 +4,9 @@ PathPlannerNode::PathPlannerNode() : Node("path_planner_node")
 {
   path_sub_ = this->create_subscription<nav_msgs::msg::Path>(
     "collection_path", 10,
-    std::bind(&PathPlannerNode::path_callback, this, std::placeholders::_1));
+    [this](const nav_msgs::msg::Path::SharedPtr msg) {
+      path_callback(msg);
+    });
 
   nav_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(
     this, "navigate_to_pose");

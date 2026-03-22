@@ -1,0 +1,355 @@
+[0.000000] (-) TimerEvent: {}
+[0.000938] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.001055] (-) JobUnselected: {'identifier': 'turtlebot3_ball_collection'}
+[0.001088] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.001111] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.001132] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.001152] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.001173] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.001193] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.001213] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.001234] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.001316] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.001384] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.001446] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.001509] (-) JobUnselected: {'identifier': 'turtlebot3_vision'}
+[0.001577] (semantic_density_map) JobQueued: {'identifier': 'semantic_density_map', 'dependencies': OrderedDict()}
+[0.001648] (semantic_density_map) JobStarted: {'identifier': 'semantic_density_map'}
+[0.015054] (semantic_density_map) JobProgress: {'identifier': 'semantic_density_map', 'progress': 'cmake'}
+[0.018606] (semantic_density_map) JobProgress: {'identifier': 'semantic_density_map', 'progress': 'build'}
+[0.018758] (semantic_density_map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/u22/turtlebot/build/semantic_density_map', '--', '-j4', '-l4'], 'cwd': '/home/u22/turtlebot/build/semantic_density_map', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('SSH_CLIENT', '192.168.182.1 4541 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/u22'), ('OLDPWD', '/home/u22/turtlebot'), ('TERM_PROGRAM_VERSION', '1.110.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c833d231-6dc2-4da5-9543-045a81d03526.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/home/u22/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8c2554b38b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/u22/turtlebot/build/semantic_density_map'), ('GIT_MERGE_AUTOEDIT', 'no'), ('SSH_CONNECTION', '192.168.182.1 4541 192.168.182.131 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099122] (-) TimerEvent: {}
+[0.163216] (semantic_density_map) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o\x1b[0m\n'}
+[0.188992] (semantic_density_map) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o\x1b[0m\n'}
+[0.202066] (-) TimerEvent: {}
+[0.303232] (-) TimerEvent: {}
+[0.404126] (-) TimerEvent: {}
+[0.505010] (-) TimerEvent: {}
+[0.605831] (-) TimerEvent: {}
+[0.706397] (-) TimerEvent: {}
+[0.806842] (-) TimerEvent: {}
+[0.907640] (-) TimerEvent: {}
+[1.009412] (-) TimerEvent: {}
+[1.110061] (-) TimerEvent: {}
+[1.210923] (-) TimerEvent: {}
+[1.311485] (-) TimerEvent: {}
+[1.412134] (-) TimerEvent: {}
+[1.513118] (-) TimerEvent: {}
+[1.614038] (-) TimerEvent: {}
+[1.714768] (-) TimerEvent: {}
+[1.815675] (-) TimerEvent: {}
+[1.916125] (-) TimerEvent: {}
+[2.017231] (-) TimerEvent: {}
+[2.119598] (-) TimerEvent: {}
+[2.220273] (-) TimerEvent: {}
+[2.321327] (-) TimerEvent: {}
+[2.422810] (-) TimerEvent: {}
+[2.526588] (-) TimerEvent: {}
+[2.627227] (-) TimerEvent: {}
+[2.728353] (-) TimerEvent: {}
+[2.831469] (-) TimerEvent: {}
+[2.936192] (-) TimerEvent: {}
+[3.036901] (-) TimerEvent: {}
+[3.137569] (-) TimerEvent: {}
+[3.238105] (-) TimerEvent: {}
+[3.340014] (-) TimerEvent: {}
+[3.440814] (-) TimerEvent: {}
+[3.542173] (-) TimerEvent: {}
+[3.643718] (-) TimerEvent: {}
+[3.745066] (-) TimerEvent: {}
+[3.845992] (-) TimerEvent: {}
+[3.947092] (-) TimerEvent: {}
+[4.048055] (-) TimerEvent: {}
+[4.148916] (-) TimerEvent: {}
+[4.249623] (-) TimerEvent: {}
+[4.350922] (-) TimerEvent: {}
+[4.452896] (-) TimerEvent: {}
+[4.553866] (-) TimerEvent: {}
+[4.656194] (-) TimerEvent: {}
+[4.759449] (-) TimerEvent: {}
+[4.860661] (-) TimerEvent: {}
+[4.961354] (-) TimerEvent: {}
+[5.062974] (-) TimerEvent: {}
+[5.163742] (-) TimerEvent: {}
+[5.265034] (-) TimerEvent: {}
+[5.365881] (-) TimerEvent: {}
+[5.466723] (-) TimerEvent: {}
+[5.567433] (-) TimerEvent: {}
+[5.668551] (-) TimerEvent: {}
+[5.769490] (-) TimerEvent: {}
+[5.870062] (-) TimerEvent: {}
+[5.971276] (-) TimerEvent: {}
+[6.072079] (-) TimerEvent: {}
+[6.173166] (-) TimerEvent: {}
+[6.273649] (-) TimerEvent: {}
+[6.274695] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SemanticPathPlannerNode::plan_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.274989] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:33:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.275098] (semantic_density_map) StderrLine: {'line': b'   33 |   for (int i = 0; \x1b[01;35m\x1b[Ki < current_density_map_.info.width\x1b[m\x1b[K; ++i) {\n'}
+[6.275183] (semantic_density_map) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.275259] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:34:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.275343] (semantic_density_map) StderrLine: {'line': b'   34 |     for (int j = 0; \x1b[01;35m\x1b[Kj < current_density_map_.info.height\x1b[m\x1b[K; ++j) {\n'}
+[6.275418] (semantic_density_map) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.287821] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.288107] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:117:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<signed char, std::allocator<signed char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.288236] (semantic_density_map) StderrLine: {'line': b'  117 |   if (index < 0 || \x1b[01;35m\x1b[Kindex >= grid.data.size()\x1b[m\x1b[K) return 100.0;\n'}
+[6.288326] (semantic_density_map) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.288402] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.288493] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:129:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kstart_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.288569] (semantic_density_map) StderrLine: {'line': b'  129 |   int \x1b[01;35m\x1b[Kstart_x\x1b[m\x1b[K = static_cast<int>((start.x - grid.info.origin.position.x) / grid.info.resolution);\n'}
+[6.288643] (semantic_density_map) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.288716] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:130:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kstart_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.288791] (semantic_density_map) StderrLine: {'line': b'  130 |   int \x1b[01;35m\x1b[Kstart_y\x1b[m\x1b[K = static_cast<int>((start.y - grid.info.origin.position.y) / grid.info.resolution);\n'}
+[6.288866] (semantic_density_map) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.288950] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:131:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgoal_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.289028] (semantic_density_map) StderrLine: {'line': b'  131 |   int \x1b[01;35m\x1b[Kgoal_x\x1b[m\x1b[K = static_cast<int>((goal.x - grid.info.origin.position.x) / grid.info.resolution);\n'}
+[6.289101] (semantic_density_map) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.289174] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:132:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgoal_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.289251] (semantic_density_map) StderrLine: {'line': b'  132 |   int \x1b[01;35m\x1b[Kgoal_y\x1b[m\x1b[K = static_cast<int>((goal.y - grid.info.origin.position.y) / grid.info.resolution);\n'}
+[6.289322] (semantic_density_map) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.295125] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[6.295751] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:159:98:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.297249] (semantic_density_map) StderrLine: {'line': b'  159 |     [](\x1b[01;35m\x1b[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult & result\x1b[m\x1b[K) {\n'}
+[6.297833] (semantic_density_map) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[6.374006] (-) TimerEvent: {}
+[6.474733] (-) TimerEvent: {}
+[6.575768] (-) TimerEvent: {}
+[6.676707] (-) TimerEvent: {}
+[6.777364] (-) TimerEvent: {}
+[6.878253] (-) TimerEvent: {}
+[6.979191] (-) TimerEvent: {}
+[7.079951] (-) TimerEvent: {}
+[7.180581] (-) TimerEvent: {}
+[7.282132] (-) TimerEvent: {}
+[7.384688] (-) TimerEvent: {}
+[7.485262] (-) TimerEvent: {}
+[7.586693] (-) TimerEvent: {}
+[7.688263] (-) TimerEvent: {}
+[7.789194] (-) TimerEvent: {}
+[7.890731] (-) TimerEvent: {}
+[7.991862] (-) TimerEvent: {}
+[8.093434] (-) TimerEvent: {}
+[8.194132] (-) TimerEvent: {}
+[8.295853] (-) TimerEvent: {}
+[8.397662] (-) TimerEvent: {}
+[8.501207] (-) TimerEvent: {}
+[8.610183] (-) TimerEvent: {}
+[8.711143] (-) TimerEvent: {}
+[8.815349] (-) TimerEvent: {}
+[8.916227] (-) TimerEvent: {}
+[9.017591] (-) TimerEvent: {}
+[9.119464] (-) TimerEvent: {}
+[9.220225] (-) TimerEvent: {}
+[9.321217] (-) TimerEvent: {}
+[9.421971] (-) TimerEvent: {}
+[9.522885] (-) TimerEvent: {}
+[9.623984] (-) TimerEvent: {}
+[9.725355] (-) TimerEvent: {}
+[9.826942] (-) TimerEvent: {}
+[9.927551] (-) TimerEvent: {}
+[10.028289] (-) TimerEvent: {}
+[10.130657] (-) TimerEvent: {}
+[10.231938] (-) TimerEvent: {}
+[10.332887] (-) TimerEvent: {}
+[10.433535] (-) TimerEvent: {}
+[10.534068] (-) TimerEvent: {}
+[10.634861] (-) TimerEvent: {}
+[10.735633] (-) TimerEvent: {}
+[10.836498] (-) TimerEvent: {}
+[10.937524] (-) TimerEvent: {}
+[11.038558] (-) TimerEvent: {}
+[11.139546] (-) TimerEvent: {}
+[11.241011] (-) TimerEvent: {}
+[11.341741] (-) TimerEvent: {}
+[11.442648] (-) TimerEvent: {}
+[11.543602] (-) TimerEvent: {}
+[11.644199] (-) TimerEvent: {}
+[11.746642] (-) TimerEvent: {}
+[11.848963] (-) TimerEvent: {}
+[11.949682] (-) TimerEvent: {}
+[12.053200] (-) TimerEvent: {}
+[12.154410] (-) TimerEvent: {}
+[12.255459] (-) TimerEvent: {}
+[12.356369] (-) TimerEvent: {}
+[12.457738] (-) TimerEvent: {}
+[12.559621] (-) TimerEvent: {}
+[12.661236] (-) TimerEvent: {}
+[12.762653] (-) TimerEvent: {}
+[12.864032] (-) TimerEvent: {}
+[12.964631] (-) TimerEvent: {}
+[13.066193] (-) TimerEvent: {}
+[13.167638] (-) TimerEvent: {}
+[13.268566] (-) TimerEvent: {}
+[13.369249] (-) TimerEvent: {}
+[13.469873] (-) TimerEvent: {}
+[13.572134] (-) TimerEvent: {}
+[13.672781] (-) TimerEvent: {}
+[13.774240] (-) TimerEvent: {}
+[13.875461] (-) TimerEvent: {}
+[13.976092] (-) TimerEvent: {}
+[14.076715] (-) TimerEvent: {}
+[14.177518] (-) TimerEvent: {}
+[14.277966] (-) TimerEvent: {}
+[14.379048] (-) TimerEvent: {}
+[14.480182] (-) TimerEvent: {}
+[14.581146] (-) TimerEvent: {}
+[14.682625] (-) TimerEvent: {}
+[14.783879] (-) TimerEvent: {}
+[14.884735] (-) TimerEvent: {}
+[14.986142] (-) TimerEvent: {}
+[15.087610] (-) TimerEvent: {}
+[15.188875] (-) TimerEvent: {}
+[15.289552] (-) TimerEvent: {}
+[15.390343] (-) TimerEvent: {}
+[15.490944] (-) TimerEvent: {}
+[15.591668] (-) TimerEvent: {}
+[15.693028] (-) TimerEvent: {}
+[15.794234] (-) TimerEvent: {}
+[15.894807] (-) TimerEvent: {}
+[15.995958] (-) TimerEvent: {}
+[16.096802] (-) TimerEvent: {}
+[16.197816] (-) TimerEvent: {}
+[16.298520] (-) TimerEvent: {}
+[16.399499] (-) TimerEvent: {}
+[16.500460] (-) TimerEvent: {}
+[16.600946] (-) TimerEvent: {}
+[16.701422] (-) TimerEvent: {}
+[16.801897] (-) TimerEvent: {}
+[16.902547] (-) TimerEvent: {}
+[17.003050] (-) TimerEvent: {}
+[17.103664] (-) TimerEvent: {}
+[17.204455] (-) TimerEvent: {}
+[17.305342] (-) TimerEvent: {}
+[17.405960] (-) TimerEvent: {}
+[17.506435] (-) TimerEvent: {}
+[17.607489] (-) TimerEvent: {}
+[17.708126] (-) TimerEvent: {}
+[17.808541] (-) TimerEvent: {}
+[17.909807] (-) TimerEvent: {}
+[18.010569] (-) TimerEvent: {}
+[18.111851] (-) TimerEvent: {}
+[18.214711] (-) TimerEvent: {}
+[18.316885] (-) TimerEvent: {}
+[18.418058] (-) TimerEvent: {}
+[18.518609] (-) TimerEvent: {}
+[18.619272] (-) TimerEvent: {}
+[18.719802] (-) TimerEvent: {}
+[18.820856] (-) TimerEvent: {}
+[18.922029] (-) TimerEvent: {}
+[19.023074] (-) TimerEvent: {}
+[19.124205] (-) TimerEvent: {}
+[19.225557] (-) TimerEvent: {}
+[19.326655] (-) TimerEvent: {}
+[19.429088] (-) TimerEvent: {}
+[19.530505] (-) TimerEvent: {}
+[19.631732] (-) TimerEvent: {}
+[19.733366] (-) TimerEvent: {}
+[19.834062] (-) TimerEvent: {}
+[19.934744] (-) TimerEvent: {}
+[20.035717] (-) TimerEvent: {}
+[20.136540] (-) TimerEvent: {}
+[20.236982] (-) TimerEvent: {}
+[20.337968] (-) TimerEvent: {}
+[20.438613] (-) TimerEvent: {}
+[20.539638] (-) TimerEvent: {}
+[20.640633] (-) TimerEvent: {}
+[20.741297] (-) TimerEvent: {}
+[20.841715] (-) TimerEvent: {}
+[20.942892] (-) TimerEvent: {}
+[21.043435] (-) TimerEvent: {}
+[21.143882] (-) TimerEvent: {}
+[21.244216] (-) TimerEvent: {}
+[21.344617] (-) TimerEvent: {}
+[21.445317] (-) TimerEvent: {}
+[21.546236] (-) TimerEvent: {}
+[21.647773] (-) TimerEvent: {}
+[21.749292] (-) TimerEvent: {}
+[21.850826] (-) TimerEvent: {}
+[21.952311] (-) TimerEvent: {}
+[22.052924] (-) TimerEvent: {}
+[22.154317] (-) TimerEvent: {}
+[22.255081] (-) TimerEvent: {}
+[22.356015] (-) TimerEvent: {}
+[22.456853] (-) TimerEvent: {}
+[22.557596] (-) TimerEvent: {}
+[22.658024] (-) TimerEvent: {}
+[22.759054] (-) TimerEvent: {}
+[22.860276] (-) TimerEvent: {}
+[22.961127] (-) TimerEvent: {}
+[23.061821] (-) TimerEvent: {}
+[23.162908] (-) TimerEvent: {}
+[23.263956] (-) TimerEvent: {}
+[23.364955] (-) TimerEvent: {}
+[23.465607] (-) TimerEvent: {}
+[23.566741] (-) TimerEvent: {}
+[23.667405] (-) TimerEvent: {}
+[23.744862] (semantic_density_map) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable density_map_builder_node\x1b[0m\n'}
+[23.768312] (-) TimerEvent: {}
+[23.869247] (-) TimerEvent: {}
+[23.970267] (-) TimerEvent: {}
+[24.070900] (-) TimerEvent: {}
+[24.171438] (-) TimerEvent: {}
+[24.272048] (-) TimerEvent: {}
+[24.373006] (-) TimerEvent: {}
+[24.474068] (-) TimerEvent: {}
+[24.575122] (-) TimerEvent: {}
+[24.606816] (semantic_density_map) StdoutLine: {'line': b'[ 75%] Built target density_map_builder_node\n'}
+[24.675818] (-) TimerEvent: {}
+[24.776912] (-) TimerEvent: {}
+[24.877835] (-) TimerEvent: {}
+[24.978449] (-) TimerEvent: {}
+[25.079435] (-) TimerEvent: {}
+[25.180106] (-) TimerEvent: {}
+[25.280944] (-) TimerEvent: {}
+[25.381676] (-) TimerEvent: {}
+[25.482797] (-) TimerEvent: {}
+[25.583654] (-) TimerEvent: {}
+[25.684376] (-) TimerEvent: {}
+[25.785241] (-) TimerEvent: {}
+[25.886546] (-) TimerEvent: {}
+[25.987067] (-) TimerEvent: {}
+[26.088470] (-) TimerEvent: {}
+[26.102136] (semantic_density_map) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable semantic_path_planner_node\x1b[0m\n'}
+[26.189225] (-) TimerEvent: {}
+[26.289896] (-) TimerEvent: {}
+[26.390514] (-) TimerEvent: {}
+[26.491588] (-) TimerEvent: {}
+[26.592202] (-) TimerEvent: {}
+[26.693354] (-) TimerEvent: {}
+[26.794195] (-) TimerEvent: {}
+[26.896188] (-) TimerEvent: {}
+[26.998172] (-) TimerEvent: {}
+[27.099068] (-) TimerEvent: {}
+[27.119977] (semantic_density_map) StdoutLine: {'line': b'[100%] Built target semantic_path_planner_node\n'}
+[27.139853] (semantic_density_map) CommandEnded: {'returncode': 0}
+[27.141718] (semantic_density_map) JobProgress: {'identifier': 'semantic_density_map', 'progress': 'install'}
+[27.157857] (semantic_density_map) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/u22/turtlebot/build/semantic_density_map'], 'cwd': '/home/u22/turtlebot/build/semantic_density_map', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('SSH_CLIENT', '192.168.182.1 4541 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/u22'), ('OLDPWD', '/home/u22/turtlebot'), ('TERM_PROGRAM_VERSION', '1.110.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c833d231-6dc2-4da5-9543-045a81d03526.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/home/u22/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8c2554b38b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/u22/turtlebot/build/semantic_density_map'), ('GIT_MERGE_AUTOEDIT', 'no'), ('SSH_CONNECTION', '192.168.182.1 4541 192.168.182.131 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[27.170592] (semantic_density_map) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.171598] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/density_map_builder_node\n'}
+[27.175533] (semantic_density_map) StdoutLine: {'line': b'-- Set runtime path of "/home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/density_map_builder_node" to ""\n'}
+[27.175804] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/semantic_path_planner_node\n'}
+[27.180845] (semantic_density_map) StdoutLine: {'line': b'-- Set runtime path of "/home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/semantic_path_planner_node" to ""\n'}
+[27.181116] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/launch\n'}
+[27.181191] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/launch/semantic_density_system.launch.py\n'}
+[27.181222] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/include/\n'}
+[27.181598] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map\n'}
+[27.181929] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map/semantic_path_planner_node.hpp\n'}
+[27.182037] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map/density_map_builder_node.hpp\n'}
+[27.186207] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/package_run_dependencies/semantic_density_map\n'}
+[27.186404] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/parent_prefix_path/semantic_density_map\n'}
+[27.186637] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/ament_prefix_path.sh\n'}
+[27.186747] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/ament_prefix_path.dsv\n'}
+[27.187345] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/path.sh\n'}
+[27.188017] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/path.dsv\n'}
+[27.188130] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.bash\n'}
+[27.188213] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.sh\n'}
+[27.188289] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.zsh\n'}
+[27.188522] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.dsv\n'}
+[27.188604] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/package.dsv\n'}
+[27.190718] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/packages/semantic_density_map\n'}
+[27.191016] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/cmake/semantic_density_mapConfig.cmake\n'}
+[27.191133] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/cmake/semantic_density_mapConfig-version.cmake\n'}
+[27.191214] (semantic_density_map) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/package.xml\n'}
+[27.192751] (semantic_density_map) CommandEnded: {'returncode': 0}
+[27.199531] (-) TimerEvent: {}
+[27.226265] (semantic_density_map) JobEnded: {'identifier': 'semantic_density_map', 'rc': 0}
+[27.229588] (-) EventReactorShutdown: {}

@@ -8,7 +8,9 @@ TspPlannerNode::TspPlannerNode() : Node("tsp_planner_node")
 {
   centroids_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
     "centroids", 10,
-    std::bind(&TspPlannerNode::centroids_callback, this, std::placeholders::_1));
+    [this](const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
+      centroids_callback(msg);
+    });
 
   path_pub_ = this->create_publisher<nav_msgs::msg::Path>("collection_path", 10);
 }
@@ -35,7 +37,7 @@ std::vector<geometry_msgs::msg::Point> TspPlannerNode::solve_tsp(const std::vect
 {
   if (points.empty()) return {};
 
-  // Simple greedy TSP: start from first point, always go to nearest unvisited
+  // greedy TSP: start from first point, always go to nearest unvisited
   std::vector<geometry_msgs::msg::Point> path = {points[0]};
   std::vector<bool> visited(points.size(), false);
   visited[0] = true;

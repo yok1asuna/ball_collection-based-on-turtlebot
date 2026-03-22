@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="tennis_court_world">
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+
+    <physics type="ode">
+      <max_step_size>0.01</max_step_size>
+      <real_time_update_rate>100.0</real_time_update_rate>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+
+    <model name="wall_north">
+      <static>true</static>
+      <pose>0 5.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>23.0 0.2 1.0</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>23.0 0.2 1.0</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="wall_south">
+      <static>true</static>
+      <pose>0 -5.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>23.0 0.2 1.0</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>23.0 0.2 1.0</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-11.5 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.2 10.0 1.0</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.2 10.0 1.0</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material>
+        </visual>
+      </link>
+    </model>
+    
+    <model name="wall_east">
+      <static>true</static>
+      <pose>11.5 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.2 10.0 1.0</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.2 10.0 1.0</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tennis_ball_1">
+      <pose>3.0 2.0 0.033 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.058</mass>
+          <inertia><ixx>2.5e-5</ixx><iyy>2.5e-5</iyy><izz>2.5e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><sphere><radius>0.033</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.033</radius></sphere></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tennis_ball_2">
+      <pose>3.2 1.8 0.033 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>0.058</mass><inertia><ixx>2.5e-5</ixx><iyy>2.5e-5</iyy><izz>2.5e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+        <collision name="collision"><geometry><sphere><radius>0.033</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.033</radius></sphere></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material></visual>
+      </link>
+    </model>
+
+    <model name="tennis_ball_3">
+      <pose>2.8 2.2 0.033 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>0.058</mass><inertia><ixx>2.5e-5</ixx><iyy>2.5e-5</iyy><izz>2.5e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+        <collision name="collision"><geometry><sphere><radius>0.033</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.033</radius></sphere></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material></visual>
+      </link>
+    </model>
+
+    <model name="tennis_ball_4">
+      <pose>-4.0 -2.0 0.033 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>0.058</mass><inertia><ixx>2.5e-5</ixx><iyy>2.5e-5</iyy><izz>2.5e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+        <collision name="collision"><geometry><sphere><radius>0.033</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.033</radius></sphere></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material></visual>
+      </link>
+    </model>
+
+    <model name="tennis_ball_5">
+      <pose>-7.0 3.0 0.033 0 0 0</pose>
+      <link name="link">
+        <inertial><mass>0.058</mass><inertia><ixx>2.5e-5</ixx><iyy>2.5e-5</iyy><izz>2.5e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+        <collision name="collision"><geometry><sphere><radius>0.033</radius></sphere></geometry></collision>
+        <visual name="visual"><geometry><sphere><radius>0.033</radius></sphere></geometry><material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material></visual>
+      </link>
+    </model>
+
+    <model name="tennis_net">
+        <static>true</static> 
+        <pose frame=''>0 0 0.5 0 0 0</pose> 
+        <link name='net_body'>
+            <visual name='visual_net'>
+                <geometry>
+                    <box>
+                        <size>0.1 8.0 1.0</size> 
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient> 
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                </material>
+            </visual>
+            <collision name='collision_net'>
+                <geometry>
+                    <box>
+                        <size>0.1 8.0 1.0</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+
+  </world>
+</sdf>

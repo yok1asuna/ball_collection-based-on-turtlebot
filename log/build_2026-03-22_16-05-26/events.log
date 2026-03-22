@@ -1,0 +1,563 @@
+[0.000000] (-) TimerEvent: {}
+[0.001406] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.002514] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.003782] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.003903] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.003975] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.004006] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.004027] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.004048] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.004069] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.004089] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.004112] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.004132] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.004153] (-) JobUnselected: {'identifier': 'turtlebot3_vision'}
+[0.004178] (turtlebot3_ball_collection) JobQueued: {'identifier': 'turtlebot3_ball_collection', 'dependencies': OrderedDict()}
+[0.004211] (turtlebot3_ball_collection) JobStarted: {'identifier': 'turtlebot3_ball_collection'}
+[0.036659] (turtlebot3_ball_collection) JobProgress: {'identifier': 'turtlebot3_ball_collection', 'progress': 'cmake'}
+[0.043138] (turtlebot3_ball_collection) JobProgress: {'identifier': 'turtlebot3_ball_collection', 'progress': 'build'}
+[0.043325] (turtlebot3_ball_collection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/u22/turtlebot/build/turtlebot3_ball_collection', '--', '-j4', '-l4'], 'cwd': '/home/u22/turtlebot/build/turtlebot3_ball_collection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LINOROBOT2_BASE', '2wd'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'TRAE'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/u22'), ('CHROME_DESKTOP', 'trae-cn.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/trae-cn.desktop'), ('TRAE_SANDBOX_CLI_PATH', '/usr/share/trae-cn/resources/app/modules/sandbox/trae-sandbox'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/trae-cn/trae-cn'), ('MANAGERPID', '1143'), ('TRAE_AI_SHELL_ID', '6'), ('TRAE_SANDBOX_SOURCE_FLAG_PATH', '/tmp/sandbox-source-flag-83e227ff-9a69-4dfa-a2ce-d98476211173'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1277'), ('BUNDLED_DEBUGPY_PATH', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('isArchMatched', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20947'), ('TRAE_JWT_TOKEN_PATH', '/home/u22/.trae-cn/trae-jwt-token'), ('TRAE_SANDBOX_STORAGE_PATH', '/home/u22/.config/Trae CN/ModularData/ai-agent/sandbox'), ('SAFE_RM_AUTO_ADD_TEMP', '1'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/u22/turtlebot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('SAFE_RM_DENIED_PATH', '/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.git:/home/u22/turtlebot/.git'), ('JOURNAL_STREAM', '8:25757'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'u22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('TRAE_SANDBOX_LOG_DIR', '/home/u22/.config/Trae CN/logs/20260322T145222/Modular'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/usr/share/trae-cn/resources/app/bin:/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/home/u22/.local/bin:/opt/ros/humble/bin:/home/u22/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/u22-virtual-machine:@/tmp/.ICE-unix/1255,unix/u22-virtual-machine:/tmp/.ICE-unix/1255'), ('INVOCATION_ID', 'fbb0c416ad334f20adfc22042f910a10'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('FILESYSTEM_CASE_SENSITIVE', 'true'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b3c30ea74d05bf89.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/u22/.config/Trae CN/User/workspaceStorage/6e37871bbf8da33ca5a514af182e861c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_CONFIG_NAME', '69bf9060927e7ef1a9c735f7'), ('XMODIFIERS', '@im=ibus'), ('TRAE_SANDBOX_DUMP_DIR', '/home/u22/.config/Trae CN/Crashpad/sandbox-pending'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8RB8L3'), ('TRAE_BRAND_NAME', 'Trae CN'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5ced0f712b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_simulations:/home/u22/turtlebot/install/turtlebot3_bringup:/home/u22/turtlebot/install/turtlebot3_node:/home/u22/turtlebot/install/turtlebot3_navigation2:/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo:/home/u22/turtlebot/install/turtlebot3_gazebo:/home/u22/turtlebot/install/turtlebot3_fake_node:/home/u22/turtlebot/install/turtlebot3_example:/home/u22/turtlebot/install/turtlebot3_description:/home/u22/turtlebot/install/turtlebot3_cartographer:/home/u22/turtlebot/install/turtlebot3_ball_collection:/home/u22/turtlebot/install/semantic_density_map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('__trae_PS1', '\\n(TraeAI-6) \\w [$?] $'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_TRACE_FILE', '/tmp/trae_sandbox_trace_b8b951b3-1a65-491e-a505-e99bb7752c73.jsonl'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/u22/turtlebot/build/turtlebot3_ball_collection'), ('SAFE_RM_ALLOWED_PATH', '/home/u22/turtlebot:/home/u22/turtlebot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('TERM_PRODUCT', 'Trae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/u22/turtlebot/build/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:/home/u22/turtlebot/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/u22/turtlebot/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SAFE_RM_PROTECTION_FLAG', '/tmp/safe-rm-protection-flag-02da2aba-dec9-4b7c-8a30-256c6ece0033'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('SAFE_RM_SOURCE_FLAG', '/tmp/safe-rm-source-flag-70b2fbb2-865f-47b5-8d42-3f5b0cdeeb4d'), ('CMAKE_PREFIX_PATH', '/home/u22/turtlebot/install/turtlebot3:/home/u22/turtlebot/install/turtlebot3_simulations:/home/u22/turtlebot/install/turtlebot3_bringup:/home/u22/turtlebot/install/turtlebot3_node:/home/u22/turtlebot/install/turtlebot3_navigation2:/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo:/home/u22/turtlebot/install/turtlebot3_gazebo:/home/u22/turtlebot/install/turtlebot3_fake_node:/home/u22/turtlebot/install/turtlebot3_description:/home/u22/turtlebot/install/turtlebot3_cartographer:/home/u22/turtlebot/install/turtlebot3_ball_collection:/home/u22/turtlebot/install/semantic_density_map:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[0.101263] (-) TimerEvent: {}
+[0.133386] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.201883] (-) TimerEvent: {}
+[0.303656] (-) TimerEvent: {}
+[0.407239] (-) TimerEvent: {}
+[0.508760] (-) TimerEvent: {}
+[0.509547] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.584392] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.587393] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.597468] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.609364] (-) TimerEvent: {}
+[0.630778] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.669008] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.709802] (-) TimerEvent: {}
+[0.741459] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.747622] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.810452] (-) TimerEvent: {}
+[0.911137] (-) TimerEvent: {}
+[1.011965] (-) TimerEvent: {}
+[1.012657] (turtlebot3_ball_collection) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.113552] (-) TimerEvent: {}
+[1.132678] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.165442] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.204352] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.213956] (-) TimerEvent: {}
+[1.240975] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.275929] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.286262] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.314140] (-) TimerEvent: {}
+[1.418260] (-) TimerEvent: {}
+[1.483643] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.518528] (-) TimerEvent: {}
+[1.542895] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.548663] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.549281] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.554441] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.616494] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.618956] (-) TimerEvent: {}
+[1.698910] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.719566] (-) TimerEvent: {}
+[1.780254] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.820501] (-) TimerEvent: {}
+[1.921032] (-) TimerEvent: {}
+[2.021743] (-) TimerEvent: {}
+[2.125017] (-) TimerEvent: {}
+[2.225833] (-) TimerEvent: {}
+[2.329326] (-) TimerEvent: {}
+[2.431486] (-) TimerEvent: {}
+[2.534292] (-) TimerEvent: {}
+[2.635439] (-) TimerEvent: {}
+[2.658457] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.679136] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.735919] (-) TimerEvent: {}
+[2.837242] (-) TimerEvent: {}
+[2.939338] (-) TimerEvent: {}
+[3.040516] (-) TimerEvent: {}
+[3.097185] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.118577] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.142228] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.142755] (-) TimerEvent: {}
+[3.244390] (-) TimerEvent: {}
+[3.347228] (-) TimerEvent: {}
+[3.449067] (-) TimerEvent: {}
+[3.481745] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.549367] (-) TimerEvent: {}
+[3.650916] (-) TimerEvent: {}
+[3.752310] (-) TimerEvent: {}
+[3.853406] (-) TimerEvent: {}
+[3.869430] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.954426] (-) TimerEvent: {}
+[4.055503] (-) TimerEvent: {}
+[4.157222] (-) TimerEvent: {}
+[4.259189] (-) TimerEvent: {}
+[4.359692] (-) TimerEvent: {}
+[4.461240] (-) TimerEvent: {}
+[4.553445] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.561865] (-) TimerEvent: {}
+[4.662934] (-) TimerEvent: {}
+[4.764543] (-) TimerEvent: {}
+[4.766311] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Generating done\n'}
+[4.829836] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Build files have been written to: /home/u22/turtlebot/build/turtlebot3_ball_collection\n'}
+[4.865065] (-) TimerEvent: {}
+[4.927287] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tsp_planner_node\x1b[0m\n'}
+[4.939411] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target semantic_path_planner_node\x1b[0m\n'}
+[4.939857] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ball_detector_node\x1b[0m\n'}
+[4.942117] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target density_map_builder_node\x1b[0m\n'}
+[4.965451] (-) TimerEvent: {}
+[5.042972] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o\x1b[0m\n'}
+[5.060790] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 30%] Built target ball_detector_node\n'}
+[5.064315] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o\x1b[0m\n'}
+[5.066095] (-) TimerEvent: {}
+[5.090811] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_planner_node\x1b[0m\n'}
+[5.095542] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 60%] Built target tsp_planner_node\n'}
+[5.166623] (-) TimerEvent: {}
+[5.187804] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 80%] Built target path_planner_node\n'}
+[5.271057] (-) TimerEvent: {}
+[5.372078] (-) TimerEvent: {}
+[5.473579] (-) TimerEvent: {}
+[5.574754] (-) TimerEvent: {}
+[5.675828] (-) TimerEvent: {}
+[5.777602] (-) TimerEvent: {}
+[5.787426] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/density_map_builder_node.cpp:7\x1b[m\x1b[K:\n'}
+[5.788917] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.789534] (turtlebot3_ball_collection) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[5.789750] (turtlebot3_ball_collection) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.879019] (-) TimerEvent: {}
+[5.984496] (-) TimerEvent: {}
+[6.086469] (-) TimerEvent: {}
+[6.192221] (-) TimerEvent: {}
+[6.293743] (-) TimerEvent: {}
+[6.395679] (-) TimerEvent: {}
+[6.497594] (-) TimerEvent: {}
+[6.599485] (-) TimerEvent: {}
+[6.702879] (-) TimerEvent: {}
+[6.804983] (-) TimerEvent: {}
+[6.906555] (-) TimerEvent: {}
+[7.009166] (-) TimerEvent: {}
+[7.109966] (-) TimerEvent: {}
+[7.213398] (-) TimerEvent: {}
+[7.315890] (-) TimerEvent: {}
+[7.417975] (-) TimerEvent: {}
+[7.519918] (-) TimerEvent: {}
+[7.622563] (-) TimerEvent: {}
+[7.724625] (-) TimerEvent: {}
+[7.827367] (-) TimerEvent: {}
+[7.929126] (-) TimerEvent: {}
+[8.034565] (-) TimerEvent: {}
+[8.139522] (-) TimerEvent: {}
+[8.240146] (-) TimerEvent: {}
+[8.343357] (-) TimerEvent: {}
+[8.444522] (-) TimerEvent: {}
+[8.545379] (-) TimerEvent: {}
+[8.647308] (-) TimerEvent: {}
+[8.752054] (-) TimerEvent: {}
+[8.854041] (-) TimerEvent: {}
+[8.955197] (-) TimerEvent: {}
+[9.056778] (-) TimerEvent: {}
+[9.157673] (-) TimerEvent: {}
+[9.261009] (-) TimerEvent: {}
+[9.361643] (-) TimerEvent: {}
+[9.462726] (-) TimerEvent: {}
+[9.564415] (-) TimerEvent: {}
+[9.665241] (-) TimerEvent: {}
+[9.765684] (-) TimerEvent: {}
+[9.868258] (-) TimerEvent: {}
+[9.969303] (-) TimerEvent: {}
+[10.076637] (-) TimerEvent: {}
+[10.180777] (-) TimerEvent: {}
+[10.283092] (-) TimerEvent: {}
+[10.384579] (-) TimerEvent: {}
+[10.487906] (-) TimerEvent: {}
+[10.589484] (-) TimerEvent: {}
+[10.690909] (-) TimerEvent: {}
+[10.792176] (-) TimerEvent: {}
+[10.893410] (-) TimerEvent: {}
+[10.997482] (-) TimerEvent: {}
+[11.098345] (-) TimerEvent: {}
+[11.200089] (-) TimerEvent: {}
+[11.304478] (-) TimerEvent: {}
+[11.405401] (-) TimerEvent: {}
+[11.506654] (-) TimerEvent: {}
+[11.608020] (-) TimerEvent: {}
+[11.710497] (-) TimerEvent: {}
+[11.812811] (-) TimerEvent: {}
+[11.918638] (-) TimerEvent: {}
+[12.019885] (-) TimerEvent: {}
+[12.121521] (-) TimerEvent: {}
+[12.223189] (-) TimerEvent: {}
+[12.325603] (-) TimerEvent: {}
+[12.428965] (-) TimerEvent: {}
+[12.532916] (-) TimerEvent: {}
+[12.635025] (-) TimerEvent: {}
+[12.739240] (-) TimerEvent: {}
+[12.840017] (-) TimerEvent: {}
+[12.941824] (-) TimerEvent: {}
+[13.042535] (-) TimerEvent: {}
+[13.144868] (-) TimerEvent: {}
+[13.245763] (-) TimerEvent: {}
+[13.346447] (-) TimerEvent: {}
+[13.447670] (-) TimerEvent: {}
+[13.548481] (-) TimerEvent: {}
+[13.649119] (-) TimerEvent: {}
+[13.750510] (-) TimerEvent: {}
+[13.853903] (-) TimerEvent: {}
+[13.959135] (-) TimerEvent: {}
+[14.061442] (-) TimerEvent: {}
+[14.164914] (-) TimerEvent: {}
+[14.266149] (-) TimerEvent: {}
+[14.369257] (-) TimerEvent: {}
+[14.470952] (-) TimerEvent: {}
+[14.571630] (-) TimerEvent: {}
+[14.673980] (-) TimerEvent: {}
+[14.777695] (-) TimerEvent: {}
+[14.879907] (-) TimerEvent: {}
+[14.980431] (-) TimerEvent: {}
+[15.082549] (-) TimerEvent: {}
+[15.184212] (-) TimerEvent: {}
+[15.287249] (-) TimerEvent: {}
+[15.388669] (-) TimerEvent: {}
+[15.491229] (-) TimerEvent: {}
+[15.596172] (-) TimerEvent: {}
+[15.697582] (-) TimerEvent: {}
+[15.800803] (-) TimerEvent: {}
+[15.901489] (-) TimerEvent: {}
+[16.002446] (-) TimerEvent: {}
+[16.103743] (-) TimerEvent: {}
+[16.205542] (-) TimerEvent: {}
+[16.307320] (-) TimerEvent: {}
+[16.409194] (-) TimerEvent: {}
+[16.510617] (-) TimerEvent: {}
+[16.613461] (-) TimerEvent: {}
+[16.714700] (-) TimerEvent: {}
+[16.818041] (-) TimerEvent: {}
+[16.919244] (-) TimerEvent: {}
+[17.021062] (-) TimerEvent: {}
+[17.123400] (-) TimerEvent: {}
+[17.223913] (-) TimerEvent: {}
+[17.324931] (-) TimerEvent: {}
+[17.426866] (-) TimerEvent: {}
+[17.528177] (-) TimerEvent: {}
+[17.629201] (-) TimerEvent: {}
+[17.732216] (-) TimerEvent: {}
+[17.834173] (-) TimerEvent: {}
+[17.941796] (-) TimerEvent: {}
+[18.042924] (-) TimerEvent: {}
+[18.145363] (-) TimerEvent: {}
+[18.246778] (-) TimerEvent: {}
+[18.347999] (-) TimerEvent: {}
+[18.453134] (-) TimerEvent: {}
+[18.555896] (-) TimerEvent: {}
+[18.657330] (-) TimerEvent: {}
+[18.759238] (-) TimerEvent: {}
+[18.862009] (-) TimerEvent: {}
+[18.964435] (-) TimerEvent: {}
+[19.065778] (-) TimerEvent: {}
+[19.168164] (-) TimerEvent: {}
+[19.274417] (-) TimerEvent: {}
+[19.375600] (-) TimerEvent: {}
+[19.476298] (-) TimerEvent: {}
+[19.579096] (-) TimerEvent: {}
+[19.583884] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SemanticPathPlannerNode::plan_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.584345] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:43:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.584842] (turtlebot3_ball_collection) StderrLine: {'line': b'   43 |   for (int i = 0; \x1b[01;35m\x1b[Ki < current_density_map_.info.width\x1b[m\x1b[K; ++i) {\n'}
+[19.585108] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.585323] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:44:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.585541] (turtlebot3_ball_collection) StderrLine: {'line': b'   44 |     for (int j = 0; \x1b[01;35m\x1b[Kj < current_density_map_.info.height\x1b[m\x1b[K; ++j) {\n'}
+[19.585743] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.617590] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.618133] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:141:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<signed char, std::allocator<signed char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.618383] (turtlebot3_ball_collection) StderrLine: {'line': b'  141 |   if (index < 0 || \x1b[01;35m\x1b[Kindex >= grid.data.size()\x1b[m\x1b[K) return 100.0;\n'}
+[19.618599] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.618803] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.619003] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.619203] (turtlebot3_ball_collection) StderrLine: {'line': b'  171 |   if (start_x < 0 || \x1b[01;35m\x1b[Kstart_x >= grid.info.width\x1b[m\x1b[K || start_y < 0 || start_y >= grid.info.height ||\n'}
+[19.619701] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.619962] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.620175] (turtlebot3_ball_collection) StderrLine: {'line': b'  171 |   if (start_x < 0 || start_x >= grid.info.width || start_y < 0 || \x1b[01;35m\x1b[Kstart_y >= grid.info.height\x1b[m\x1b[K ||\n'}
+[19.622599] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.622724] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.622843] (turtlebot3_ball_collection) StderrLine: {'line': b'  172 |       goal_x < 0 || \x1b[01;35m\x1b[Kgoal_x >= grid.info.width\x1b[m\x1b[K || goal_y < 0 || goal_y >= grid.info.height) {\n'}
+[19.622910] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.624668] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.624780] (turtlebot3_ball_collection) StderrLine: {'line': b'  172 |       goal_x < 0 || goal_x >= grid.info.width || goal_y < 0 || \x1b[01;35m\x1b[Kgoal_y >= grid.info.height\x1b[m\x1b[K) {\n'}
+[19.626098] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.659791] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.661565] (turtlebot3_ball_collection) StderrLine: {'line': b'  231 |       if (neighbor_x < 0 || \x1b[01;35m\x1b[Kneighbor_x >= grid.info.width\x1b[m\x1b[K || neighbor_y < 0 || neighbor_y >= grid.info.height) {\n'}
+[19.661854] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.662068] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.662445] (turtlebot3_ball_collection) StderrLine: {'line': b'  231 |       if (neighbor_x < 0 || neighbor_x >= grid.info.width || neighbor_y < 0 || \x1b[01;35m\x1b[Kneighbor_y >= grid.info.height\x1b[m\x1b[K) {\n'}
+[19.664182] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.680171] (-) TimerEvent: {}
+[19.782863] (-) TimerEvent: {}
+[19.887596] (-) TimerEvent: {}
+[19.989167] (-) TimerEvent: {}
+[20.091329] (-) TimerEvent: {}
+[20.192549] (-) TimerEvent: {}
+[20.296313] (-) TimerEvent: {}
+[20.398527] (-) TimerEvent: {}
+[20.500285] (-) TimerEvent: {}
+[20.603289] (-) TimerEvent: {}
+[20.705704] (-) TimerEvent: {}
+[20.806580] (-) TimerEvent: {}
+[20.909412] (-) TimerEvent: {}
+[21.016274] (-) TimerEvent: {}
+[21.116995] (-) TimerEvent: {}
+[21.219383] (-) TimerEvent: {}
+[21.325320] (-) TimerEvent: {}
+[21.430079] (-) TimerEvent: {}
+[21.535229] (-) TimerEvent: {}
+[21.637916] (-) TimerEvent: {}
+[21.738296] (-) TimerEvent: {}
+[21.841786] (-) TimerEvent: {}
+[21.946536] (-) TimerEvent: {}
+[22.048362] (-) TimerEvent: {}
+[22.155263] (-) TimerEvent: {}
+[22.255977] (-) TimerEvent: {}
+[22.357097] (-) TimerEvent: {}
+[22.459382] (-) TimerEvent: {}
+[22.560710] (-) TimerEvent: {}
+[22.663759] (-) TimerEvent: {}
+[22.767600] (-) TimerEvent: {}
+[22.870942] (-) TimerEvent: {}
+[22.973820] (-) TimerEvent: {}
+[23.075918] (-) TimerEvent: {}
+[23.179321] (-) TimerEvent: {}
+[23.282016] (-) TimerEvent: {}
+[23.386395] (-) TimerEvent: {}
+[23.488460] (-) TimerEvent: {}
+[23.590755] (-) TimerEvent: {}
+[23.695002] (-) TimerEvent: {}
+[23.796925] (-) TimerEvent: {}
+[23.900612] (-) TimerEvent: {}
+[24.007675] (-) TimerEvent: {}
+[24.108162] (-) TimerEvent: {}
+[24.208982] (-) TimerEvent: {}
+[24.309788] (-) TimerEvent: {}
+[24.410587] (-) TimerEvent: {}
+[24.513158] (-) TimerEvent: {}
+[24.616188] (-) TimerEvent: {}
+[24.722472] (-) TimerEvent: {}
+[24.824186] (-) TimerEvent: {}
+[24.925393] (-) TimerEvent: {}
+[25.028354] (-) TimerEvent: {}
+[25.129220] (-) TimerEvent: {}
+[25.230166] (-) TimerEvent: {}
+[25.331337] (-) TimerEvent: {}
+[25.432183] (-) TimerEvent: {}
+[25.534109] (-) TimerEvent: {}
+[25.634995] (-) TimerEvent: {}
+[25.736997] (-) TimerEvent: {}
+[25.840543] (-) TimerEvent: {}
+[25.943221] (-) TimerEvent: {}
+[26.043905] (-) TimerEvent: {}
+[26.146796] (-) TimerEvent: {}
+[26.248634] (-) TimerEvent: {}
+[26.350050] (-) TimerEvent: {}
+[26.452494] (-) TimerEvent: {}
+[26.555534] (-) TimerEvent: {}
+[26.657232] (-) TimerEvent: {}
+[26.758665] (-) TimerEvent: {}
+[26.859630] (-) TimerEvent: {}
+[26.960596] (-) TimerEvent: {}
+[27.061392] (-) TimerEvent: {}
+[27.162654] (-) TimerEvent: {}
+[27.263636] (-) TimerEvent: {}
+[27.365807] (-) TimerEvent: {}
+[27.467820] (-) TimerEvent: {}
+[27.570397] (-) TimerEvent: {}
+[27.671768] (-) TimerEvent: {}
+[27.775068] (-) TimerEvent: {}
+[27.879680] (-) TimerEvent: {}
+[27.980633] (-) TimerEvent: {}
+[28.083752] (-) TimerEvent: {}
+[28.184478] (-) TimerEvent: {}
+[28.287643] (-) TimerEvent: {}
+[28.388807] (-) TimerEvent: {}
+[28.490324] (-) TimerEvent: {}
+[28.594030] (-) TimerEvent: {}
+[28.695428] (-) TimerEvent: {}
+[28.802402] (-) TimerEvent: {}
+[28.903945] (-) TimerEvent: {}
+[29.005631] (-) TimerEvent: {}
+[29.108577] (-) TimerEvent: {}
+[29.212730] (-) TimerEvent: {}
+[29.314274] (-) TimerEvent: {}
+[29.415568] (-) TimerEvent: {}
+[29.516909] (-) TimerEvent: {}
+[29.619144] (-) TimerEvent: {}
+[29.722588] (-) TimerEvent: {}
+[29.823969] (-) TimerEvent: {}
+[29.925812] (-) TimerEvent: {}
+[30.029960] (-) TimerEvent: {}
+[30.134782] (-) TimerEvent: {}
+[30.238507] (-) TimerEvent: {}
+[30.343218] (-) TimerEvent: {}
+[30.443845] (-) TimerEvent: {}
+[30.550045] (-) TimerEvent: {}
+[30.651431] (-) TimerEvent: {}
+[30.752299] (-) TimerEvent: {}
+[30.853228] (-) TimerEvent: {}
+[30.956220] (-) TimerEvent: {}
+[31.058727] (-) TimerEvent: {}
+[31.159373] (-) TimerEvent: {}
+[31.259942] (-) TimerEvent: {}
+[31.360885] (-) TimerEvent: {}
+[31.462598] (-) TimerEvent: {}
+[31.531884] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable density_map_builder_node\x1b[0m\n'}
+[31.563524] (-) TimerEvent: {}
+[31.666725] (-) TimerEvent: {}
+[31.768883] (-) TimerEvent: {}
+[31.871404] (-) TimerEvent: {}
+[31.974412] (-) TimerEvent: {}
+[32.080179] (-) TimerEvent: {}
+[32.181042] (-) TimerEvent: {}
+[32.282872] (-) TimerEvent: {}
+[32.383600] (-) TimerEvent: {}
+[32.485387] (-) TimerEvent: {}
+[32.586240] (-) TimerEvent: {}
+[32.686998] (-) TimerEvent: {}
+[32.788409] (-) TimerEvent: {}
+[32.890513] (-) TimerEvent: {}
+[32.994886] (-) TimerEvent: {}
+[33.097799] (-) TimerEvent: {}
+[33.200063] (-) TimerEvent: {}
+[33.301895] (-) TimerEvent: {}
+[33.405818] (-) TimerEvent: {}
+[33.449779] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 90%] Built target density_map_builder_node\n'}
+[33.506087] (-) TimerEvent: {}
+[33.606989] (-) TimerEvent: {}
+[33.707494] (-) TimerEvent: {}
+[33.808263] (-) TimerEvent: {}
+[33.911351] (-) TimerEvent: {}
+[34.012811] (-) TimerEvent: {}
+[34.115007] (-) TimerEvent: {}
+[34.217295] (-) TimerEvent: {}
+[34.318549] (-) TimerEvent: {}
+[34.418871] (-) TimerEvent: {}
+[34.519685] (-) TimerEvent: {}
+[34.620760] (-) TimerEvent: {}
+[34.722018] (-) TimerEvent: {}
+[34.822966] (-) TimerEvent: {}
+[34.924123] (-) TimerEvent: {}
+[35.029099] (-) TimerEvent: {}
+[35.130502] (-) TimerEvent: {}
+[35.233879] (-) TimerEvent: {}
+[35.335237] (-) TimerEvent: {}
+[35.436301] (-) TimerEvent: {}
+[35.538085] (-) TimerEvent: {}
+[35.641533] (-) TimerEvent: {}
+[35.742862] (-) TimerEvent: {}
+[35.844526] (-) TimerEvent: {}
+[35.947848] (-) TimerEvent: {}
+[36.049548] (-) TimerEvent: {}
+[36.150308] (-) TimerEvent: {}
+[36.252102] (-) TimerEvent: {}
+[36.354937] (-) TimerEvent: {}
+[36.456378] (-) TimerEvent: {}
+[36.557208] (-) TimerEvent: {}
+[36.659060] (-) TimerEvent: {}
+[36.760139] (-) TimerEvent: {}
+[36.861277] (-) TimerEvent: {}
+[36.962033] (-) TimerEvent: {}
+[37.064972] (-) TimerEvent: {}
+[37.165514] (-) TimerEvent: {}
+[37.266298] (-) TimerEvent: {}
+[37.366923] (-) TimerEvent: {}
+[37.467831] (-) TimerEvent: {}
+[37.568756] (-) TimerEvent: {}
+[37.669460] (-) TimerEvent: {}
+[37.770414] (-) TimerEvent: {}
+[37.871206] (-) TimerEvent: {}
+[37.972149] (-) TimerEvent: {}
+[38.074198] (-) TimerEvent: {}
+[38.175578] (-) TimerEvent: {}
+[38.276423] (-) TimerEvent: {}
+[38.377626] (-) TimerEvent: {}
+[38.478238] (-) TimerEvent: {}
+[38.578919] (-) TimerEvent: {}
+[38.679624] (-) TimerEvent: {}
+[38.783755] (-) TimerEvent: {}
+[38.884714] (-) TimerEvent: {}
+[38.985964] (-) TimerEvent: {}
+[39.091802] (-) TimerEvent: {}
+[39.193284] (-) TimerEvent: {}
+[39.294674] (-) TimerEvent: {}
+[39.396647] (-) TimerEvent: {}
+[39.499215] (-) TimerEvent: {}
+[39.601356] (-) TimerEvent: {}
+[39.702512] (-) TimerEvent: {}
+[39.803933] (-) TimerEvent: {}
+[39.908467] (-) TimerEvent: {}
+[40.009096] (-) TimerEvent: {}
+[40.110542] (-) TimerEvent: {}
+[40.212394] (-) TimerEvent: {}
+[40.313458] (-) TimerEvent: {}
+[40.417130] (-) TimerEvent: {}
+[40.517798] (-) TimerEvent: {}
+[40.619119] (-) TimerEvent: {}
+[40.720163] (-) TimerEvent: {}
+[40.820709] (-) TimerEvent: {}
+[40.923702] (-) TimerEvent: {}
+[41.024970] (-) TimerEvent: {}
+[41.126542] (-) TimerEvent: {}
+[41.228701] (-) TimerEvent: {}
+[41.259264] (turtlebot3_ball_collection) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable semantic_path_planner_node\x1b[0m\n'}
+[41.329102] (-) TimerEvent: {}
+[41.430412] (-) TimerEvent: {}
+[41.531461] (-) TimerEvent: {}
+[41.632417] (-) TimerEvent: {}
+[41.733758] (-) TimerEvent: {}
+[41.835062] (-) TimerEvent: {}
+[41.937560] (-) TimerEvent: {}
+[42.043248] (-) TimerEvent: {}
+[42.144260] (-) TimerEvent: {}
+[42.246030] (-) TimerEvent: {}
+[42.349733] (-) TimerEvent: {}
+[42.450953] (-) TimerEvent: {}
+[42.552659] (-) TimerEvent: {}
+[42.653895] (-) TimerEvent: {}
+[42.760593] (-) TimerEvent: {}
+[42.863425] (-) TimerEvent: {}
+[42.966535] (-) TimerEvent: {}
+[43.068159] (-) TimerEvent: {}
+[43.169376] (-) TimerEvent: {}
+[43.271639] (-) TimerEvent: {}
+[43.372885] (-) TimerEvent: {}
+[43.460019] (turtlebot3_ball_collection) StdoutLine: {'line': b'[100%] Built target semantic_path_planner_node\n'}
+[43.474082] (-) TimerEvent: {}
+[43.483414] (turtlebot3_ball_collection) CommandEnded: {'returncode': 0}
+[43.485609] (turtlebot3_ball_collection) JobProgress: {'identifier': 'turtlebot3_ball_collection', 'progress': 'install'}
+[43.509667] (turtlebot3_ball_collection) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/u22/turtlebot/build/turtlebot3_ball_collection'], 'cwd': '/home/u22/turtlebot/build/turtlebot3_ball_collection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LINOROBOT2_BASE', '2wd'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'TRAE'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/u22'), ('CHROME_DESKTOP', 'trae-cn.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/trae-cn.desktop'), ('TRAE_SANDBOX_CLI_PATH', '/usr/share/trae-cn/resources/app/modules/sandbox/trae-sandbox'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/trae-cn/trae-cn'), ('MANAGERPID', '1143'), ('TRAE_AI_SHELL_ID', '6'), ('TRAE_SANDBOX_SOURCE_FLAG_PATH', '/tmp/sandbox-source-flag-83e227ff-9a69-4dfa-a2ce-d98476211173'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1277'), ('BUNDLED_DEBUGPY_PATH', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('isArchMatched', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20947'), ('TRAE_JWT_TOKEN_PATH', '/home/u22/.trae-cn/trae-jwt-token'), ('TRAE_SANDBOX_STORAGE_PATH', '/home/u22/.config/Trae CN/ModularData/ai-agent/sandbox'), ('SAFE_RM_AUTO_ADD_TEMP', '1'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/u22/turtlebot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('SAFE_RM_DENIED_PATH', '/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.git:/home/u22/turtlebot/.git'), ('JOURNAL_STREAM', '8:25757'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'u22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('TRAE_SANDBOX_LOG_DIR', '/home/u22/.config/Trae CN/logs/20260322T145222/Modular'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/usr/share/trae-cn/resources/app/bin:/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/home/u22/.local/bin:/opt/ros/humble/bin:/home/u22/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/u22-virtual-machine:@/tmp/.ICE-unix/1255,unix/u22-virtual-machine:/tmp/.ICE-unix/1255'), ('INVOCATION_ID', 'fbb0c416ad334f20adfc22042f910a10'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('FILESYSTEM_CASE_SENSITIVE', 'true'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b3c30ea74d05bf89.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/u22/.config/Trae CN/User/workspaceStorage/6e37871bbf8da33ca5a514af182e861c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_CONFIG_NAME', '69bf9060927e7ef1a9c735f7'), ('XMODIFIERS', '@im=ibus'), ('TRAE_SANDBOX_DUMP_DIR', '/home/u22/.config/Trae CN/Crashpad/sandbox-pending'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8RB8L3'), ('TRAE_BRAND_NAME', 'Trae CN'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5ced0f712b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_simulations:/home/u22/turtlebot/install/turtlebot3_bringup:/home/u22/turtlebot/install/turtlebot3_node:/home/u22/turtlebot/install/turtlebot3_navigation2:/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo:/home/u22/turtlebot/install/turtlebot3_gazebo:/home/u22/turtlebot/install/turtlebot3_fake_node:/home/u22/turtlebot/install/turtlebot3_example:/home/u22/turtlebot/install/turtlebot3_description:/home/u22/turtlebot/install/turtlebot3_cartographer:/home/u22/turtlebot/install/turtlebot3_ball_collection:/home/u22/turtlebot/install/semantic_density_map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('__trae_PS1', '\\n(TraeAI-6) \\w [$?] $'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_TRACE_FILE', '/tmp/trae_sandbox_trace_b8b951b3-1a65-491e-a505-e99bb7752c73.jsonl'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/u22/turtlebot/build/turtlebot3_ball_collection'), ('SAFE_RM_ALLOWED_PATH', '/home/u22/turtlebot:/home/u22/turtlebot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('TERM_PRODUCT', 'Trae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/u22/turtlebot/build/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:/home/u22/turtlebot/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/u22/turtlebot/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SAFE_RM_PROTECTION_FLAG', '/tmp/safe-rm-protection-flag-02da2aba-dec9-4b7c-8a30-256c6ece0033'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('SAFE_RM_SOURCE_FLAG', '/tmp/safe-rm-source-flag-70b2fbb2-865f-47b5-8d42-3f5b0cdeeb4d'), ('CMAKE_PREFIX_PATH', '/home/u22/turtlebot/install/turtlebot3:/home/u22/turtlebot/install/turtlebot3_simulations:/home/u22/turtlebot/install/turtlebot3_bringup:/home/u22/turtlebot/install/turtlebot3_node:/home/u22/turtlebot/install/turtlebot3_navigation2:/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo:/home/u22/turtlebot/install/turtlebot3_gazebo:/home/u22/turtlebot/install/turtlebot3_fake_node:/home/u22/turtlebot/install/turtlebot3_description:/home/u22/turtlebot/install/turtlebot3_cartographer:/home/u22/turtlebot/install/turtlebot3_ball_collection:/home/u22/turtlebot/install/semantic_density_map:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[43.525916] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.526499] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/density_map_builder_node\n'}
+[43.534722] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Set runtime path of "/home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/density_map_builder_node" to ""\n'}
+[43.535191] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/semantic_path_planner_node\n'}
+[43.544243] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Set runtime path of "/home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/semantic_path_planner_node" to ""\n'}
+[43.544862] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/ball_detector_node\n'}
+[43.545466] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/tsp_planner_node\n'}
+[43.545671] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/path_planner_node\n'}
+[43.545880] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch\n'}
+[43.545985] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/ball_collection.launch.py\n'}
+[43.546465] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/full_system.launch.py\n'}
+[43.546707] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/slam_navigation.launch.py\n'}
+[43.546808] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param\n'}
+[43.546901] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param/slam_toolbox.yaml\n'}
+[43.547063] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/package_run_dependencies/turtlebot3_ball_collection\n'}
+[43.547298] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/parent_prefix_path/turtlebot3_ball_collection\n'}
+[43.547546] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.sh\n'}
+[43.547686] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.dsv\n'}
+[43.547766] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.sh\n'}
+[43.547930] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.dsv\n'}
+[43.548224] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.bash\n'}
+[43.548457] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.sh\n'}
+[43.548545] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.zsh\n'}
+[43.548624] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.dsv\n'}
+[43.548704] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.dsv\n'}
+[43.548785] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/packages/turtlebot3_ball_collection\n'}
+[43.548862] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig.cmake\n'}
+[43.548946] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig-version.cmake\n'}
+[43.549023] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.xml\n'}
+[43.554926] (turtlebot3_ball_collection) CommandEnded: {'returncode': 0}
+[43.574751] (-) TimerEvent: {}
+[43.595526] (turtlebot3_ball_collection) JobEnded: {'identifier': 'turtlebot3_ball_collection', 'rc': 0}
+[43.597276] (-) EventReactorShutdown: {}

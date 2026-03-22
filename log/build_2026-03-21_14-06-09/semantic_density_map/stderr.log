@@ -1,0 +1,22 @@
+[33mCMake Warning (dev) at CMakeLists.txt:20 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+    3 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/semantic_path_planner_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/density_map_builder_node.dir/build.make:76: CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/density_map_builder_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

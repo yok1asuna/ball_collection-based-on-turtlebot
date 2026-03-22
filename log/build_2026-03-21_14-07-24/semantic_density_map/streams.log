@@ -1,0 +1,64 @@
+[0.022s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4
+[0.162s] [ 25%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[0.188s] [ 50%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+[6.273s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kvoid SemanticPathPlannerNode::plan_path()[m[K’:
+[6.273s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:33:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.273s]    33 |   for (int i = 0; [01;35m[Ki < current_density_map_.info.width[m[K; ++i) {
+[6.274s]       |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.274s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:34:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.274s]    34 |     for (int j = 0; [01;35m[Kj < current_density_map_.info.height[m[K; ++j) {
+[6.274s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.286s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)[m[K’:
+[6.287s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:117:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.287s]   117 |   if (index < 0 || [01;35m[Kindex >= grid.data.size()[m[K) return 100.0;
+[6.287s]       |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[6.287s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)[m[K’:
+[6.287s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:129:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstart_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.287s]   129 |   int [01;35m[Kstart_x[m[K = static_cast<int>((start.x - grid.info.origin.position.x) / grid.info.resolution);
+[6.287s]       |       [01;35m[K^~~~~~~[m[K
+[6.287s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:130:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstart_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.287s]   130 |   int [01;35m[Kstart_y[m[K = static_cast<int>((start.y - grid.info.origin.position.y) / grid.info.resolution);
+[6.287s]       |       [01;35m[K^~~~~~~[m[K
+[6.287s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:131:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgoal_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.287s]   131 |   int [01;35m[Kgoal_x[m[K = static_cast<int>((goal.x - grid.info.origin.position.x) / grid.info.resolution);
+[6.287s]       |       [01;35m[K^~~~~~[m[K
+[6.288s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:132:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgoal_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.288s]   132 |   int [01;35m[Kgoal_y[m[K = static_cast<int>((goal.y - grid.info.origin.position.y) / grid.info.resolution);
+[6.288s]       |       [01;35m[K^~~~~~[m[K
+[6.294s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:[m[K In lambda function:
+[6.294s] [01m[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:159:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.296s]   159 |     []([01;35m[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult & result[m[K) {
+[6.296s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[23.743s] [ 75%] [32m[1mLinking CXX executable density_map_builder_node[0m
+[24.605s] [ 75%] Built target density_map_builder_node
+[26.101s] [100%] [32m[1mLinking CXX executable semantic_path_planner_node[0m
+[27.119s] [100%] Built target semantic_path_planner_node
+[27.140s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4
+[27.157s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/semantic_density_map
+[27.169s] -- Install configuration: ""
+[27.170s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/density_map_builder_node
+[27.174s] -- Set runtime path of "/home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/density_map_builder_node" to ""
+[27.174s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/semantic_path_planner_node
+[27.179s] -- Set runtime path of "/home/u22/turtlebot/install/semantic_density_map/lib/semantic_density_map/semantic_path_planner_node" to ""
+[27.179s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/launch
+[27.180s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/launch/semantic_density_system.launch.py
+[27.180s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/include/
+[27.180s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map
+[27.180s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map/semantic_path_planner_node.hpp
+[27.180s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/include//semantic_density_map/density_map_builder_node.hpp
+[27.185s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/package_run_dependencies/semantic_density_map
+[27.185s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/parent_prefix_path/semantic_density_map
+[27.185s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/ament_prefix_path.sh
+[27.186s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/ament_prefix_path.dsv
+[27.186s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/path.sh
+[27.186s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/environment/path.dsv
+[27.186s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.bash
+[27.187s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.sh
+[27.187s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.zsh
+[27.187s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/local_setup.dsv
+[27.187s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/package.dsv
+[27.189s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/ament_index/resource_index/packages/semantic_density_map
+[27.189s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/cmake/semantic_density_mapConfig.cmake
+[27.190s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/cmake/semantic_density_mapConfig-version.cmake
+[27.190s] -- Installing: /home/u22/turtlebot/install/semantic_density_map/share/semantic_density_map/package.xml
+[27.192s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/semantic_density_map

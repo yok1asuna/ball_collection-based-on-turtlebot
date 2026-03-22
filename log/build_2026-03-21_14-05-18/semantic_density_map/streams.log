@@ -1,0 +1,9 @@
+[0.018s] Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4
+[0.127s] [ 25%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[0.129s] [ 50%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+[3.803s] gmake[2]: *** [CMakeFiles/density_map_builder_node.dir/build.make:76: CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o] Interrupt
+[3.803s] gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Interrupt
+[3.804s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/density_map_builder_node.dir/all] Interrupt
+[3.805s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/semantic_path_planner_node.dir/all] Interrupt
+[3.808s] gmake: *** [Makefile:146: all] Interrupt
+[3.817s] Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4

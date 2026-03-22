@@ -53,7 +53,7 @@ def make_ball_sdf(radius=0.033, mass=0.058):
 
 def main():
     parser = argparse.ArgumentParser(description='Spawn random tennis balls in Gazebo')
-    parser.add_argument('--count', type=int, default=10, help='Number of balls to spawn')
+    parser.add_argument('--count', type=int, default=30, help='Number of balls to spawn')
     parser.add_argument('--xmin', type=float, default=-11.5)
     parser.add_argument('--xmax', type=float, default=11.5)
     parser.add_argument('--ymin', type=float, default=-5.0)

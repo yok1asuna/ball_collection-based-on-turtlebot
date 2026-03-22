@@ -1,0 +1,37 @@
+[2.685s] Invoking command in '/home/u22/turtlebot/turtlebot3/turtlebot3_vision': PYTHONPATH=/home/u22/turtlebot/build/turtlebot3_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_vision build --build-base /home/u22/turtlebot/build/turtlebot3_vision/build install --record /home/u22/turtlebot/build/turtlebot3_vision/install.log --single-version-externally-managed install_data
+[3.296s] running egg_info
+[3.298s] creating ../../build/turtlebot3_vision/turtlebot3_vision.egg-info
+[3.301s] writing ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/PKG-INFO
+[3.302s] writing dependency_links to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/dependency_links.txt
+[3.303s] writing entry points to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/entry_points.txt
+[3.304s] writing requirements to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/requires.txt
+[3.305s] writing top-level names to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/top_level.txt
+[3.306s] writing manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'
+[3.306s] reading manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'
+[3.307s] writing manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'
+[3.309s] running build
+[3.309s] running build_py
+[3.310s] creating /home/u22/turtlebot/build/turtlebot3_vision/build
+[3.310s] creating /home/u22/turtlebot/build/turtlebot3_vision/build/lib
+[3.312s] creating /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision
+[3.313s] copying turtlebot3_vision/__init__.py -> /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision
+[3.313s] copying turtlebot3_vision/yolo_detector_node.py -> /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision
+[3.314s] running install
+[3.316s] running install_lib
+[3.316s] creating /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision
+[3.317s] copying /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision/__init__.py -> /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision
+[3.318s] copying /home/u22/turtlebot/build/turtlebot3_vision/build/lib/turtlebot3_vision/yolo_detector_node.py -> /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision
+[3.320s] byte-compiling /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision/__init__.py to __init__.cpython-310.pyc
+[3.320s] byte-compiling /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision/yolo_detector_node.py to yolo_detector_node.cpython-310.pyc
+[3.320s] running install_data
+[3.320s] creating /home/u22/turtlebot/install/turtlebot3_vision/share/ament_index
+[3.321s] creating /home/u22/turtlebot/install/turtlebot3_vision/share/ament_index/resource_index
+[3.323s] creating /home/u22/turtlebot/install/turtlebot3_vision/share/ament_index/resource_index/packages
+[3.324s] copying resource/turtlebot3_vision -> /home/u22/turtlebot/install/turtlebot3_vision/share/ament_index/resource_index/packages
+[3.325s] copying package.xml -> /home/u22/turtlebot/install/turtlebot3_vision/share/turtlebot3_vision
+[3.326s] creating /home/u22/turtlebot/install/turtlebot3_vision/share/turtlebot3_vision/weights
+[3.327s] running install_egg_info
+[3.327s] Copying ../../build/turtlebot3_vision/turtlebot3_vision.egg-info to /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision-0.0.0-py3.10.egg-info
+[3.328s] running install_scripts
+[3.382s] writing list of installed files to '/home/u22/turtlebot/build/turtlebot3_vision/install.log'
+[3.431s] Invoked command in '/home/u22/turtlebot/turtlebot3/turtlebot3_vision' returned '0': PYTHONPATH=/home/u22/turtlebot/build/turtlebot3_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_vision build --build-base /home/u22/turtlebot/build/turtlebot3_vision/build install --record /home/u22/turtlebot/build/turtlebot3_vision/install.log --single-version-externally-managed install_data

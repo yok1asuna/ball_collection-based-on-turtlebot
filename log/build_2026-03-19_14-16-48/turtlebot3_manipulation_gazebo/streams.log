@@ -1,0 +1,177 @@
+[0.041s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3_simulations/turtlebot3_manipulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo
+[0.264s] -- The C compiler identification is GNU 11.4.0
+[0.392s] -- The CXX compiler identification is GNU 11.4.0
+[0.413s] -- Detecting C compiler ABI info
+[0.641s] -- Detecting C compiler ABI info - done
+[0.664s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.664s] -- Detecting C compile features
+[0.664s] -- Detecting C compile features - done
+[0.674s] -- Detecting CXX compiler ABI info
+[0.924s] -- Detecting CXX compiler ABI info - done
+[0.948s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.949s] -- Detecting CXX compile features
+[0.950s] -- Detecting CXX compile features - done
+[0.956s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.569s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.078s] -- Configuring done
+[2.100s] -- Generating done
+[2.126s] -- Build files have been written to: /home/u22/turtlebot/build/turtlebot3_manipulation_gazebo
+[2.169s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3_simulations/turtlebot3_manipulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/turtlebot3_manipulation_gazebo
+[2.171s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_manipulation_gazebo -- -j4 -l4
+[2.388s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_manipulation_gazebo -- -j4 -l4
+[2.389s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_manipulation_gazebo
+[2.429s] -- Install configuration: ""
+[2.432s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/config
+[2.432s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/config/gazebo_controller_manager.yaml
+[2.432s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/config/hardware_controller_manager.yaml
+[2.432s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/gazebo
+[2.432s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/gazebo/materials.xacro
+[2.434s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/gazebo/turtlebot3_waffle_pi.gazebo.xacro
+[2.435s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/gazebo/open_manipulator_x.gazebo.xacro
+[2.435s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/launch
+[2.436s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/launch/turtlebot3_home_service_challenge.launch.py
+[2.436s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/launch/base.launch.py
+[2.436s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/launch/fake.launch.py
+[2.436s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/launch/gazebo.launch.py
+[2.442s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/ros2_control
+[2.442s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/ros2_control/turtlebot3_manipulation_system.ros2_control.xacro
+[2.442s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/rviz
+[2.444s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/rviz/turtlebot3_manipulation.rviz
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/urdf
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/urdf/open_manipulator_x.urdf.xacro
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/urdf/turtlebot3_manipulation.urdf.xacro
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/urdf/turtlebot3_waffle_pi.urdf.xacro
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/worlds
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/worlds/turtlebot3_home_service_challenge.world
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1
+[2.445s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/model.config
+[2.447s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/model-1_4.sdf
+[2.448s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/materials
+[2.448s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/materials/textures
+[2.448s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/materials/textures/Marker1.png
+[2.448s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/meshes
+[2.449s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/meshes/Marker1.dae
+[2.450s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/model-1_5.sdf
+[2.450s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker1/model.sdf
+[2.450s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/model.config
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/model-1_4.sdf
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/materials
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/materials/textures
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/materials/textures/Marker0.png
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/meshes
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/meshes/Marker0.dae
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/model-1_5.sdf
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker0/model.sdf
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/model.config
+[2.451s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/model-1_4.sdf
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/materials
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/materials/textures
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/materials/textures/Marker8.png
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/meshes
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/meshes/Marker8.dae
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/model-1_5.sdf
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker8/model.sdf
+[2.452s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2
+[2.457s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/model.config
+[2.457s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/model-1_4.sdf
+[2.457s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/materials
+[2.462s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/materials/textures
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/materials/textures/Marker2.png
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/meshes
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/meshes/Marker2.dae
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/model-1_5.sdf
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker2/model.sdf
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/model.config
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/model-1_4.sdf
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/materials
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/materials/textures
+[2.463s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/materials/textures/Marker6.png
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/meshes
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/meshes/Marker6.dae
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/model-1_5.sdf
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker6/model.sdf
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/model.config
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/model-1_4.sdf
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/materials
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/materials/textures
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/materials/textures/Marker4.png
+[2.466s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/meshes
+[2.467s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/meshes/Marker4.dae
+[2.467s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/model-1_5.sdf
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker4/model.sdf
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/model.config
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/model-1_4.sdf
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/materials
+[2.474s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/materials/textures
+[2.481s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/materials/textures/Marker5.png
+[2.481s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/meshes
+[2.481s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/meshes/Marker5.dae
+[2.481s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/model-1_5.sdf
+[2.481s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker5/model.sdf
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/model.config
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/model-1_4.sdf
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/materials
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/materials/textures
+[2.482s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/materials/textures/Marker3.png
+[2.486s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/meshes
+[2.487s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/meshes/Marker3.dae
+[2.487s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/model-1_5.sdf
+[2.487s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker3/model.sdf
+[2.487s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/model.config
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/model-1_4.sdf
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/materials
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/materials/textures
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/materials/textures/Marker9.png
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/meshes
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/meshes/Marker9.dae
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/model-1_5.sdf
+[2.493s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker9/model.sdf
+[2.503s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7
+[2.503s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/model.config
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/model-1_4.sdf
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/materials
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/materials/textures
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/materials/textures/Marker7.png
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/meshes
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/meshes/Marker7.dae
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/model-1_5.sdf
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge/marker7/model.sdf
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes
+[2.504s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/turtlebot3_waffle_pi
+[2.506s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/turtlebot3_waffle_pi/base.stl
+[2.674s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/turtlebot3_waffle_pi/ladar.stl
+[2.682s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/turtlebot3_waffle_pi/left_tire.stl
+[2.717s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/turtlebot3_waffle_pi/right_tire.stl
+[2.756s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x
+[2.756s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/link3.stl
+[2.778s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/link2.stl
+[2.783s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/gripper_right_palm.stl
+[2.783s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/link1.stl
+[2.814s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/gripper_left_palm.stl
+[2.814s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/link4.stl
+[2.824s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/meshes/open_manipulator_x/link5.stl
+[2.832s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_gazebo
+[2.842s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_gazebo
+[2.842s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/environment/ament_prefix_path.sh
+[2.843s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/environment/ament_prefix_path.dsv
+[2.843s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/environment/path.sh
+[2.843s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/environment/path.dsv
+[2.846s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/local_setup.bash
+[2.849s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/local_setup.sh
+[2.849s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/local_setup.zsh
+[2.850s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/local_setup.dsv
+[2.850s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/package.dsv
+[2.853s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/ament_index/resource_index/packages/turtlebot3_manipulation_gazebo
+[2.853s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/cmake/turtlebot3_manipulation_gazeboConfig.cmake
+[2.853s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/cmake/turtlebot3_manipulation_gazeboConfig-version.cmake
+[2.853s] -- Installing: /home/u22/turtlebot/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/package.xml
+[2.867s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_manipulation_gazebo

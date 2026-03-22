@@ -1,0 +1,775 @@
+[0.000000] (-) TimerEvent: {}
+[0.001324] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.002022] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.002086] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.002114] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.002143] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.002224] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.002794] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.002825] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.002908] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.002966] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.002978] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.002986] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.002993] (-) JobUnselected: {'identifier': 'turtlebot3_vision'}
+[0.003003] (turtlebot3_ball_collection) JobQueued: {'identifier': 'turtlebot3_ball_collection', 'dependencies': OrderedDict()}
+[0.003999] (turtlebot3_ball_collection) JobStarted: {'identifier': 'turtlebot3_ball_collection'}
+[0.017388] (turtlebot3_ball_collection) JobProgress: {'identifier': 'turtlebot3_ball_collection', 'progress': 'cmake'}
+[0.020533] (turtlebot3_ball_collection) JobProgress: {'identifier': 'turtlebot3_ball_collection', 'progress': 'build'}
+[0.020593] (turtlebot3_ball_collection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/u22/turtlebot/build/turtlebot3_ball_collection', '--', '-j4', '-l4'], 'cwd': '/home/u22/turtlebot/build/turtlebot3_ball_collection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LINOROBOT2_BASE', '2wd'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'TRAE'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/u22'), ('CHROME_DESKTOP', 'trae-cn.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/trae-cn.desktop'), ('TRAE_SANDBOX_CLI_PATH', '/usr/share/trae-cn/resources/app/modules/sandbox/trae-sandbox'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/trae-cn/trae-cn'), ('MANAGERPID', '1143'), ('TRAE_AI_SHELL_ID', '3'), ('TRAE_SANDBOX_SOURCE_FLAG_PATH', '/tmp/sandbox-source-flag-b090b34b-6971-4972-a442-671d7c6ca757'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1277'), ('BUNDLED_DEBUGPY_PATH', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('isArchMatched', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20947'), ('TRAE_JWT_TOKEN_PATH', '/home/u22/.trae-cn/trae-jwt-token'), ('TRAE_SANDBOX_STORAGE_PATH', '/home/u22/.config/Trae CN/ModularData/ai-agent/sandbox'), ('SAFE_RM_AUTO_ADD_TEMP', '1'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('_', '/usr/bin/colcon'), ('SAFE_RM_DENIED_PATH', '/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.git:/home/u22/turtlebot/.git'), ('JOURNAL_STREAM', '8:25757'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'u22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('TRAE_SANDBOX_LOG_DIR', '/home/u22/.config/Trae CN/logs/20260322T145222/Modular'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/usr/share/trae-cn/resources/app/bin:/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/home/u22/.local/bin:/opt/ros/humble/bin:/home/u22/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/u22-virtual-machine:@/tmp/.ICE-unix/1255,unix/u22-virtual-machine:/tmp/.ICE-unix/1255'), ('INVOCATION_ID', 'fbb0c416ad334f20adfc22042f910a10'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('FILESYSTEM_CASE_SENSITIVE', 'true'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b3c30ea74d05bf89.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/u22/.config/Trae CN/User/workspaceStorage/6e37871bbf8da33ca5a514af182e861c/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_CONFIG_NAME', '69bf9060927e7ef1a9c735f7'), ('XMODIFIERS', '@im=ibus'), ('TRAE_SANDBOX_DUMP_DIR', '/home/u22/.config/Trae CN/Crashpad/sandbox-pending'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8RB8L3'), ('TRAE_BRAND_NAME', 'Trae CN'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-5ced0f712b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('__trae_PS1', '\\n(TraeAI-3) \\w [$?] $'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TRAE_SANDBOX_TRACE_FILE', '/tmp/trae_sandbox_trace_9760a913-aa5f-44e2-bced-8b1e07c61555.jsonl'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/u22/turtlebot/build/turtlebot3_ball_collection'), ('SAFE_RM_ALLOWED_PATH', '/home/u22/turtlebot:/home/u22/turtlebot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('TERM_PRODUCT', 'Trae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SAFE_RM_PROTECTION_FLAG', '/tmp/safe-rm-protection-flag-f82af620-652d-4387-a87f-8de4e4a97606'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('SAFE_RM_SOURCE_FLAG', '/tmp/safe-rm-source-flag-c44816db-75ec-4087-9be4-38eb1f08e684'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073726] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100209] (-) TimerEvent: {}
+[0.202604] (-) TimerEvent: {}
+[0.304013] (-) TimerEvent: {}
+[0.332852] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400032] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.404416] (-) TimerEvent: {}
+[0.405672] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.420751] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.440486] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.468465] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.504654] (-) TimerEvent: {}
+[0.545777] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.548251] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.605191] (-) TimerEvent: {}
+[0.706012] (-) TimerEvent: {}
+[0.755162] (turtlebot3_ball_collection) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.806647] (-) TimerEvent: {}
+[0.856582] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.874609] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.907166] (-) TimerEvent: {}
+[0.921107] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.963223] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.007456] (-) TimerEvent: {}
+[1.014102] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.025319] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.107640] (-) TimerEvent: {}
+[1.209699] (-) TimerEvent: {}
+[1.214787] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.276864] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.310347] (-) TimerEvent: {}
+[1.353220] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.410817] (-) TimerEvent: {}
+[1.420396] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.511294] (-) TimerEvent: {}
+[1.612789] (-) TimerEvent: {}
+[1.714673] (-) TimerEvent: {}
+[1.816169] (-) TimerEvent: {}
+[1.917230] (-) TimerEvent: {}
+[2.018673] (-) TimerEvent: {}
+[2.119827] (-) TimerEvent: {}
+[2.130337] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.147383] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.220012] (-) TimerEvent: {}
+[2.320889] (-) TimerEvent: {}
+[2.422318] (-) TimerEvent: {}
+[2.474860] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.491831] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.502156] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.522453] (-) TimerEvent: {}
+[2.624254] (-) TimerEvent: {}
+[2.726249] (-) TimerEvent: {}
+[2.802353] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.827354] (-) TimerEvent: {}
+[2.928533] (-) TimerEvent: {}
+[3.029600] (-) TimerEvent: {}
+[3.130202] (-) TimerEvent: {}
+[3.164369] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.230445] (-) TimerEvent: {}
+[3.332078] (-) TimerEvent: {}
+[3.433005] (-) TimerEvent: {}
+[3.534293] (-) TimerEvent: {}
+[3.636209] (-) TimerEvent: {}
+[3.718007] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.737058] (-) TimerEvent: {}
+[3.838743] (-) TimerEvent: {}
+[3.939378] (-) TimerEvent: {}
+[4.001370] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Generating done\n'}
+[4.039638] (-) TimerEvent: {}
+[4.062153] (turtlebot3_ball_collection) StdoutLine: {'line': b'-- Build files have been written to: /home/u22/turtlebot/build/turtlebot3_ball_collection\n'}
+[4.140289] (-) TimerEvent: {}
+[4.147201] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target density_map_builder_node\x1b[0m\n'}
+[4.156633] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ball_detector_node\x1b[0m\n'}
+[4.185509] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target semantic_path_planner_node\x1b[0m\n'}
+[4.189565] (turtlebot3_ball_collection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tsp_planner_node\x1b[0m\n'}
+[4.240550] (-) TimerEvent: {}
+[4.292996] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o\x1b[0m\n'}
+[4.320809] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o\x1b[0m\n'}
+[4.341124] (-) TimerEvent: {}
+[4.429395] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tsp_planner_node.dir/src/tsp_planner_node.cpp.o\x1b[0m\n'}
+[4.441404] (-) TimerEvent: {}
+[4.453687] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector_node.dir/src/ball_detector_node.cpp.o\x1b[0m\n'}
+[4.547816] (-) TimerEvent: {}
+[4.649792] (-) TimerEvent: {}
+[4.750354] (-) TimerEvent: {}
+[4.851878] (-) TimerEvent: {}
+[4.953337] (-) TimerEvent: {}
+[5.054090] (-) TimerEvent: {}
+[5.155853] (-) TimerEvent: {}
+[5.257235] (-) TimerEvent: {}
+[5.360245] (-) TimerEvent: {}
+[5.463181] (-) TimerEvent: {}
+[5.563717] (-) TimerEvent: {}
+[5.665247] (-) TimerEvent: {}
+[5.767118] (-) TimerEvent: {}
+[5.868248] (-) TimerEvent: {}
+[5.970096] (-) TimerEvent: {}
+[6.073269] (-) TimerEvent: {}
+[6.180492] (-) TimerEvent: {}
+[6.283044] (-) TimerEvent: {}
+[6.385061] (-) TimerEvent: {}
+[6.487039] (-) TimerEvent: {}
+[6.589950] (-) TimerEvent: {}
+[6.691944] (-) TimerEvent: {}
+[6.796195] (-) TimerEvent: {}
+[6.897318] (-) TimerEvent: {}
+[6.999909] (-) TimerEvent: {}
+[7.102975] (-) TimerEvent: {}
+[7.205335] (-) TimerEvent: {}
+[7.307859] (-) TimerEvent: {}
+[7.409445] (-) TimerEvent: {}
+[7.510835] (-) TimerEvent: {}
+[7.615818] (-) TimerEvent: {}
+[7.718469] (-) TimerEvent: {}
+[7.819864] (-) TimerEvent: {}
+[7.921342] (-) TimerEvent: {}
+[8.024740] (-) TimerEvent: {}
+[8.126863] (-) TimerEvent: {}
+[8.230955] (-) TimerEvent: {}
+[8.332750] (-) TimerEvent: {}
+[8.434963] (-) TimerEvent: {}
+[8.536853] (-) TimerEvent: {}
+[8.639640] (-) TimerEvent: {}
+[8.747094] (-) TimerEvent: {}
+[8.848150] (-) TimerEvent: {}
+[8.949343] (-) TimerEvent: {}
+[9.051299] (-) TimerEvent: {}
+[9.159297] (-) TimerEvent: {}
+[9.264163] (-) TimerEvent: {}
+[9.367549] (-) TimerEvent: {}
+[9.468056] (-) TimerEvent: {}
+[9.573969] (-) TimerEvent: {}
+[9.688811] (-) TimerEvent: {}
+[9.791940] (-) TimerEvent: {}
+[9.893407] (-) TimerEvent: {}
+[9.997330] (-) TimerEvent: {}
+[10.098105] (-) TimerEvent: {}
+[10.206586] (-) TimerEvent: {}
+[10.307548] (-) TimerEvent: {}
+[10.409685] (-) TimerEvent: {}
+[10.510273] (-) TimerEvent: {}
+[10.612529] (-) TimerEvent: {}
+[10.715194] (-) TimerEvent: {}
+[10.816035] (-) TimerEvent: {}
+[10.919016] (-) TimerEvent: {}
+[11.021001] (-) TimerEvent: {}
+[11.122596] (-) TimerEvent: {}
+[11.225300] (-) TimerEvent: {}
+[11.326930] (-) TimerEvent: {}
+[11.427942] (-) TimerEvent: {}
+[11.533697] (-) TimerEvent: {}
+[11.634565] (-) TimerEvent: {}
+[11.736544] (-) TimerEvent: {}
+[11.838028] (-) TimerEvent: {}
+[11.938983] (-) TimerEvent: {}
+[12.044398] (-) TimerEvent: {}
+[12.162093] (-) TimerEvent: {}
+[12.265025] (-) TimerEvent: {}
+[12.366136] (-) TimerEvent: {}
+[12.468145] (-) TimerEvent: {}
+[12.568846] (-) TimerEvent: {}
+[12.671053] (-) TimerEvent: {}
+[12.772357] (-) TimerEvent: {}
+[12.874874] (-) TimerEvent: {}
+[12.977690] (-) TimerEvent: {}
+[13.079764] (-) TimerEvent: {}
+[13.180722] (-) TimerEvent: {}
+[13.285220] (-) TimerEvent: {}
+[13.387261] (-) TimerEvent: {}
+[13.488278] (-) TimerEvent: {}
+[13.589412] (-) TimerEvent: {}
+[13.690925] (-) TimerEvent: {}
+[13.810404] (-) TimerEvent: {}
+[13.912597] (-) TimerEvent: {}
+[14.013961] (-) TimerEvent: {}
+[14.117643] (-) TimerEvent: {}
+[14.224236] (-) TimerEvent: {}
+[14.325662] (-) TimerEvent: {}
+[14.429037] (-) TimerEvent: {}
+[14.531217] (-) TimerEvent: {}
+[14.634505] (-) TimerEvent: {}
+[14.740206] (-) TimerEvent: {}
+[14.846011] (-) TimerEvent: {}
+[14.946716] (-) TimerEvent: {}
+[15.051226] (-) TimerEvent: {}
+[15.153531] (-) TimerEvent: {}
+[15.254387] (-) TimerEvent: {}
+[15.356788] (-) TimerEvent: {}
+[15.458479] (-) TimerEvent: {}
+[15.561058] (-) TimerEvent: {}
+[15.664419] (-) TimerEvent: {}
+[15.767552] (-) TimerEvent: {}
+[15.868336] (-) TimerEvent: {}
+[15.973815] (-) TimerEvent: {}
+[16.074624] (-) TimerEvent: {}
+[16.177468] (-) TimerEvent: {}
+[16.279132] (-) TimerEvent: {}
+[16.381139] (-) TimerEvent: {}
+[16.485077] (-) TimerEvent: {}
+[16.588216] (-) TimerEvent: {}
+[16.692852] (-) TimerEvent: {}
+[16.795679] (-) TimerEvent: {}
+[16.896471] (-) TimerEvent: {}
+[16.997493] (-) TimerEvent: {}
+[17.098835] (-) TimerEvent: {}
+[17.199632] (-) TimerEvent: {}
+[17.301901] (-) TimerEvent: {}
+[17.402870] (-) TimerEvent: {}
+[17.508145] (-) TimerEvent: {}
+[17.608812] (-) TimerEvent: {}
+[17.709908] (-) TimerEvent: {}
+[17.810911] (-) TimerEvent: {}
+[17.912503] (-) TimerEvent: {}
+[18.016763] (-) TimerEvent: {}
+[18.118209] (-) TimerEvent: {}
+[18.220587] (-) TimerEvent: {}
+[18.321959] (-) TimerEvent: {}
+[18.427039] (-) TimerEvent: {}
+[18.528578] (-) TimerEvent: {}
+[18.631201] (-) TimerEvent: {}
+[18.732581] (-) TimerEvent: {}
+[18.836311] (-) TimerEvent: {}
+[18.939351] (-) TimerEvent: {}
+[19.044907] (-) TimerEvent: {}
+[19.146236] (-) TimerEvent: {}
+[19.251709] (-) TimerEvent: {}
+[19.352661] (-) TimerEvent: {}
+[19.453130] (-) TimerEvent: {}
+[19.555193] (-) TimerEvent: {}
+[19.656561] (-) TimerEvent: {}
+[19.758381] (-) TimerEvent: {}
+[19.859533] (-) TimerEvent: {}
+[19.965787] (-) TimerEvent: {}
+[20.068397] (-) TimerEvent: {}
+[20.171377] (-) TimerEvent: {}
+[20.275443] (-) TimerEvent: {}
+[20.376712] (-) TimerEvent: {}
+[20.479829] (-) TimerEvent: {}
+[20.580612] (-) TimerEvent: {}
+[20.682628] (-) TimerEvent: {}
+[20.792435] (-) TimerEvent: {}
+[20.901966] (-) TimerEvent: {}
+[21.007551] (-) TimerEvent: {}
+[21.109822] (-) TimerEvent: {}
+[21.225187] (-) TimerEvent: {}
+[21.326104] (-) TimerEvent: {}
+[21.428072] (-) TimerEvent: {}
+[21.532214] (-) TimerEvent: {}
+[21.639117] (-) TimerEvent: {}
+[21.740990] (-) TimerEvent: {}
+[21.842449] (-) TimerEvent: {}
+[21.945168] (-) TimerEvent: {}
+[22.047616] (-) TimerEvent: {}
+[22.148320] (-) TimerEvent: {}
+[22.249808] (-) TimerEvent: {}
+[22.352781] (-) TimerEvent: {}
+[22.454351] (-) TimerEvent: {}
+[22.556580] (-) TimerEvent: {}
+[22.662108] (-) TimerEvent: {}
+[22.763412] (-) TimerEvent: {}
+[22.865372] (-) TimerEvent: {}
+[22.966723] (-) TimerEvent: {}
+[23.069271] (-) TimerEvent: {}
+[23.171748] (-) TimerEvent: {}
+[23.275698] (-) TimerEvent: {}
+[23.377304] (-) TimerEvent: {}
+[23.479044] (-) TimerEvent: {}
+[23.582217] (-) TimerEvent: {}
+[23.608016] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SemanticPathPlannerNode::plan_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.608422] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:43:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.608546] (turtlebot3_ball_collection) StderrLine: {'line': b'   43 |   for (int i = 0; \x1b[01;35m\x1b[Ki < current_density_map_.info.width\x1b[m\x1b[K; ++i) {\n'}
+[23.608715] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.608999] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:44:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.609313] (turtlebot3_ball_collection) StderrLine: {'line': b'   44 |     for (int j = 0; \x1b[01;35m\x1b[Kj < current_density_map_.info.height\x1b[m\x1b[K; ++j) {\n'}
+[23.609446] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.654323] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.655384] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:141:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<signed char, std::allocator<signed char> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.656488] (turtlebot3_ball_collection) StderrLine: {'line': b'  141 |   if (index < 0 || \x1b[01;35m\x1b[Kindex >= grid.data.size()\x1b[m\x1b[K) return 100.0;\n'}
+[23.657898] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.660165] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.661010] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.661530] (turtlebot3_ball_collection) StderrLine: {'line': b'  171 |   if (start_x < 0 || \x1b[01;35m\x1b[Kstart_x >= grid.info.width\x1b[m\x1b[K || start_y < 0 || start_y >= grid.info.height ||\n'}
+[23.661628] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.661711] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.661795] (turtlebot3_ball_collection) StderrLine: {'line': b'  171 |   if (start_x < 0 || start_x >= grid.info.width || start_y < 0 || \x1b[01;35m\x1b[Kstart_y >= grid.info.height\x1b[m\x1b[K ||\n'}
+[23.661871] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.661943] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.670400] (turtlebot3_ball_collection) StderrLine: {'line': b'  172 |       goal_x < 0 || \x1b[01;35m\x1b[Kgoal_x >= grid.info.width\x1b[m\x1b[K || goal_y < 0 || goal_y >= grid.info.height) {\n'}
+[23.671490] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.672904] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.673998] (turtlebot3_ball_collection) StderrLine: {'line': b'  172 |       goal_x < 0 || goal_x >= grid.info.width || goal_y < 0 || \x1b[01;35m\x1b[Kgoal_y >= grid.info.height\x1b[m\x1b[K) {\n'}
+[23.675705] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.685907] (-) TimerEvent: {}
+[23.710486] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:191:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.710854] (turtlebot3_ball_collection) StderrLine: {'line': b'  191 |     Node current = open_list.top(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[23.711195] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.711226] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[23.711255] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[23.711282] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[23.711308] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[23.711334] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[23.711359] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[23.711382] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[23.711404] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[23.711427] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[23.711449] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.712396] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:195:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.712604] (turtlebot3_ball_collection) StderrLine: {'line': b'  195 |     if (current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K == goal_x && current.y == goal_y) {\n'}
+[23.712709] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.712913] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:195:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.713003] (turtlebot3_ball_collection) StderrLine: {'line': b'  195 |     if (current.x == goal_x && current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K == goal_y) {\n'}
+[23.713078] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.713480] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:201:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.713607] (turtlebot3_ball_collection) StderrLine: {'line': b'  201 |         p.x = grid.info.origin.position.x + node->\x1b[01;31m\x1b[Kx\x1b[m\x1b[K * grid.info.resolution + grid.info.resolution / 2;\n'}
+[23.713689] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.713819] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:202:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.714057] (turtlebot3_ball_collection) StderrLine: {'line': b'  202 |         p.y = grid.info.origin.position.y + node->\x1b[01;31m\x1b[Ky\x1b[m\x1b[K * grid.info.resolution + grid.info.resolution / 2;\n'}
+[23.714211] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.714631] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:205:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kparent\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.714833] (turtlebot3_ball_collection) StderrLine: {'line': b'  205 |         node = node->\x1b[01;31m\x1b[Kparent\x1b[m\x1b[K;\n'}
+[23.714980] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.716551] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:220:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.716757] (turtlebot3_ball_collection) StderrLine: {'line': b'  220 |     if (closed_list[current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][current.x]) {\n'}
+[23.716855] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.718391] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:220:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.718563] (turtlebot3_ball_collection) StderrLine: {'line': b'  220 |     if (closed_list[current.y][current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K]) {\n'}
+[23.718654] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.718744] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:223:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.718830] (turtlebot3_ball_collection) StderrLine: {'line': b'  223 |     closed_list[current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][current.x] = true;\n'}
+[23.718906] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.718980] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:223:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.719058] (turtlebot3_ball_collection) StderrLine: {'line': b'  223 |     closed_list[current.y][current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K] = true;\n'}
+[23.719131] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.719273] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:227:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.719431] (turtlebot3_ball_collection) StderrLine: {'line': b'  227 |       int neighbor_x = current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K + dir.first;\n'}
+[23.719583] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.719955] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:228:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.720149] (turtlebot3_ball_collection) StderrLine: {'line': b'  228 |       int neighbor_y = current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K + dir.second;\n'}
+[23.720311] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.720608] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _width_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.720927] (turtlebot3_ball_collection) StderrLine: {'line': b'  231 |       if (neighbor_x < 0 || \x1b[01;35m\x1b[Kneighbor_x >= grid.info.width\x1b[m\x1b[K || neighbor_y < 0 || neighbor_y >= grid.info.height) {\n'}
+[23.721224] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.722131] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:91:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst _height_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.722305] (turtlebot3_ball_collection) StderrLine: {'line': b'  231 |       if (neighbor_x < 0 || neighbor_x >= grid.info.width || neighbor_y < 0 || \x1b[01;35m\x1b[Kneighbor_y >= grid.info.height\x1b[m\x1b[K) {\n'}
+[23.722390] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.723036] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:243:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.723244] (turtlebot3_ball_collection) StderrLine: {'line': b'  243 |       double total_cost = current.\x1b[01;31m\x1b[Kg\x1b[m\x1b[K + move_cost * (1.0 + density_cost * 0.5); // Higher density slightly increases cost\n'}
+[23.723327] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.723468] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.723630] (turtlebot3_ball_collection) StderrLine: {'line': b'  248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K, current.y, current.g, current.h, current.parent));\n'}
+[23.723852] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.724180] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.724524] (turtlebot3_ball_collection) StderrLine: {'line': b'  248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K, current.g, current.h, current.parent));\n'}
+[23.725653] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.725948] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:105:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.728360] (turtlebot3_ball_collection) StderrLine: {'line': b'  248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.\x1b[01;31m\x1b[Kg\x1b[m\x1b[K, current.h, current.parent));\n'}
+[23.728691] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.729121] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:116:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kh\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.729382] (turtlebot3_ball_collection) StderrLine: {'line': b'  248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.g, current.\x1b[01;31m\x1b[Kh\x1b[m\x1b[K, current.parent));\n'}
+[23.729585] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.729777] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:248:127:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kparent\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.729970] (turtlebot3_ball_collection) StderrLine: {'line': b'  248 |         open_list.emplace(neighbor_x, neighbor_y, total_cost, h, new Node(current.x, current.y, current.g, current.h, current.\x1b[01;31m\x1b[Kparent\x1b[m\x1b[K));\n'}
+[23.730295] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                                                                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.789958] (-) TimerEvent: {}
+[23.890879] (-) TimerEvent: {}
+[23.992030] (-) TimerEvent: {}
+[24.093019] (-) TimerEvent: {}
+[24.195017] (-) TimerEvent: {}
+[24.296133] (-) TimerEvent: {}
+[24.398222] (-) TimerEvent: {}
+[24.500242] (-) TimerEvent: {}
+[24.603265] (-) TimerEvent: {}
+[24.704915] (-) TimerEvent: {}
+[24.805987] (-) TimerEvent: {}
+[24.907628] (-) TimerEvent: {}
+[24.988565] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[24.988927] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[24.989126] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[24.989403] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.989590] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.989977] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.990090] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[24.990173] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[24.990248] (turtlebot3_ball_collection) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_heap.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.991306] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:659:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.991526] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:\x1b[m\x1b[K   required from here\n'}
+[24.991635] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:214:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.991718] (turtlebot3_ball_collection) StderrLine: {'line': b'  214 |       _ValueType \x1b[01;31m\x1b[K__value\x1b[m\x1b[K = _GLIBCXX_MOVE(*(__last - 1));\n'}
+[24.991796] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[24.991868] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[24.991952] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[24.992025] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.992098] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.992171] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.992243] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[24.992311] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[24.992385] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[24.992456] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[24.992527] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.995643] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[24.995847] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[24.995942] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[24.996026] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.996106] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.996180] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.996252] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[24.996325] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[24.996396] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:215:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.996482] (turtlebot3_ball_collection) StderrLine: {'line': b'  215 |       \x1b[01;31m\x1b[Kstd::__push_heap(__first, _DistanceType((__last - __first) - 1),\x1b[m\x1b[K\n'}
+[24.996612] (turtlebot3_ball_collection) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.996786] (turtlebot3_ball_collection) StderrLine: {'line': b'  216 | \x1b[01;31m\x1b[K                       _DistanceType(0), _GLIBCXX_MOVE(__value), __cmp)\x1b[m\x1b[K;\n'}
+[24.996896] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.996979] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[24.997055] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[24.997132] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.997206] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.997282] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.997431] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[24.997530] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[24.997605] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[24.997681] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[24.997753] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.997825] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[24.997898] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[24.997969] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[24.998042] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[24.998113] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[24.998181] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.998251] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[24.998335] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[24.998413] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:135:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.998504] (turtlebot3_ball_collection) StderrLine: {'line': b'  135 |                 _Distance __holeIndex, _Distance __topIndex, \x1b[01;36m\x1b[K_Tp __value\x1b[m\x1b[K,\n'}
+[24.998579] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.010309] (-) TimerEvent: {}
+[25.112920] (-) TimerEvent: {}
+[25.214386] (-) TimerEvent: {}
+[25.317992] (-) TimerEvent: {}
+[25.419320] (-) TimerEvent: {}
+[25.521085] (-) TimerEvent: {}
+[25.591352] (turtlebot3_ball_collection) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_heap.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.591690] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:332:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::pop_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.591797] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:678:15:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::pop() [with _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.591886] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:192:18:\x1b[m\x1b[K   required from here\n'}
+[25.591973] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:261:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.592055] (turtlebot3_ball_collection) StderrLine: {'line': b'  261 |       _ValueType \x1b[01;31m\x1b[K__value\x1b[m\x1b[K = _GLIBCXX_MOVE(*__result);\n'}
+[25.592131] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[25.592206] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[25.592283] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[25.592357] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.592434] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.592511] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.592584] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.592662] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.594359] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[25.594482] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[25.594561] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.594636] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[25.594708] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[25.594893] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[25.594977] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.595053] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.595125] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.595195] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.595265] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.595335] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:262:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.595419] (turtlebot3_ball_collection) StderrLine: {'line': b'  262 |       *__result \x1b[01;31m\x1b[K=\x1b[m\x1b[K _GLIBCXX_MOVE(*__first);\n'}
+[25.595490] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.595563] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[25.595631] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[25.595700] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.595769] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.595840] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.596127] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.596373] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.596616] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[25.597928] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[25.598093] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.601617] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[25.601928] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[25.602030] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[25.602114] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.602198] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.602275] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.602350] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.602423] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.602496] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:263:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.602575] (turtlebot3_ball_collection) StderrLine: {'line': b'  263 |       \x1b[01;31m\x1b[Kstd::__adjust_heap(__first, _DistanceType(0),\x1b[m\x1b[K\n'}
+[25.602649] (turtlebot3_ball_collection) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.602724] (turtlebot3_ball_collection) StderrLine: {'line': b'  264 | \x1b[01;31m\x1b[K                         _DistanceType(__last - __first),\x1b[m\x1b[K\n'}
+[25.604104] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.604350] (turtlebot3_ball_collection) StderrLine: {'line': b'  265 | \x1b[01;31m\x1b[K                         _GLIBCXX_MOVE(__value), __comp)\x1b[m\x1b[K;\n'}
+[25.604595] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.604755] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[25.604878] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[25.605114] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.605249] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.605370] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.607386] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.607724] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.607893] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[25.608011] (turtlebot3_ball_collection) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[25.609063] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.609295] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[25.609416] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[25.609510] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[25.609944] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[25.610059] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[25.610149] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[25.610241] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[25.610355] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[25.610449] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:224:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.610548] (turtlebot3_ball_collection) StderrLine: {'line': b'  224 |                   _Distance __len, \x1b[01;36m\x1b[K_Tp __value\x1b[m\x1b[K, _Compare __comp)\n'}
+[25.610635] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[25.624499] (-) TimerEvent: {}
+[25.726569] (-) TimerEvent: {}
+[25.827491] (-) TimerEvent: {}
+[25.928791] (-) TimerEvent: {}
+[26.030889] (-) TimerEvent: {}
+[26.134154] (-) TimerEvent: {}
+[26.146428] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[26.146838] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[26.147017] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[26.147393] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[26.147661] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[26.147876] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[26.148010] (turtlebot3_ball_collection) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.148152] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.148393] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:115:30:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.148555] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:658:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.148682] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:\x1b[m\x1b[K   required from here\n'}
+[26.148886] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(int&, int&, double, double&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.149022] (turtlebot3_ball_collection) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[26.149149] (turtlebot3_ball_collection) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.153368] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[26.153577] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[26.153766] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[26.153911] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[26.154038] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[26.154161] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.154454] (turtlebot3_ball_collection) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[26.154601] (turtlebot3_ball_collection) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[26.158616] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 5 provided\n'}
+[26.158992] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.159183] (turtlebot3_ball_collection) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[26.159424] (turtlebot3_ball_collection) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[26.159622] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 5 provided\n'}
+[26.159762] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.160006] (turtlebot3_ball_collection) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[26.160163] (turtlebot3_ball_collection) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[26.160288] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 5 provided\n'}
+[26.236602] (-) TimerEvent: {}
+[26.338894] (-) TimerEvent: {}
+[26.451341] (-) TimerEvent: {}
+[26.552889] (-) TimerEvent: {}
+[26.655226] (-) TimerEvent: {}
+[26.757542] (-) TimerEvent: {}
+[26.860036] (-) TimerEvent: {}
+[26.963660] (-) TimerEvent: {}
+[27.068364] (-) TimerEvent: {}
+[27.170877] (-) TimerEvent: {}
+[27.197550] (turtlebot3_ball_collection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:66\x1b[m\x1b[K,\n'}
+[27.198547] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[27.199746] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/include/semantic_path_planner_node.hpp:4\x1b[m\x1b[K,\n'}
+[27.200802] (turtlebot3_ball_collection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:1\x1b[m\x1b[K:\n'}
+[27.201058] (turtlebot3_ball_collection) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.201425] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*; _Tp = rclcpp::Node]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.201676] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = rclcpp::Node*; _ForwardIterator = rclcpp::Node*; _Allocator = std::allocator<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.201900] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:474:3:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::iterator = std::vector<rclcpp::Node>::iterator]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.202101] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:121:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.202345] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:658:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double&, std::nullptr_t}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.207674] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:184:20:\x1b[m\x1b[K   required from here\n'}
+[27.207798] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: result type must be constructible from value type of input range\n'}
+[27.207887] (turtlebot3_ball_collection) StderrLine: {'line': b'  138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K,\n'}
+[27.207968] (turtlebot3_ball_collection) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[27.208048] (turtlebot3_ball_collection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::integral_constant<bool, false>::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[27.271769] (-) TimerEvent: {}
+[27.377068] (-) TimerEvent: {}
+[27.478511] (-) TimerEvent: {}
+[27.582491] (-) TimerEvent: {}
+[27.683961] (-) TimerEvent: {}
+[27.785708] (-) TimerEvent: {}
+[27.886971] (-) TimerEvent: {}
+[27.990404] (-) TimerEvent: {}
+[28.101018] (-) TimerEvent: {}
+[28.203560] (-) TimerEvent: {}
+[28.304467] (-) TimerEvent: {}
+[28.406809] (-) TimerEvent: {}
+[28.511039] (-) TimerEvent: {}
+[28.612719] (-) TimerEvent: {}
+[28.715640] (-) TimerEvent: {}
+[28.819557] (-) TimerEvent: {}
+[28.920705] (-) TimerEvent: {}
+[29.022445] (-) TimerEvent: {}
+[29.124575] (-) TimerEvent: {}
+[29.226581] (-) TimerEvent: {}
+[29.329527] (-) TimerEvent: {}
+[29.433182] (-) TimerEvent: {}
+[29.535096] (-) TimerEvent: {}
+[29.636197] (-) TimerEvent: {}
+[29.740556] (-) TimerEvent: {}
+[29.841383] (-) TimerEvent: {}
+[29.941962] (-) TimerEvent: {}
+[30.042534] (-) TimerEvent: {}
+[30.145419] (-) TimerEvent: {}
+[30.247620] (-) TimerEvent: {}
+[30.352314] (-) TimerEvent: {}
+[30.453088] (-) TimerEvent: {}
+[30.557298] (-) TimerEvent: {}
+[30.659034] (-) TimerEvent: {}
+[30.761323] (-) TimerEvent: {}
+[30.864318] (-) TimerEvent: {}
+[30.965409] (-) TimerEvent: {}
+[31.066069] (-) TimerEvent: {}
+[31.169787] (-) TimerEvent: {}
+[31.276140] (-) TimerEvent: {}
+[31.377180] (-) TimerEvent: {}
+[31.480224] (-) TimerEvent: {}
+[31.582961] (-) TimerEvent: {}
+[31.685348] (-) TimerEvent: {}
+[31.788034] (-) TimerEvent: {}
+[31.897144] (-) TimerEvent: {}
+[31.999363] (-) TimerEvent: {}
+[32.100639] (-) TimerEvent: {}
+[32.201993] (-) TimerEvent: {}
+[32.303199] (-) TimerEvent: {}
+[32.406361] (-) TimerEvent: {}
+[32.511536] (-) TimerEvent: {}
+[32.614950] (-) TimerEvent: {}
+[32.717868] (-) TimerEvent: {}
+[32.818494] (-) TimerEvent: {}
+[32.919758] (-) TimerEvent: {}
+[33.023103] (-) TimerEvent: {}
+[33.126915] (-) TimerEvent: {}
+[33.232492] (-) TimerEvent: {}
+[33.334339] (-) TimerEvent: {}
+[33.435801] (-) TimerEvent: {}
+[33.540359] (-) TimerEvent: {}
+[33.641270] (-) TimerEvent: {}
+[33.743321] (-) TimerEvent: {}
+[33.846185] (-) TimerEvent: {}
+[33.949856] (-) TimerEvent: {}
+[34.050948] (-) TimerEvent: {}
+[34.170024] (-) TimerEvent: {}
+[34.270766] (-) TimerEvent: {}
+[34.371408] (-) TimerEvent: {}
+[34.474459] (-) TimerEvent: {}
+[34.578311] (-) TimerEvent: {}
+[34.679553] (-) TimerEvent: {}
+[34.781333] (-) TimerEvent: {}
+[34.882789] (-) TimerEvent: {}
+[34.984293] (-) TimerEvent: {}
+[34.987397] (turtlebot3_ball_collection) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Error 1\n'}
+[34.989836] (turtlebot3_ball_collection) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/semantic_path_planner_node.dir/all] Error 2\n'}
+[34.990944] (turtlebot3_ball_collection) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[35.084511] (-) TimerEvent: {}
+[35.185906] (-) TimerEvent: {}
+[35.288907] (-) TimerEvent: {}
+[35.392013] (-) TimerEvent: {}
+[35.430203] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable density_map_builder_node\x1b[0m\n'}
+[35.492930] (-) TimerEvent: {}
+[35.594451] (-) TimerEvent: {}
+[35.695767] (-) TimerEvent: {}
+[35.798810] (-) TimerEvent: {}
+[35.902688] (-) TimerEvent: {}
+[36.003863] (-) TimerEvent: {}
+[36.105260] (-) TimerEvent: {}
+[36.205823] (-) TimerEvent: {}
+[36.307518] (-) TimerEvent: {}
+[36.408214] (-) TimerEvent: {}
+[36.510604] (-) TimerEvent: {}
+[36.611445] (-) TimerEvent: {}
+[36.712647] (-) TimerEvent: {}
+[36.814404] (-) TimerEvent: {}
+[36.917207] (-) TimerEvent: {}
+[37.019274] (-) TimerEvent: {}
+[37.122656] (-) TimerEvent: {}
+[37.223862] (-) TimerEvent: {}
+[37.327611] (-) TimerEvent: {}
+[37.428682] (-) TimerEvent: {}
+[37.530209] (-) TimerEvent: {}
+[37.632730] (-) TimerEvent: {}
+[37.664024] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 50%] Built target density_map_builder_node\n'}
+[37.733543] (-) TimerEvent: {}
+[37.834972] (-) TimerEvent: {}
+[37.936616] (-) TimerEvent: {}
+[38.038341] (-) TimerEvent: {}
+[38.139768] (-) TimerEvent: {}
+[38.241268] (-) TimerEvent: {}
+[38.343809] (-) TimerEvent: {}
+[38.444526] (-) TimerEvent: {}
+[38.545389] (-) TimerEvent: {}
+[38.647396] (-) TimerEvent: {}
+[38.748957] (-) TimerEvent: {}
+[38.850283] (-) TimerEvent: {}
+[38.951640] (-) TimerEvent: {}
+[39.052689] (-) TimerEvent: {}
+[39.153826] (-) TimerEvent: {}
+[39.254858] (-) TimerEvent: {}
+[39.356031] (-) TimerEvent: {}
+[39.457606] (-) TimerEvent: {}
+[39.559171] (-) TimerEvent: {}
+[39.659679] (-) TimerEvent: {}
+[39.761097] (-) TimerEvent: {}
+[39.862224] (-) TimerEvent: {}
+[39.964116] (-) TimerEvent: {}
+[40.065698] (-) TimerEvent: {}
+[40.169316] (-) TimerEvent: {}
+[40.271813] (-) TimerEvent: {}
+[40.373333] (-) TimerEvent: {}
+[40.474725] (-) TimerEvent: {}
+[40.575677] (-) TimerEvent: {}
+[40.677819] (-) TimerEvent: {}
+[40.780977] (-) TimerEvent: {}
+[40.881656] (-) TimerEvent: {}
+[40.983406] (-) TimerEvent: {}
+[41.084086] (-) TimerEvent: {}
+[41.186709] (-) TimerEvent: {}
+[41.288867] (-) TimerEvent: {}
+[41.389716] (-) TimerEvent: {}
+[41.491323] (-) TimerEvent: {}
+[41.596532] (-) TimerEvent: {}
+[41.697120] (-) TimerEvent: {}
+[41.797849] (-) TimerEvent: {}
+[41.902350] (-) TimerEvent: {}
+[42.003963] (-) TimerEvent: {}
+[42.104660] (-) TimerEvent: {}
+[42.206674] (-) TimerEvent: {}
+[42.307570] (-) TimerEvent: {}
+[42.409417] (-) TimerEvent: {}
+[42.512431] (-) TimerEvent: {}
+[42.613840] (-) TimerEvent: {}
+[42.623009] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable ball_detector_node\x1b[0m\n'}
+[42.667075] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable tsp_planner_node\x1b[0m\n'}
+[42.714852] (-) TimerEvent: {}
+[42.817395] (-) TimerEvent: {}
+[42.918471] (-) TimerEvent: {}
+[43.021401] (-) TimerEvent: {}
+[43.122374] (-) TimerEvent: {}
+[43.223843] (-) TimerEvent: {}
+[43.324356] (-) TimerEvent: {}
+[43.425306] (-) TimerEvent: {}
+[43.527962] (-) TimerEvent: {}
+[43.629645] (-) TimerEvent: {}
+[43.732133] (-) TimerEvent: {}
+[43.833138] (-) TimerEvent: {}
+[43.935571] (-) TimerEvent: {}
+[44.037204] (-) TimerEvent: {}
+[44.138729] (-) TimerEvent: {}
+[44.240473] (-) TimerEvent: {}
+[44.265389] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 70%] Built target tsp_planner_node\n'}
+[44.271091] (turtlebot3_ball_collection) StdoutLine: {'line': b'[ 70%] Built target ball_detector_node\n'}
+[44.274490] (turtlebot3_ball_collection) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[44.280839] (turtlebot3_ball_collection) CommandEnded: {'returncode': 2}
+[44.340880] (-) TimerEvent: {}
+[44.344404] (turtlebot3_ball_collection) JobEnded: {'identifier': 'turtlebot3_ball_collection', 'rc': 2}
+[44.389314] (-) EventReactorShutdown: {}

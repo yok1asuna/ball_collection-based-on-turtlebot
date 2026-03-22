@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.002157] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.002353] (-) JobUnselected: {'identifier': 'turtlebot3_ball_collection'}
+[0.002485] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.002547] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.007150] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.007977] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.008245] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.009196] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.009325] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.009661] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.009758] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.009850] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.009917] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.010533] (turtlebot3_vision) JobQueued: {'identifier': 'turtlebot3_vision', 'dependencies': OrderedDict()}
+[0.010744] (turtlebot3_vision) JobStarted: {'identifier': 'turtlebot3_vision'}
+[0.099560] (-) TimerEvent: {}
+[0.201050] (-) TimerEvent: {}
+[0.303575] (-) TimerEvent: {}
+[0.406556] (-) TimerEvent: {}
+[0.508442] (-) TimerEvent: {}
+[0.610140] (-) TimerEvent: {}
+[0.711121] (-) TimerEvent: {}
+[0.811719] (-) TimerEvent: {}
+[0.912749] (-) TimerEvent: {}
+[1.013625] (-) TimerEvent: {}
+[1.115471] (-) TimerEvent: {}
+[1.219653] (-) TimerEvent: {}
+[1.320196] (-) TimerEvent: {}
+[1.420956] (-) TimerEvent: {}
+[1.521408] (-) TimerEvent: {}
+[1.622575] (-) TimerEvent: {}
+[1.723965] (-) TimerEvent: {}
+[1.800750] (turtlebot3_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtlebot3_vision', 'build', '--build-base', '/home/u22/turtlebot/build/turtlebot3_vision/build', 'install', '--record', '/home/u22/turtlebot/build/turtlebot3_vision/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/u22/turtlebot/turtlebot3/turtlebot3_vision', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LINOROBOT2_BASE': '2wd', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'AI_AGENT': 'TRAE', 'LANGUAGE': 'en_US:', 'USER': 'u22', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/u22', 'CHROME_DESKTOP': 'trae-cn.desktop', 'TERM_PROGRAM_VERSION': '1.107.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/trae-cn.desktop', 'TRAE_SANDBOX_CLI_PATH': '/usr/share/trae-cn/resources/app/modules/sandbox/trae-sandbox', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': '', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/trae-cn/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/trae-cn/trae-cn', 'MANAGERPID': '1143', 'TRAE_AI_SHELL_ID': '4', 'TRAE_SANDBOX_SOURCE_FLAG_PATH': '/tmp/sandbox-source-flag-1232ec33-9a23-4cb7-b380-f692619acebd', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1277', 'BUNDLED_DEBUGPY_PATH': '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'isArchMatched': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '20947', 'TRAE_JWT_TOKEN_PATH': '/home/u22/.trae-cn/trae-jwt-token', 'TRAE_SANDBOX_STORAGE_PATH': '/home/u22/.config/Trae CN/ModularData/ai-agent/sandbox', 'SAFE_RM_AUTO_ADD_TEMP': '1', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'u22', '_': '/usr/bin/colcon', 'SAFE_RM_DENIED_PATH': '/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.vscode:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.trae:/home/u22/turtlebot/.git:/home/u22/turtlebot/.git', 'JOURNAL_STREAM': '8:25757', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'u22', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'TRAE_SANDBOX_LOG_DIR': '/home/u22/.config/Trae CN/logs/20260322T145222/Modular', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignorespace', 'PATH': '/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/usr/share/trae-cn/resources/app/bin:/home/u22/.trae-cn/tools/trae-gopls/current:/home/u22/.trae-cn/sdks/workspaces/6e37871b/versions/node/current:/home/u22/.trae-cn/sdks/versions/node/current:/home/u22/.local/bin:/opt/ros/humble/bin:/home/u22/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/u22-virtual-machine:@/tmp/.ICE-unix/1255,unix/u22-virtual-machine:/tmp/.ICE-unix/1255', 'INVOCATION_ID': 'fbb0c416ad334f20adfc22042f910a10', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'FILESYSTEM_CASE_SENSITIVE': 'true', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/u22/.trae-cn/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b3c30ea74d05bf89.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/u22/.config/Trae CN/User/workspaceStorage/6e37871bbf8da33ca5a514af182e861c/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'TRAE_SANDBOX_CONFIG_NAME': '69bf9060927e7ef1a9c735f7', 'XMODIFIERS': '@im=ibus', 'TRAE_SANDBOX_DUMP_DIR': '/home/u22/.config/Trae CN/Crashpad/sandbox-pending', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8RB8L3', 'TRAE_BRAND_NAME': 'Trae CN', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-5ced0f712b.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', '__trae_PS1': '\\n(TraeAI-4) \\w [$?] $', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'TRAE_SANDBOX_TRACE_FILE': '/tmp/trae_sandbox_trace_6ac0e659-f7dc-450d-82b2-bd1b82f7526e.jsonl', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/u22/turtlebot/build/turtlebot3_vision', 'SAFE_RM_ALLOWED_PATH': '/home/u22/turtlebot:/home/u22/turtlebot', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'TERM_PRODUCT': 'Trae', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/u22/turtlebot/build/turtlebot3_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'SAFE_RM_PROTECTION_FLAG': '/tmp/safe-rm-protection-flag-49082bdc-ba85-462c-bb03-d6342058aecd', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'SAFE_RM_SOURCE_FLAG': '/tmp/safe-rm-source-flag-efd703ac-45bf-43ba-ad1f-0a74eaeb6c42'}, 'shell': False}
+[1.824413] (-) TimerEvent: {}
+[1.927198] (-) TimerEvent: {}
+[2.029417] (-) TimerEvent: {}
+[2.135439] (-) TimerEvent: {}
+[2.236284] (-) TimerEvent: {}
+[2.337069] (-) TimerEvent: {}
+[2.355810] (turtlebot3_vision) StdoutLine: {'line': b'running egg_info\n'}
+[2.357276] (turtlebot3_vision) StdoutLine: {'line': b'writing ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/PKG-INFO\n'}
+[2.358200] (turtlebot3_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/dependency_links.txt\n'}
+[2.358833] (turtlebot3_vision) StdoutLine: {'line': b'writing entry points to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/entry_points.txt\n'}
+[2.359267] (turtlebot3_vision) StdoutLine: {'line': b'writing requirements to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/requires.txt\n'}
+[2.359557] (turtlebot3_vision) StdoutLine: {'line': b'writing top-level names to ../../build/turtlebot3_vision/turtlebot3_vision.egg-info/top_level.txt\n'}
+[2.362885] (turtlebot3_vision) StdoutLine: {'line': b"reading manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'\n"}
+[2.366514] (turtlebot3_vision) StdoutLine: {'line': b"writing manifest file '../../build/turtlebot3_vision/turtlebot3_vision.egg-info/SOURCES.txt'\n"}
+[2.367044] (turtlebot3_vision) StdoutLine: {'line': b'running build\n'}
+[2.367728] (turtlebot3_vision) StdoutLine: {'line': b'running build_py\n'}
+[2.368483] (turtlebot3_vision) StdoutLine: {'line': b'running install\n'}
+[2.369829] (turtlebot3_vision) StdoutLine: {'line': b'running install_lib\n'}
+[2.370775] (turtlebot3_vision) StdoutLine: {'line': b'running install_data\n'}
+[2.371662] (turtlebot3_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.376509] (turtlebot3_vision) StdoutLine: {'line': b"removing '/home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.379891] (turtlebot3_vision) StdoutLine: {'line': b'Copying ../../build/turtlebot3_vision/turtlebot3_vision.egg-info to /home/u22/turtlebot/install/turtlebot3_vision/lib/python3.10/site-packages/turtlebot3_vision-0.0.0-py3.10.egg-info\n'}
+[2.380629] (turtlebot3_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[2.429263] (turtlebot3_vision) StdoutLine: {'line': b'Installing yolo_detector_node script to /home/u22/turtlebot/install/turtlebot3_vision/lib/turtlebot3_vision\n'}
+[2.429638] (turtlebot3_vision) StdoutLine: {'line': b"writing list of installed files to '/home/u22/turtlebot/build/turtlebot3_vision/install.log'\n"}
+[2.437425] (-) TimerEvent: {}
+[2.476676] (turtlebot3_vision) CommandEnded: {'returncode': 0}
+[2.506722] (turtlebot3_vision) JobEnded: {'identifier': 'turtlebot3_vision', 'rc': 0}
+[2.510345] (-) EventReactorShutdown: {}

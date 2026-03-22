@@ -1,0 +1,488 @@
+[0.000000] (-) TimerEvent: {}
+[0.000862] (-) JobUnselected: {'identifier': 'turtlebot3'}
+[0.001367] (-) JobUnselected: {'identifier': 'turtlebot3_ball_collection'}
+[0.001502] (-) JobUnselected: {'identifier': 'turtlebot3_bringup'}
+[0.001668] (-) JobUnselected: {'identifier': 'turtlebot3_cartographer'}
+[0.001784] (-) JobUnselected: {'identifier': 'turtlebot3_description'}
+[0.001854] (-) JobUnselected: {'identifier': 'turtlebot3_example'}
+[0.001887] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.001919] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.003723] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_gazebo'}
+[0.003771] (-) JobUnselected: {'identifier': 'turtlebot3_navigation2'}
+[0.003796] (-) JobUnselected: {'identifier': 'turtlebot3_node'}
+[0.003805] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.003828] (-) JobUnselected: {'identifier': 'turtlebot3_teleop'}
+[0.003836] (-) JobUnselected: {'identifier': 'turtlebot3_vision'}
+[0.003847] (semantic_density_map) JobQueued: {'identifier': 'semantic_density_map', 'dependencies': OrderedDict()}
+[0.003862] (semantic_density_map) JobStarted: {'identifier': 'semantic_density_map'}
+[0.017900] (semantic_density_map) JobProgress: {'identifier': 'semantic_density_map', 'progress': 'cmake'}
+[0.021297] (semantic_density_map) JobProgress: {'identifier': 'semantic_density_map', 'progress': 'build'}
+[0.021453] (semantic_density_map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/u22/turtlebot/build/semantic_density_map', '--', '-j4', '-l4'], 'cwd': '/home/u22/turtlebot/build/semantic_density_map', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'u22'), ('SSH_CLIENT', '192.168.182.1 4541 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/u22'), ('OLDPWD', '/home/u22/turtlebot'), ('TERM_PROGRAM_VERSION', '1.110.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c833d231-6dc2-4da5-9543-045a81d03526.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'u22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('PATH', '/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/u22/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/u22/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/home/u22/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8c2554b38b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('PWD', '/home/u22/turtlebot/build/semantic_density_map'), ('GIT_MERGE_AUTOEDIT', 'no'), ('SSH_CONNECTION', '192.168.182.1 4541 192.168.182.131 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073927] (semantic_density_map) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100246] (-) TimerEvent: {}
+[0.200987] (-) TimerEvent: {}
+[0.301890] (-) TimerEvent: {}
+[0.357640] (semantic_density_map) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.402534] (-) TimerEvent: {}
+[0.414332] (semantic_density_map) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.421945] (semantic_density_map) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.431846] (semantic_density_map) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.453320] (semantic_density_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.485062] (semantic_density_map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.502886] (-) TimerEvent: {}
+[0.562399] (semantic_density_map) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.564877] (semantic_density_map) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.603062] (-) TimerEvent: {}
+[0.704156] (-) TimerEvent: {}
+[0.767201] (semantic_density_map) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.804858] (-) TimerEvent: {}
+[0.866702] (semantic_density_map) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.890578] (semantic_density_map) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.905174] (-) TimerEvent: {}
+[0.922394] (semantic_density_map) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.951186] (semantic_density_map) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.003124] (semantic_density_map) StdoutLine: {'line': b'-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.005560] (-) TimerEvent: {}
+[1.015628] (semantic_density_map) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.105870] (-) TimerEvent: {}
+[1.189303] (semantic_density_map) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.196543] (semantic_density_map) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.198375] (semantic_density_map) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.201153] (semantic_density_map) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.206525] (-) TimerEvent: {}
+[1.271275] (semantic_density_map) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.306762] (-) TimerEvent: {}
+[1.334766] (semantic_density_map) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.407163] (-) TimerEvent: {}
+[1.508775] (-) TimerEvent: {}
+[1.609912] (-) TimerEvent: {}
+[1.711342] (-) TimerEvent: {}
+[1.814663] (-) TimerEvent: {}
+[1.916077] (-) TimerEvent: {}
+[1.975222] (semantic_density_map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.992179] (semantic_density_map) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.016601] (-) TimerEvent: {}
+[2.117454] (-) TimerEvent: {}
+[2.218252] (-) TimerEvent: {}
+[2.318886] (-) TimerEvent: {}
+[2.325187] (semantic_density_map) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.341006] (semantic_density_map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.356152] (semantic_density_map) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.419825] (-) TimerEvent: {}
+[2.521307] (-) TimerEvent: {}
+[2.622297] (-) TimerEvent: {}
+[2.680439] (semantic_density_map) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.722910] (-) TimerEvent: {}
+[2.824048] (-) TimerEvent: {}
+[2.925467] (-) TimerEvent: {}
+[3.026653] (-) TimerEvent: {}
+[3.071971] (semantic_density_map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.126867] (-) TimerEvent: {}
+[3.227945] (-) TimerEvent: {}
+[3.329792] (-) TimerEvent: {}
+[3.401672] (semantic_density_map) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:20 (find_package):\n'}
+[3.402105] (semantic_density_map) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.402219] (semantic_density_map) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.402302] (semantic_density_map) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.402382] (semantic_density_map) StderrLine: {'line': b'\n'}
+[3.402459] (semantic_density_map) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.402541] (semantic_density_map) StderrLine: {'line': b'\n'}
+[3.402621] (semantic_density_map) StderrLine: {'line': b'    /usr\n'}
+[3.402701] (semantic_density_map) StderrLine: {'line': b'\n'}
+[3.402773] (semantic_density_map) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.402859] (semantic_density_map) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.402936] (semantic_density_map) StderrLine: {'line': b'\x1b[0m\n'}
+[3.412621] (semantic_density_map) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[3.430246] (-) TimerEvent: {}
+[3.531187] (-) TimerEvent: {}
+[3.632691] (-) TimerEvent: {}
+[3.633678] (semantic_density_map) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.724847] (semantic_density_map) StdoutLine: {'line': b'-- Generating done\n'}
+[3.733458] (-) TimerEvent: {}
+[3.760843] (semantic_density_map) StdoutLine: {'line': b'-- Build files have been written to: /home/u22/turtlebot/build/semantic_density_map\n'}
+[3.833617] (-) TimerEvent: {}
+[3.846564] (semantic_density_map) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o\x1b[0m\n'}
+[3.850751] (semantic_density_map) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o\x1b[0m\n'}
+[3.935138] (-) TimerEvent: {}
+[4.037534] (-) TimerEvent: {}
+[4.138334] (-) TimerEvent: {}
+[4.241077] (-) TimerEvent: {}
+[4.342383] (-) TimerEvent: {}
+[4.443283] (-) TimerEvent: {}
+[4.450805] (semantic_density_map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/u22/turtlebot/turtlebot3/semantic_density_map/src/semantic_path_planner_node.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory\n'}
+[4.451037] (semantic_density_map) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>\x1b[m\x1b[K\n'}
+[4.451125] (semantic_density_map) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.451190] (semantic_density_map) StderrLine: {'line': b'compilation terminated.\n'}
+[4.454147] (semantic_density_map) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/semantic_path_planner_node.dir/build.make:76: CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o] Error 1\n'}
+[4.454371] (semantic_density_map) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/semantic_path_planner_node.dir/all] Error 2\n'}
+[4.454453] (semantic_density_map) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.543846] (-) TimerEvent: {}
+[4.645080] (-) TimerEvent: {}
+[4.746436] (-) TimerEvent: {}
+[4.847739] (-) TimerEvent: {}
+[4.949752] (-) TimerEvent: {}
+[5.050819] (-) TimerEvent: {}
+[5.152133] (-) TimerEvent: {}
+[5.253094] (-) TimerEvent: {}
+[5.354339] (-) TimerEvent: {}
+[5.455219] (-) TimerEvent: {}
+[5.556221] (-) TimerEvent: {}
+[5.656986] (-) TimerEvent: {}
+[5.757603] (-) TimerEvent: {}
+[5.858642] (-) TimerEvent: {}
+[5.960104] (-) TimerEvent: {}
+[6.060904] (-) TimerEvent: {}
+[6.162249] (-) TimerEvent: {}
+[6.263062] (-) TimerEvent: {}
+[6.363786] (-) TimerEvent: {}
+[6.464564] (-) TimerEvent: {}
+[6.565323] (-) TimerEvent: {}
+[6.666038] (-) TimerEvent: {}
+[6.767113] (-) TimerEvent: {}
+[6.867968] (-) TimerEvent: {}
+[6.968736] (-) TimerEvent: {}
+[7.069840] (-) TimerEvent: {}
+[7.170599] (-) TimerEvent: {}
+[7.271822] (-) TimerEvent: {}
+[7.372797] (-) TimerEvent: {}
+[7.473911] (-) TimerEvent: {}
+[7.574931] (-) TimerEvent: {}
+[7.676943] (-) TimerEvent: {}
+[7.778285] (-) TimerEvent: {}
+[7.880199] (-) TimerEvent: {}
+[7.981457] (-) TimerEvent: {}
+[8.082132] (-) TimerEvent: {}
+[8.183245] (-) TimerEvent: {}
+[8.284873] (-) TimerEvent: {}
+[8.387803] (-) TimerEvent: {}
+[8.488693] (-) TimerEvent: {}
+[8.589940] (-) TimerEvent: {}
+[8.691282] (-) TimerEvent: {}
+[8.793292] (-) TimerEvent: {}
+[8.894441] (-) TimerEvent: {}
+[8.995670] (-) TimerEvent: {}
+[9.097888] (-) TimerEvent: {}
+[9.201214] (-) TimerEvent: {}
+[9.302251] (-) TimerEvent: {}
+[9.403571] (-) TimerEvent: {}
+[9.504682] (-) TimerEvent: {}
+[9.606505] (-) TimerEvent: {}
+[9.708439] (-) TimerEvent: {}
+[9.811741] (-) TimerEvent: {}
+[9.912316] (-) TimerEvent: {}
+[10.013355] (-) TimerEvent: {}
+[10.116698] (-) TimerEvent: {}
+[10.217791] (-) TimerEvent: {}
+[10.319830] (-) TimerEvent: {}
+[10.421152] (-) TimerEvent: {}
+[10.522169] (-) TimerEvent: {}
+[10.625775] (-) TimerEvent: {}
+[10.726951] (-) TimerEvent: {}
+[10.829457] (-) TimerEvent: {}
+[10.931539] (-) TimerEvent: {}
+[11.033282] (-) TimerEvent: {}
+[11.134170] (-) TimerEvent: {}
+[11.235119] (-) TimerEvent: {}
+[11.335470] (-) TimerEvent: {}
+[11.436166] (-) TimerEvent: {}
+[11.539400] (-) TimerEvent: {}
+[11.640179] (-) TimerEvent: {}
+[11.741695] (-) TimerEvent: {}
+[11.842702] (-) TimerEvent: {}
+[11.943413] (-) TimerEvent: {}
+[12.044428] (-) TimerEvent: {}
+[12.145439] (-) TimerEvent: {}
+[12.246367] (-) TimerEvent: {}
+[12.346929] (-) TimerEvent: {}
+[12.447702] (-) TimerEvent: {}
+[12.549142] (-) TimerEvent: {}
+[12.649940] (-) TimerEvent: {}
+[12.750657] (-) TimerEvent: {}
+[12.851375] (-) TimerEvent: {}
+[12.953822] (-) TimerEvent: {}
+[13.054336] (-) TimerEvent: {}
+[13.155409] (-) TimerEvent: {}
+[13.257527] (-) TimerEvent: {}
+[13.360605] (-) TimerEvent: {}
+[13.461587] (-) TimerEvent: {}
+[13.562766] (-) TimerEvent: {}
+[13.663359] (-) TimerEvent: {}
+[13.764104] (-) TimerEvent: {}
+[13.865612] (-) TimerEvent: {}
+[13.966681] (-) TimerEvent: {}
+[14.067770] (-) TimerEvent: {}
+[14.168593] (-) TimerEvent: {}
+[14.269431] (-) TimerEvent: {}
+[14.370746] (-) TimerEvent: {}
+[14.471931] (-) TimerEvent: {}
+[14.572502] (-) TimerEvent: {}
+[14.673596] (-) TimerEvent: {}
+[14.774514] (-) TimerEvent: {}
+[14.875476] (-) TimerEvent: {}
+[14.976531] (-) TimerEvent: {}
+[15.077712] (-) TimerEvent: {}
+[15.179869] (-) TimerEvent: {}
+[15.280877] (-) TimerEvent: {}
+[15.381489] (-) TimerEvent: {}
+[15.482763] (-) TimerEvent: {}
+[15.584008] (-) TimerEvent: {}
+[15.685039] (-) TimerEvent: {}
+[15.786466] (-) TimerEvent: {}
+[15.887352] (-) TimerEvent: {}
+[15.988313] (-) TimerEvent: {}
+[16.089228] (-) TimerEvent: {}
+[16.190667] (-) TimerEvent: {}
+[16.291441] (-) TimerEvent: {}
+[16.393261] (-) TimerEvent: {}
+[16.493961] (-) TimerEvent: {}
+[16.594810] (-) TimerEvent: {}
+[16.696709] (-) TimerEvent: {}
+[16.797570] (-) TimerEvent: {}
+[16.899272] (-) TimerEvent: {}
+[16.999887] (-) TimerEvent: {}
+[17.101216] (-) TimerEvent: {}
+[17.202547] (-) TimerEvent: {}
+[17.303501] (-) TimerEvent: {}
+[17.404463] (-) TimerEvent: {}
+[17.505663] (-) TimerEvent: {}
+[17.607158] (-) TimerEvent: {}
+[17.708514] (-) TimerEvent: {}
+[17.809940] (-) TimerEvent: {}
+[17.911330] (-) TimerEvent: {}
+[18.012304] (-) TimerEvent: {}
+[18.113411] (-) TimerEvent: {}
+[18.214954] (-) TimerEvent: {}
+[18.315912] (-) TimerEvent: {}
+[18.418323] (-) TimerEvent: {}
+[18.522784] (-) TimerEvent: {}
+[18.623447] (-) TimerEvent: {}
+[18.724380] (-) TimerEvent: {}
+[18.825356] (-) TimerEvent: {}
+[18.926342] (-) TimerEvent: {}
+[19.027253] (-) TimerEvent: {}
+[19.130584] (-) TimerEvent: {}
+[19.232813] (-) TimerEvent: {}
+[19.333430] (-) TimerEvent: {}
+[19.434211] (-) TimerEvent: {}
+[19.534631] (-) TimerEvent: {}
+[19.635445] (-) TimerEvent: {}
+[19.736424] (-) TimerEvent: {}
+[19.838127] (-) TimerEvent: {}
+[19.938794] (-) TimerEvent: {}
+[20.039865] (-) TimerEvent: {}
+[20.140836] (-) TimerEvent: {}
+[20.241663] (-) TimerEvent: {}
+[20.342265] (-) TimerEvent: {}
+[20.443084] (-) TimerEvent: {}
+[20.543967] (-) TimerEvent: {}
+[20.645059] (-) TimerEvent: {}
+[20.745525] (-) TimerEvent: {}
+[20.845992] (-) TimerEvent: {}
+[20.946810] (-) TimerEvent: {}
+[21.047612] (-) TimerEvent: {}
+[21.148641] (-) TimerEvent: {}
+[21.249955] (-) TimerEvent: {}
+[21.350424] (-) TimerEvent: {}
+[21.451483] (-) TimerEvent: {}
+[21.552362] (-) TimerEvent: {}
+[21.652946] (-) TimerEvent: {}
+[21.754048] (-) TimerEvent: {}
+[21.854643] (-) TimerEvent: {}
+[21.955584] (-) TimerEvent: {}
+[22.056393] (-) TimerEvent: {}
+[22.160197] (-) TimerEvent: {}
+[22.261114] (-) TimerEvent: {}
+[22.362290] (-) TimerEvent: {}
+[22.463087] (-) TimerEvent: {}
+[22.563943] (-) TimerEvent: {}
+[22.664974] (-) TimerEvent: {}
+[22.766001] (-) TimerEvent: {}
+[22.867073] (-) TimerEvent: {}
+[22.968322] (-) TimerEvent: {}
+[23.069998] (-) TimerEvent: {}
+[23.171575] (-) TimerEvent: {}
+[23.272738] (-) TimerEvent: {}
+[23.373793] (-) TimerEvent: {}
+[23.475080] (-) TimerEvent: {}
+[23.576432] (-) TimerEvent: {}
+[23.677797] (-) TimerEvent: {}
+[23.778294] (-) TimerEvent: {}
+[23.878991] (-) TimerEvent: {}
+[23.980350] (-) TimerEvent: {}
+[24.081023] (-) TimerEvent: {}
+[24.181844] (-) TimerEvent: {}
+[24.282677] (-) TimerEvent: {}
+[24.384550] (-) TimerEvent: {}
+[24.486406] (-) TimerEvent: {}
+[24.587225] (-) TimerEvent: {}
+[24.688822] (-) TimerEvent: {}
+[24.789878] (-) TimerEvent: {}
+[24.890807] (-) TimerEvent: {}
+[24.991646] (-) TimerEvent: {}
+[25.092486] (-) TimerEvent: {}
+[25.193731] (-) TimerEvent: {}
+[25.294787] (-) TimerEvent: {}
+[25.396338] (-) TimerEvent: {}
+[25.497404] (-) TimerEvent: {}
+[25.598122] (-) TimerEvent: {}
+[25.698962] (-) TimerEvent: {}
+[25.799762] (-) TimerEvent: {}
+[25.900516] (-) TimerEvent: {}
+[26.001553] (-) TimerEvent: {}
+[26.102594] (-) TimerEvent: {}
+[26.203438] (-) TimerEvent: {}
+[26.304019] (-) TimerEvent: {}
+[26.404940] (-) TimerEvent: {}
+[26.506004] (-) TimerEvent: {}
+[26.606732] (-) TimerEvent: {}
+[26.707372] (-) TimerEvent: {}
+[26.808288] (-) TimerEvent: {}
+[26.909109] (-) TimerEvent: {}
+[27.009743] (-) TimerEvent: {}
+[27.110719] (-) TimerEvent: {}
+[27.211431] (-) TimerEvent: {}
+[27.311960] (-) TimerEvent: {}
+[27.412854] (-) TimerEvent: {}
+[27.513882] (-) TimerEvent: {}
+[27.614773] (-) TimerEvent: {}
+[27.715329] (-) TimerEvent: {}
+[27.816116] (-) TimerEvent: {}
+[27.917328] (-) TimerEvent: {}
+[28.018085] (-) TimerEvent: {}
+[28.118959] (-) TimerEvent: {}
+[28.219980] (-) TimerEvent: {}
+[28.320735] (-) TimerEvent: {}
+[28.421796] (-) TimerEvent: {}
+[28.523423] (-) TimerEvent: {}
+[28.624674] (-) TimerEvent: {}
+[28.725199] (-) TimerEvent: {}
+[28.826602] (-) TimerEvent: {}
+[28.927296] (-) TimerEvent: {}
+[29.028186] (-) TimerEvent: {}
+[29.128932] (-) TimerEvent: {}
+[29.229988] (-) TimerEvent: {}
+[29.330465] (-) TimerEvent: {}
+[29.431119] (-) TimerEvent: {}
+[29.531666] (-) TimerEvent: {}
+[29.632368] (-) TimerEvent: {}
+[29.733177] (-) TimerEvent: {}
+[29.833870] (-) TimerEvent: {}
+[29.934459] (-) TimerEvent: {}
+[30.035270] (-) TimerEvent: {}
+[30.136037] (-) TimerEvent: {}
+[30.236899] (-) TimerEvent: {}
+[30.339403] (-) TimerEvent: {}
+[30.439883] (-) TimerEvent: {}
+[30.541264] (-) TimerEvent: {}
+[30.642940] (-) TimerEvent: {}
+[30.744532] (-) TimerEvent: {}
+[30.845609] (-) TimerEvent: {}
+[30.946891] (-) TimerEvent: {}
+[31.047572] (-) TimerEvent: {}
+[31.148752] (-) TimerEvent: {}
+[31.251238] (-) TimerEvent: {}
+[31.351954] (-) TimerEvent: {}
+[31.453363] (-) TimerEvent: {}
+[31.553948] (-) TimerEvent: {}
+[31.654798] (-) TimerEvent: {}
+[31.755507] (-) TimerEvent: {}
+[31.856083] (-) TimerEvent: {}
+[31.956681] (-) TimerEvent: {}
+[32.057567] (-) TimerEvent: {}
+[32.158175] (-) TimerEvent: {}
+[32.259105] (-) TimerEvent: {}
+[32.360365] (-) TimerEvent: {}
+[32.461225] (-) TimerEvent: {}
+[32.562273] (-) TimerEvent: {}
+[32.663365] (-) TimerEvent: {}
+[32.763801] (-) TimerEvent: {}
+[32.864615] (-) TimerEvent: {}
+[32.965617] (-) TimerEvent: {}
+[33.066760] (-) TimerEvent: {}
+[33.167819] (-) TimerEvent: {}
+[33.268650] (-) TimerEvent: {}
+[33.369969] (-) TimerEvent: {}
+[33.470924] (-) TimerEvent: {}
+[33.571388] (-) TimerEvent: {}
+[33.672200] (-) TimerEvent: {}
+[33.773046] (-) TimerEvent: {}
+[33.873829] (-) TimerEvent: {}
+[33.974912] (-) TimerEvent: {}
+[34.077247] (-) TimerEvent: {}
+[34.178608] (-) TimerEvent: {}
+[34.280117] (-) TimerEvent: {}
+[34.381293] (-) TimerEvent: {}
+[34.482407] (-) TimerEvent: {}
+[34.583364] (-) TimerEvent: {}
+[34.684408] (-) TimerEvent: {}
+[34.785581] (-) TimerEvent: {}
+[34.887167] (-) TimerEvent: {}
+[34.988434] (-) TimerEvent: {}
+[35.089699] (-) TimerEvent: {}
+[35.191059] (-) TimerEvent: {}
+[35.292192] (-) TimerEvent: {}
+[35.395282] (-) TimerEvent: {}
+[35.496062] (-) TimerEvent: {}
+[35.597471] (-) TimerEvent: {}
+[35.699092] (-) TimerEvent: {}
+[35.800171] (-) TimerEvent: {}
+[35.901124] (-) TimerEvent: {}
+[36.001973] (-) TimerEvent: {}
+[36.102949] (-) TimerEvent: {}
+[36.203832] (-) TimerEvent: {}
+[36.305352] (-) TimerEvent: {}
+[36.406984] (-) TimerEvent: {}
+[36.507538] (-) TimerEvent: {}
+[36.608581] (-) TimerEvent: {}
+[36.710058] (-) TimerEvent: {}
+[36.810565] (-) TimerEvent: {}
+[36.912026] (-) TimerEvent: {}
+[37.012668] (-) TimerEvent: {}
+[37.113383] (-) TimerEvent: {}
+[37.213912] (-) TimerEvent: {}
+[37.315454] (-) TimerEvent: {}
+[37.416952] (-) TimerEvent: {}
+[37.517440] (-) TimerEvent: {}
+[37.618597] (-) TimerEvent: {}
+[37.719899] (-) TimerEvent: {}
+[37.820953] (-) TimerEvent: {}
+[37.922276] (-) TimerEvent: {}
+[38.023664] (-) TimerEvent: {}
+[38.124783] (-) TimerEvent: {}
+[38.225345] (-) TimerEvent: {}
+[38.327750] (-) TimerEvent: {}
+[38.428482] (-) TimerEvent: {}
+[38.529759] (-) TimerEvent: {}
+[38.630830] (-) TimerEvent: {}
+[38.731972] (-) TimerEvent: {}
+[38.833392] (-) TimerEvent: {}
+[38.935418] (-) TimerEvent: {}
+[39.036219] (-) TimerEvent: {}
+[39.070864] (semantic_density_map) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable density_map_builder_node\x1b[0m\n'}
+[39.138566] (-) TimerEvent: {}
+[39.240259] (-) TimerEvent: {}
+[39.341072] (-) TimerEvent: {}
+[39.442224] (-) TimerEvent: {}
+[39.543122] (-) TimerEvent: {}
+[39.644389] (-) TimerEvent: {}
+[39.745724] (-) TimerEvent: {}
+[39.847053] (-) TimerEvent: {}
+[39.947807] (-) TimerEvent: {}
+[40.048383] (-) TimerEvent: {}
+[40.149892] (-) TimerEvent: {}
+[40.251609] (-) TimerEvent: {}
+[40.353449] (-) TimerEvent: {}
+[40.454358] (-) TimerEvent: {}
+[40.555579] (-) TimerEvent: {}
+[40.656766] (-) TimerEvent: {}
+[40.758855] (-) TimerEvent: {}
+[40.860234] (-) TimerEvent: {}
+[40.961714] (-) TimerEvent: {}
+[41.063065] (-) TimerEvent: {}
+[41.164612] (-) TimerEvent: {}
+[41.230032] (semantic_density_map) StdoutLine: {'line': b'[ 75%] Built target density_map_builder_node\n'}
+[41.233415] (semantic_density_map) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[41.238530] (semantic_density_map) CommandEnded: {'returncode': 2}
+[41.261554] (semantic_density_map) JobEnded: {'identifier': 'semantic_density_map', 'rc': 2}
+[41.264600] (-) TimerEvent: {}
+[41.265184] (-) EventReactorShutdown: {}

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d05de28d5fed51033979.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "semantic_density_map",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "density_map_builder_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-density_map_builder_node-caed42199ed4fe41c127.json",
+					"name" : "density_map_builder_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "semantic_density_map_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-semantic_density_map_uninstall-21db4a37d2497770a6f3.json",
+					"name" : "semantic_density_map_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "semantic_path_planner_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-semantic_path_planner_node-f135470205570d5958f6.json",
+					"name" : "semantic_path_planner_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7036a569e7c941531ccc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u22/turtlebot/build/semantic_density_map",
+		"source" : "/home/u22/turtlebot/turtlebot3/semantic_density_map"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

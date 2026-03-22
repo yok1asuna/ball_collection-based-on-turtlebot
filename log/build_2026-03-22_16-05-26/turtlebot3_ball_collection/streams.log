@@ -1,0 +1,115 @@
+[0.042s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble __trae_PS1=\n(TraeAI-6) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
+[0.129s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.506s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.580s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.583s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.594s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.627s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.665s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.738s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.744s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.009s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.129s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.161s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.200s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.237s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.272s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[1.282s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.480s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.539s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.545s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.545s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.551s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.613s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.695s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.776s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.654s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.675s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.093s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.115s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.138s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.478s] -- Found Qhull version 8.0.2
+[3.866s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.550s] -- Configuring done
+[4.762s] -- Generating done
+[4.826s] -- Build files have been written to: /home/u22/turtlebot/build/turtlebot3_ball_collection
+[4.924s] [35m[1mConsolidate compiler generated dependencies of target tsp_planner_node[0m
+[4.936s] [35m[1mConsolidate compiler generated dependencies of target semantic_path_planner_node[0m
+[4.936s] [35m[1mConsolidate compiler generated dependencies of target ball_detector_node[0m
+[4.938s] [35m[1mConsolidate compiler generated dependencies of target density_map_builder_node[0m
+[5.039s] [ 10%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
+[5.057s] [ 30%] Built target ball_detector_node
+[5.060s] [ 40%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
+[5.087s] [35m[1mConsolidate compiler generated dependencies of target path_planner_node[0m
+[5.092s] [ 60%] Built target tsp_planner_node
+[5.184s] [ 80%] Built target path_planner_node
+[5.785s] In file included from [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/density_map_builder_node.cpp:7[m[K:
+[5.785s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[5.785s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[5.786s]       |  [01;35m[K^~~~~~~[m[K
+[19.580s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kvoid SemanticPathPlannerNode::plan_path()[m[K’:
+[19.580s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:43:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.581s]    43 |   for (int i = 0; [01;35m[Ki < current_density_map_.info.width[m[K; ++i) {
+[19.581s]       |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.581s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:44:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.581s]    44 |     for (int j = 0; [01;35m[Kj < current_density_map_.info.height[m[K; ++j) {
+[19.582s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.614s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Kdouble SemanticPathPlannerNode::potential_field_cost(int, int, const OccupancyGrid&)[m[K’:
+[19.614s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:141:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.614s]   141 |   if (index < 0 || [01;35m[Kindex >= grid.data.size()[m[K) return 100.0;
+[19.615s]       |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[19.615s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:[m[K In member function ‘[01m[Knav_msgs::msg::Path SemanticPathPlannerNode::astar_path_planning(const Point&, const Point&, const OccupancyGrid&)[m[K’:
+[19.615s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.615s]   171 |   if (start_x < 0 || [01;35m[Kstart_x >= grid.info.width[m[K || start_y < 0 || start_y >= grid.info.height ||
+[19.616s]       |                      [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[19.616s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:171:75:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.618s]   171 |   if (start_x < 0 || start_x >= grid.info.width || start_y < 0 || [01;35m[Kstart_y >= grid.info.height[m[K ||
+[19.618s]       |                                                                   [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[19.619s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:28:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.619s]   172 |       goal_x < 0 || [01;35m[Kgoal_x >= grid.info.width[m[K || goal_y < 0 || goal_y >= grid.info.height) {
+[19.620s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[19.621s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:172:71:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.621s]   172 |       goal_x < 0 || goal_x >= grid.info.width || goal_y < 0 || [01;35m[Kgoal_y >= grid.info.height[m[K) {
+[19.622s]       |                                                                [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[19.657s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _width_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.658s]   231 |       if (neighbor_x < 0 || [01;35m[Kneighbor_x >= grid.info.width[m[K || neighbor_y < 0 || neighbor_y >= grid.info.height) {
+[19.658s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[19.658s] [01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/semantic_path_planner_node.cpp:231:91:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst _height_type[m[K’ {aka ‘[01m[Kconst unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[19.660s]   231 |       if (neighbor_x < 0 || neighbor_x >= grid.info.width || neighbor_y < 0 || [01;35m[Kneighbor_y >= grid.info.height[m[K) {
+[19.660s]       |                                                                                [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[31.529s] [ 90%] [32m[1mLinking CXX executable density_map_builder_node[0m
+[33.446s] [ 90%] Built target density_map_builder_node
+[41.256s] [100%] [32m[1mLinking CXX executable semantic_path_planner_node[0m
+[43.456s] [100%] Built target semantic_path_planner_node
+[43.480s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble __trae_PS1=\n(TraeAI-6) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
+[43.507s] Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble __trae_PS1=\n(TraeAI-6) \w [$?] $ /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_ball_collection
+[43.522s] -- Install configuration: ""
+[43.522s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/density_map_builder_node
+[43.531s] -- Set runtime path of "/home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/density_map_builder_node" to ""
+[43.531s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/semantic_path_planner_node
+[43.540s] -- Set runtime path of "/home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/semantic_path_planner_node" to ""
+[43.541s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/ball_detector_node
+[43.541s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/tsp_planner_node
+[43.542s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/lib/turtlebot3_ball_collection/path_planner_node
+[43.542s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch
+[43.542s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/ball_collection.launch.py
+[43.542s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/full_system.launch.py
+[43.543s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/launch/slam_navigation.launch.py
+[43.543s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param
+[43.543s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/param/slam_toolbox.yaml
+[43.543s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/package_run_dependencies/turtlebot3_ball_collection
+[43.543s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/parent_prefix_path/turtlebot3_ball_collection
+[43.543s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.sh
+[43.544s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/ament_prefix_path.dsv
+[43.544s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.sh
+[43.544s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/environment/path.dsv
+[43.544s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.bash
+[43.544s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.sh
+[43.544s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.zsh
+[43.544s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/local_setup.dsv
+[43.545s] -- Installing: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.dsv
+[43.545s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/ament_index/resource_index/packages/turtlebot3_ball_collection
+[43.545s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig.cmake
+[43.545s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/cmake/turtlebot3_ball_collectionConfig-version.cmake
+[43.545s] -- Up-to-date: /home/u22/turtlebot/install/turtlebot3_ball_collection/share/turtlebot3_ball_collection/package.xml
+[43.551s] Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/u22/turtlebot/install/turtlebot3_vision:/home/u22/turtlebot/install/turtlebot3_teleop:/home/u22/turtlebot/install/turtlebot3_example:/opt/ros/humble __trae_PS1=\n(TraeAI-6) \w [$?] $ /usr/bin/cmake --install /home/u22/turtlebot/build/turtlebot3_ball_collection
