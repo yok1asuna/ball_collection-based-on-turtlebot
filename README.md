@@ -1,3 +1,5 @@
+This package implements a complete ball collection pipeline for TurtleBot3 robots, including vision-based detection, clustering, path planning, and navigation.
+
 ## System Architecture
 The project consists of several key nodes working together:
 
