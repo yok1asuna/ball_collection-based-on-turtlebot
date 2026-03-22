@@ -1,4 +1,0 @@
-Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map
-Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/u22/turtlebot/turtlebot3/semantic_density_map -DCMAKE_INSTALL_PREFIX=/home/u22/turtlebot/install/semantic_density_map
-Invoking command in '/home/u22/turtlebot/build/semantic_density_map': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4
-Invoked command in '/home/u22/turtlebot/build/semantic_density_map' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/u22/turtlebot/build/semantic_density_map -- -j4 -l4

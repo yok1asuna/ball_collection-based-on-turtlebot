@@ -1,8 +1,0 @@
-[0m** WARNING ** io features related to pcap will be disabled[0m
-[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/path_planner_node.cpp:[m[K In lambda function:
-[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/path_planner_node.cpp:59:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Khandle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   59 |     []([01;35m[Kconst std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>> handle[m[K,
-      |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
-[01m[K/home/u22/turtlebot/turtlebot3/turtlebot3_ball_collection/src/path_planner_node.cpp:60:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   60 |        [01;35m[Kconst std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback> feedback[m[K) {
-      |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K

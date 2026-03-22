@@ -1,2 +1,0 @@
-Invoking command in '/home/u22/turtlebot/build/turtlebot3_ball_collection': CMAKE_PREFIX_PATH=/opt/ros/humble __trae_PS1=\n(TraeAI-3) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4
-Invoked command in '/home/u22/turtlebot/build/turtlebot3_ball_collection' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble __trae_PS1=\n(TraeAI-3) \w [$?] $ /usr/bin/cmake --build /home/u22/turtlebot/build/turtlebot3_ball_collection -- -j4 -l4

@@ -1,3 +1,0 @@
-[console_scripts]
-yolo_detector_node = turtlebot3_vision.yolo_detector_node:main
-

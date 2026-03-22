@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target density_map_builder_node[0m
-[ 10%] [32mBuilding CXX object CMakeFiles/density_map_builder_node.dir/src/density_map_builder_node.cpp.o[0m
-[ 30%] Built target ball_detector_node
-[ 50%] Built target tsp_planner_node
-[ 60%] [32mBuilding CXX object CMakeFiles/semantic_path_planner_node.dir/src/semantic_path_planner_node.cpp.o[0m
-[ 80%] Built target path_planner_node
-[ 90%] [32m[1mLinking CXX executable semantic_path_planner_node[0m
-[ 90%] Built target semantic_path_planner_node

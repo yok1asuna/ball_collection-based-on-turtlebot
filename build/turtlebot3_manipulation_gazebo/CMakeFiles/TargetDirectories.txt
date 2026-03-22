@@ -1,9 +1,0 @@
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/uninstall.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/turtlebot3_manipulation_gazebo_uninstall.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/test.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/edit_cache.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/rebuild_cache.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/list_install_components.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/install.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/install/local.dir
-/home/u22/turtlebot/build/turtlebot3_manipulation_gazebo/CMakeFiles/install/strip.dir

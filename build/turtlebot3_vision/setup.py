@@ -1,1 +1,0 @@
-/home/u22/turtlebot/turtlebot3/turtlebot3_vision/setup.py
