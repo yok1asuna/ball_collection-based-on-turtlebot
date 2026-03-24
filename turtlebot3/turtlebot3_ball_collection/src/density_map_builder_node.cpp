@@ -1,24 +1,18 @@
 #include "density_map_builder_node.hpp"
-
-#include <sensor_msgs/point_cloud2_iterator.hpp>
 #include <cmath>
-#include <tf2_ros/buffer.h>
-#include <tf2_ros/transform_listener.h>
+#include <algorithm>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node")
 {
-  pointcloud_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-    "ball_positions", 10,
-    std::bind(&DensityMapBuilderNode::pointcloud_callback, this, std::placeholders::_1));
-
-  // Also subscribe to detected balls from yolo_detector_node
-  yolo_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-    "/detected_balls", 10,
-    std::bind(&DensityMapBuilderNode::pointcloud_callback, this, std::placeholders::_1));
+  target_poses_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
+    "/vision/target_poses", 10,
+    std::bind(&DensityMapBuilderNode::target_poses_callback, this, std::placeholders::_1));
 
   density_map_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("density_map", 10);
-  marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("density_markers", 10);
+  marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/visualization/density_markers", 10);
+  nav_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(
+    this, "/navigate_to_pose");
 
   this->declare_parameter<double>("resolution", 0.1);
   this->declare_parameter<int>("width", 100);
@@ -29,6 +23,8 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   this->declare_parameter<int>("max_density", 100);
   this->declare_parameter<double>("gaussian_sigma", 0.5);
   this->declare_parameter<double>("time_decay_factor", 0.95);
+  this->declare_parameter<bool>("navigate_on_peak", true);
+  this->declare_parameter<double>("goal_republish_distance", 0.2);
 
   this->get_parameter("resolution", resolution_);
   this->get_parameter("width", width_);
@@ -39,6 +35,8 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   this->get_parameter("max_density", max_density_);
   this->get_parameter("gaussian_sigma", gaussian_sigma_);
   this->get_parameter("time_decay_factor", time_decay_factor_);
+  this->get_parameter("navigate_on_peak", navigate_on_peak_);
+  this->get_parameter("goal_republish_distance", goal_republish_distance_);
 
   // Initialize TF2 buffer and listener
   tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
@@ -55,19 +53,12 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   density_grid_.data.assign(width_ * height_, 0);
 }
 
-void DensityMapBuilderNode::pointcloud_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
+void DensityMapBuilderNode::target_poses_callback(const geometry_msgs::msg::PoseArray::SharedPtr msg)
 {
-  sensor_msgs::PointCloud2ConstIterator<float> iter_x(*msg, "x");
-  sensor_msgs::PointCloud2ConstIterator<float> iter_y(*msg, "y");
-  sensor_msgs::PointCloud2ConstIterator<float> iter_z(*msg, "z");
-
   std::vector<geometry_msgs::msg::Point> points;
-  for (; iter_x != iter_x.end(); ++iter_x, ++iter_y, ++iter_z) {
-    geometry_msgs::msg::Point p;
-    p.x = *iter_x;
-    p.y = *iter_y;
-    p.z = *iter_z;
-    points.push_back(p);
+  points.reserve(msg->poses.size());
+  for (const auto &pose : msg->poses) {
+    points.push_back(pose.position);
   }
 
   RCLCPP_INFO(this->get_logger(), "Received %zu balls from %s frame", points.size(), msg->header.frame_id.c_str());
@@ -103,6 +94,7 @@ void DensityMapBuilderNode::pointcloud_callback(const sensor_msgs::msg::PointClo
 
   build_density_map(transformed_points);
   publish_density_map();
+  send_peak_navigation_goal();
 }
 
 void DensityMapBuilderNode::build_density_map(const std::vector<geometry_msgs::msg::Point>& points)
@@ -194,6 +186,54 @@ void DensityMapBuilderNode::publish_density_map()
     }
   }
   marker_pub_->publish(markers);
+}
+
+void DensityMapBuilderNode::send_peak_navigation_goal()
+{
+  if (!navigate_on_peak_) {
+    return;
+  }
+
+  auto max_iter = std::max_element(density_grid_.data.begin(), density_grid_.data.end());
+  if (max_iter == density_grid_.data.end() || *max_iter <= 0) {
+    return;
+  }
+
+  const int max_index = static_cast<int>(std::distance(density_grid_.data.begin(), max_iter));
+  const int x = max_index % width_;
+  const int y = max_index / width_;
+
+  geometry_msgs::msg::Point goal_point;
+  goal_point.x = origin_x_ + (static_cast<double>(x) + 0.5) * resolution_;
+  goal_point.y = origin_y_ + (static_cast<double>(y) + 0.5) * resolution_;
+  goal_point.z = 0.0;
+
+  if (has_last_goal_) {
+    const double dx = goal_point.x - last_goal_point_.x;
+    const double dy = goal_point.y - last_goal_point_.y;
+    if (std::hypot(dx, dy) < goal_republish_distance_) {
+      return;
+    }
+  }
+
+  if (!nav_client_->wait_for_action_server(std::chrono::milliseconds(200))) {
+    RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+      "navigate_to_pose action server not available");
+    return;
+  }
+
+  nav2_msgs::action::NavigateToPose::Goal goal;
+  goal.pose.header.frame_id = "map";
+  goal.pose.header.stamp = this->now();
+  goal.pose.pose.position = goal_point;
+  goal.pose.pose.orientation.w = 1.0;
+
+  nav_client_->async_send_goal(goal);
+  last_goal_point_ = goal_point;
+  has_last_goal_ = true;
+
+  RCLCPP_INFO(this->get_logger(), "Sent navigation goal to density peak (%.2f, %.2f)",
+    goal_point.x, goal_point.y);
 }
 
 int main(int argc, char * argv[])

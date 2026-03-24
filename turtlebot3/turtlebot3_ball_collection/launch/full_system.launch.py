@@ -22,7 +22,8 @@ def generate_launch_description():
         ),
         launch_arguments={
             'world': LaunchConfiguration('world'),
-            'spawn_balls': LaunchConfiguration('spawn_balls')
+            'spawn_balls': LaunchConfiguration('spawn_balls'),
+            'spawn_balls_count': LaunchConfiguration('spawn_balls_count')
         }.items()
     )
 
@@ -51,6 +52,11 @@ def generate_launch_description():
             'spawn_balls',
             default_value='true',
             description='Whether to spawn random tennis balls'
+        ),
+        DeclareLaunchArgument(
+            'spawn_balls_count',
+            default_value='20',
+            description='Number of tennis balls to spawn at startup'
         ),
         DeclareLaunchArgument(
             'use_slam',

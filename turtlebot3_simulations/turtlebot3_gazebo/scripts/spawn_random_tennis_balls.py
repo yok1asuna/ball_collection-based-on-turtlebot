@@ -6,12 +6,10 @@ import sys
 
 import rclpy
 from gazebo_msgs.srv import SpawnEntity
-from geometry_msgs.msg import Pose, Point
-from std_msgs.msg import Float32MultiArray
+from geometry_msgs.msg import Pose
 
 
-def make_ball_sdf(radius=0.033, mass=0.058):
-    # Simplified SDF for a tennis ball (visual + collision)
+def make_ball_sdf(radius: float = 0.033, mass: float = 0.058) -> str:
     return f"""<?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='tennis_ball'>
@@ -51,9 +49,9 @@ def make_ball_sdf(radius=0.033, mass=0.058):
 """
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description='Spawn random tennis balls in Gazebo')
-    parser.add_argument('--count', type=int, default=30, help='Number of balls to spawn')
+    parser.add_argument('--count', type=int, default=20, help='Number of balls to spawn')
     parser.add_argument('--xmin', type=float, default=-11.5)
     parser.add_argument('--xmax', type=float, default=11.5)
     parser.add_argument('--ymin', type=float, default=-5.0)
@@ -61,20 +59,18 @@ def main():
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     args = parser.parse_args()
 
+    random.seed(args.seed)
     rclpy.init(args=sys.argv)
     node = rclpy.create_node('spawn_random_tennis_balls')
 
     client = node.create_client(SpawnEntity, '/spawn_entity')
-    if not client.wait_for_service(timeout_sec=10.0):
+    if not client.wait_for_service(timeout_sec=20.0):
         node.get_logger().error('Service /spawn_entity not available')
+        node.destroy_node()
         rclpy.shutdown()
         return
 
-    # Publisher for ball positions
-    ball_positions_pub = node.create_publisher(Float32MultiArray, 'spawned_ball_positions', 10)
-
     sdf = make_ball_sdf()
-    ball_positions = []
 
     for i in range(args.count):
         name = f'tennis_ball_{i}'
@@ -91,18 +87,14 @@ def main():
 
         future = client.call_async(req)
         rclpy.spin_until_future_complete(node, future)
+
         if future.result() is None:
             node.get_logger().error(f'Failed to spawn {name}: {future.exception()}')
         else:
-            node.get_logger().info(f'Spawned {name} at ({pose.position.x:.2f}, {pose.position.y:.2f})')
-            ball_positions.extend([pose.position.x, pose.position.y, pose.position.z])
+            node.get_logger().info(
+                f'Spawned {name} at ({pose.position.x:.2f}, {pose.position.y:.2f})')
 
-    # Publish ball positions
-    msg = Float32MultiArray()
-    msg.data = ball_positions
-    ball_positions_pub.publish(msg)
-    node.get_logger().info(f'Published {len(ball_positions)//3} ball positions')
-
+    node.get_logger().info(f'Finished spawning {args.count} tennis balls')
     node.destroy_node()
     rclpy.shutdown()
 

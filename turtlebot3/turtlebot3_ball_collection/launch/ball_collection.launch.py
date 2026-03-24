@@ -31,34 +31,6 @@ def generate_launch_description():
             executable='density_map_builder_node',
             name='density_map_builder',
             output='screen'
-        ),
-
-        Node(
-            package='turtlebot3_ball_collection',
-            executable='semantic_path_planner_node',
-            name='semantic_path_planner',
-            output='screen'
-        ),
-
-        Node(
-            package='turtlebot3_ball_collection',
-            executable='ball_detector_node',
-            name='ball_detector',
-            output='screen'
-        ),
-
-        Node(
-            package='turtlebot3_ball_collection',
-            executable='tsp_planner_node',
-            name='tsp_planner',
-            output='screen'
-        ),
-
-        Node(
-            package='turtlebot3_ball_collection',
-            executable='path_planner_node',
-            name='path_planner',
-            output='screen'
         )
     ])
 

@@ -55,6 +55,11 @@ def generate_launch_description():
         description='Whether to spawn random tennis balls'
     )
 
+    declare_spawn_balls_count_cmd = DeclareLaunchArgument(
+        'spawn_balls_count', default_value='20',
+        description='Number of random tennis balls to spawn'
+    )
+
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_gazebo_ros, 'launch', 'gzserver.launch.py')
@@ -93,7 +98,7 @@ def generate_launch_description():
     )
 
     spawn_random_balls_cmd = ExecuteProcess(
-        cmd=['python3', spawn_balls_script, '--count', '10'],
+        cmd=['python3', spawn_balls_script, '--count', LaunchConfiguration('spawn_balls_count')],
         output='screen',
         condition=IfCondition(LaunchConfiguration('spawn_balls', default='true'))
     )
@@ -103,6 +108,7 @@ def generate_launch_description():
     # Declare launch arguments before adding actions
     ld.add_action(declare_world_cmd)
     ld.add_action(declare_spawn_balls_cmd)
+    ld.add_action(declare_spawn_balls_count_cmd)
 
     # Add the commands to the launch description
     ld.add_action(gzserver_cmd)
