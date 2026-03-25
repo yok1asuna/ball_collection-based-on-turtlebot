@@ -22,7 +22,6 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
-from launch.substitutions import PythonExpression
 from launch_ros.actions import Node
 
 
@@ -31,7 +30,6 @@ def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     urdf_file_name = 'turtlebot3_' + TURTLEBOT3_MODEL + '.urdf'
-    frame_prefix = LaunchConfiguration('frame_prefix', default='')
 
     print('urdf_file_name : {}'.format(urdf_file_name))
 
