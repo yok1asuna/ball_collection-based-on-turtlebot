@@ -5,17 +5,14 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    ball_collection_dir = get_package_share_directory('turtlebot3_ball_collection')
-
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    enable_initial_rotation = LaunchConfiguration('enable_initial_rotation', default='false')
-    params_file = LaunchConfiguration('params_file')
+    turtlebot3_model = os.environ.get('TURTLEBOT3_MODEL', 'burger')
+    robot_model_name = f'turtlebot3_{turtlebot3_model}'
 
     # Define the path to YOLO model
     yolo_model_path = os.path.join(
@@ -29,17 +26,6 @@ def generate_launch_description():
             default_value='true',
             description='Use simulation (Gazebo) clock if true'
         ),
-        DeclareLaunchArgument(
-            'params_file',
-            default_value=os.path.join(ball_collection_dir, 'param', 'ball_collection.yaml'),
-            description='Full path to param file to load'
-        ),
-        DeclareLaunchArgument(
-            'enable_initial_rotation',
-            default_value='false',
-            description='Rotate robot once at startup to scan environment'
-        ),
-
         Node(
             package='turtlebot3_vision',
             executable='yolo_detector_node',
@@ -47,19 +33,11 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'model_path': yolo_model_path,
-                'color_topic': '/camera/image_raw',
+                'color_topic': '/depth_camera/image_raw',
                 'depth_topic': '/depth_camera/depth/image_raw',
+                'camera_info_topic': '/depth_camera/camera_info',
                 'use_sim_time': use_sim_time
             }]
-        ),
-
-        Node(
-            package='turtlebot3_ball_collection',
-            executable='rotate_once.py',
-            name='initial_rotator',
-            output='screen',
-            condition=IfCondition(enable_initial_rotation),
-            parameters=[{'use_sim_time': use_sim_time}]
         ),
 
         Node(
@@ -76,7 +54,32 @@ def generate_launch_description():
                 'origin_y': -5.0,
                 'gaussian_sigma': 0.5,
                 'time_decay_factor': 0.99,
-                'navigate_on_peak': True
+                'navigate_on_peak': True,
+                'spin_action_name': '/spin',
+                'enable_startup_spin': True,
+                'startup_spin_delay_sec': 1.0,
+                'lost_target_timeout_sec': 3.0,
+                'spin_angle_rad': 6.283185307179586,
+                'spin_cooldown_sec': 1.0
+            }]
+        ),
+
+        Node(
+            package='turtlebot3_ball_collection',
+            executable='ball_collector.py',
+            name='ball_collector',
+            output='screen',
+            parameters=[{
+                'use_sim_time': use_sim_time,
+                'model_states_topic': '/gazebo/model_states',
+                'delete_service': '/delete_entity',
+                'robot_model_name': robot_model_name,
+                'robot_name_fallback_substring': 'turtlebot3',
+                'ball_name_regex': '(ball|tennis)',
+                'collect_distance_m': 0.26,
+                'collect_half_fov_rad': 0.52,
+                'collect_cooldown_sec': 0.5,
+                'check_period_sec': 0.1
             }]
         )
     ])

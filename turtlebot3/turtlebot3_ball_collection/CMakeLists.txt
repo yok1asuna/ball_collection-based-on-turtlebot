@@ -21,12 +21,27 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(std_srvs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 
 include_directories(include)
 
 add_executable(density_map_builder_node src/density_map_builder_node.cpp)
-ament_target_dependencies(density_map_builder_node rclcpp rclcpp_action std_msgs geometry_msgs sensor_msgs nav_msgs visualization_msgs nav2_msgs tf2 tf2_ros tf2_geometry_msgs)
+ament_target_dependencies(
+  density_map_builder_node
+  rclcpp
+  rclcpp_action
+  std_msgs
+  std_srvs
+  geometry_msgs
+  sensor_msgs
+  nav_msgs
+  visualization_msgs
+  nav2_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+)
 
 install(TARGETS
   density_map_builder_node
@@ -34,7 +49,7 @@ install(TARGETS
 )
 
 install(PROGRAMS
-  scripts/rotate_once.py
+  scripts/ball_collector.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

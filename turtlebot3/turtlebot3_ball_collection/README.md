@@ -32,6 +32,7 @@ This package implements an complete ball collection system for TurtleBot3 robots
 1. Set environment variables:
    ```bash
    export TURTLEBOT3_MODEL=waffle
+   source install/setup.bash
    ```
 1. Launch the system:
    ```bash

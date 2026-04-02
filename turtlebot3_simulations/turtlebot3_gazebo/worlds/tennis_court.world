@@ -113,30 +113,5 @@
       </link>
     </model>
 
-    <model name="tennis_net">
-        <static>true</static> 
-        <pose frame=''>0 0 0.5 0 0 0</pose> 
-        <link name='net_body'>
-            <visual name='visual_net'>
-                <geometry>
-                    <box>
-                        <size>0.1 8.0 1.0</size> 
-                    </box>
-                </geometry>
-                <material>
-                    <ambient>0.8 0.8 0.8 1</ambient> 
-                    <diffuse>0.8 0.8 0.8 1</diffuse>
-                </material>
-            </visual>
-            <collision name='collision_net'>
-                <geometry>
-                    <box>
-                        <size>0.1 8.0 1.0</size>
-                    </box>
-                </geometry>
-            </collision>
-        </link>
-    </model>
-
   </world>
 </sdf>

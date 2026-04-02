@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
+using namespace std::chrono_literals;
+
 DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node")
 {
   target_poses_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
@@ -13,6 +15,7 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/visualization/density_markers", 10);
   nav_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(
     this, "/navigate_to_pose");
+  spin_client_ = rclcpp_action::create_client<nav2_msgs::action::Spin>(this, "/spin");
 
   this->declare_parameter<double>("resolution", 0.1);
   this->declare_parameter<int>("width", 100);
@@ -25,6 +28,12 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   this->declare_parameter<double>("time_decay_factor", 0.95);
   this->declare_parameter<bool>("navigate_on_peak", true);
   this->declare_parameter<double>("goal_republish_distance", 0.2);
+  this->declare_parameter<std::string>("spin_action_name", "/spin");
+  this->declare_parameter<bool>("enable_startup_spin", true);
+  this->declare_parameter<double>("startup_spin_delay_sec", 1.0);
+  this->declare_parameter<double>("lost_target_timeout_sec", 3.0);
+  this->declare_parameter<double>("spin_angle_rad", 2.0 * M_PI);
+  this->declare_parameter<double>("spin_cooldown_sec", 1.0);
 
   this->get_parameter("resolution", resolution_);
   this->get_parameter("width", width_);
@@ -37,6 +46,31 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   this->get_parameter("time_decay_factor", time_decay_factor_);
   this->get_parameter("navigate_on_peak", navigate_on_peak_);
   this->get_parameter("goal_republish_distance", goal_republish_distance_);
+  this->get_parameter("spin_action_name", spin_action_name_);
+  this->get_parameter("enable_startup_spin", enable_startup_spin_);
+  this->get_parameter("startup_spin_delay_sec", startup_spin_delay_sec_);
+  this->get_parameter("lost_target_timeout_sec", lost_target_timeout_sec_);
+  this->get_parameter("spin_angle_rad", spin_angle_rad_);
+  this->get_parameter("spin_cooldown_sec", spin_cooldown_sec_);
+
+  spin_client_ = rclcpp_action::create_client<nav2_msgs::action::Spin>(this, spin_action_name_);
+
+  pause_decay_srv_ = this->create_service<std_srvs::srv::Trigger>(
+    "/pause_decay",
+    std::bind(&DensityMapBuilderNode::handle_pause_decay, this, std::placeholders::_1, std::placeholders::_2));
+  resume_decay_srv_ = this->create_service<std_srvs::srv::Trigger>(
+    "/resume_decay",
+    std::bind(&DensityMapBuilderNode::handle_resume_decay, this, std::placeholders::_1, std::placeholders::_2));
+
+  lost_target_timer_ = this->create_wall_timer(
+    200ms, std::bind(&DensityMapBuilderNode::monitor_lost_targets, this));
+  startup_spin_timer_ = this->create_wall_timer(
+    std::chrono::duration_cast<std::chrono::nanoseconds>(
+      std::chrono::duration<double>(startup_spin_delay_sec_)),
+    std::bind(&DensityMapBuilderNode::maybe_startup_spin, this));
+
+  last_detection_time_ = this->now();
+  last_spin_time_ = this->now() - rclcpp::Duration::from_seconds(spin_cooldown_sec_ + 1.0);
 
   // Initialize TF2 buffer and listener
   tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
@@ -51,6 +85,11 @@ DensityMapBuilderNode::DensityMapBuilderNode() : Node("density_map_builder_node"
   density_grid_.info.origin.position.z = 0.0;
   density_grid_.info.origin.orientation.w = 1.0;
   density_grid_.data.assign(width_ * height_, 0);
+
+  RCLCPP_INFO(
+    this->get_logger(),
+    "Density map builder ready. startup_spin=%s, lost_target_timeout=%.2fs, spin_action=%s",
+    enable_startup_spin_ ? "true" : "false", lost_target_timeout_sec_, spin_action_name_.c_str());
 }
 
 void DensityMapBuilderNode::target_poses_callback(const geometry_msgs::msg::PoseArray::SharedPtr msg)
@@ -67,6 +106,8 @@ void DensityMapBuilderNode::target_poses_callback(const geometry_msgs::msg::Pose
     send_peak_navigation_goal();
     return;
   }
+
+  last_detection_time_ = this->now();
 
   RCLCPP_INFO(this->get_logger(), "Received %zu balls from %s frame", points.size(), msg->header.frame_id.c_str());
 
@@ -105,9 +146,11 @@ void DensityMapBuilderNode::target_poses_callback(const geometry_msgs::msg::Pose
 
 void DensityMapBuilderNode::build_density_map(const std::vector<geometry_msgs::msg::Point>& points)
 {
-  // Apply time decay to existing density
-  for (size_t i = 0; i < density_grid_.data.size(); ++i) {
-    density_grid_.data[i] = static_cast<int>(density_grid_.data[i] * time_decay_factor_);
+  // Keep peaks persistent while tactical scan is running.
+  if (!decay_paused_) {
+    for (size_t i = 0; i < density_grid_.data.size(); ++i) {
+      density_grid_.data[i] = static_cast<int>(density_grid_.data[i] * time_decay_factor_);
+    }
   }
 
   // Apply Gaussian distribution for each point
@@ -200,6 +243,10 @@ void DensityMapBuilderNode::send_peak_navigation_goal()
     return;
   }
 
+  if (spin_in_progress_) {
+    return;
+  }
+
   auto max_iter = std::max_element(density_grid_.data.begin(), density_grid_.data.end());
   if (max_iter == density_grid_.data.end() || *max_iter <= 0) {
     return;
@@ -240,6 +287,138 @@ void DensityMapBuilderNode::send_peak_navigation_goal()
 
   RCLCPP_INFO(this->get_logger(), "Sent navigation goal to density peak (%.2f, %.2f)",
     goal_point.x, goal_point.y);
+}
+
+void DensityMapBuilderNode::trigger_spin(const std::string & reason)
+{
+  if (spin_in_progress_) {
+    return;
+  }
+
+  const rclcpp::Time now = this->now();
+  if ((now - last_spin_time_).seconds() < spin_cooldown_sec_) {
+    return;
+  }
+
+  if (!spin_client_->wait_for_action_server(500ms)) {
+    RCLCPP_WARN_THROTTLE(
+      this->get_logger(), *this->get_clock(), 5000,
+      "Spin action server '%s' not available", spin_action_name_.c_str());
+    return;
+  }
+
+  set_decay_paused(true, reason.c_str());
+  spin_in_progress_ = true;
+  last_spin_time_ = now;
+
+  nav2_msgs::action::Spin::Goal goal;
+  goal.target_yaw = spin_angle_rad_;
+  goal.time_allowance = rclcpp::Duration::from_seconds(30.0);
+
+  rclcpp_action::Client<nav2_msgs::action::Spin>::SendGoalOptions options;
+  options.goal_response_callback =
+    std::bind(&DensityMapBuilderNode::on_spin_goal_response, this, std::placeholders::_1);
+  options.result_callback =
+    std::bind(&DensityMapBuilderNode::on_spin_result, this, std::placeholders::_1);
+
+  spin_client_->async_send_goal(goal, options);
+  RCLCPP_INFO(this->get_logger(), "Triggered spin (reason=%s, angle=%.2f rad)", reason.c_str(), spin_angle_rad_);
+}
+
+void DensityMapBuilderNode::on_spin_goal_response(
+  const rclcpp_action::ClientGoalHandle<nav2_msgs::action::Spin>::SharedPtr & goal_handle)
+{
+  if (!goal_handle) {
+    spin_in_progress_ = false;
+    set_decay_paused(false, "spin_goal_rejected");
+    RCLCPP_WARN(this->get_logger(), "Spin goal was rejected by Nav2");
+    return;
+  }
+  RCLCPP_INFO(this->get_logger(), "Spin goal accepted");
+}
+
+void DensityMapBuilderNode::on_spin_result(
+  const rclcpp_action::ClientGoalHandle<nav2_msgs::action::Spin>::WrappedResult & result)
+{
+  spin_in_progress_ = false;
+  // Reset lost-target watchdog after each scan attempt to avoid immediate retrigger loops.
+  last_detection_time_ = this->now();
+  set_decay_paused(false, "spin_result");
+
+  if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
+    RCLCPP_INFO(this->get_logger(), "Spin completed successfully");
+  } else if (result.code == rclcpp_action::ResultCode::ABORTED) {
+    RCLCPP_WARN(this->get_logger(), "Spin aborted");
+  } else if (result.code == rclcpp_action::ResultCode::CANCELED) {
+    RCLCPP_WARN(this->get_logger(), "Spin canceled");
+  } else {
+    RCLCPP_WARN(this->get_logger(), "Spin ended with unknown result code");
+  }
+
+  // Immediately transition from scan phase back to peak-driven navigation.
+  send_peak_navigation_goal();
+}
+
+void DensityMapBuilderNode::monitor_lost_targets()
+{
+  if (spin_in_progress_) {
+    return;
+  }
+
+  const double seconds_without_target = (this->now() - last_detection_time_).seconds();
+  if (seconds_without_target >= lost_target_timeout_sec_) {
+    trigger_spin("lost_target");
+    // Prevent immediate retrigger while still no detections.
+    last_detection_time_ = this->now();
+  }
+}
+
+void DensityMapBuilderNode::maybe_startup_spin()
+{
+  if (startup_spin_triggered_) {
+    return;
+  }
+
+  startup_spin_triggered_ = true;
+  startup_spin_timer_->cancel();
+  if (enable_startup_spin_) {
+    trigger_spin("startup");
+  }
+}
+
+bool DensityMapBuilderNode::set_decay_paused(bool paused, const char * source)
+{
+  if (decay_paused_ == paused) {
+    return false;
+  }
+
+  decay_paused_ = paused;
+  RCLCPP_INFO(
+    this->get_logger(),
+    "Decay %s by %s",
+    decay_paused_ ? "paused" : "resumed",
+    source == nullptr ? "unknown" : source);
+  return true;
+}
+
+void DensityMapBuilderNode::handle_pause_decay(
+  const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+  std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+{
+  (void)request;
+  set_decay_paused(true, "service_pause_decay");
+  response->success = true;
+  response->message = "Decay paused";
+}
+
+void DensityMapBuilderNode::handle_resume_decay(
+  const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+  std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+{
+  (void)request;
+  set_decay_paused(false, "service_resume_decay");
+  response->success = true;
+  response->message = "Decay resumed";
 }
 
 int main(int argc, char * argv[])
